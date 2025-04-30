@@ -4,7 +4,7 @@
 2. Nevigate to your hosts file
     - On MacOS this will likely be in `/etc/`
     - On Windows this will likely be at `C:\Windows\System32\drivers\etc`
-3. Open the `hosts` file as **admin or sudo** and append the below **Hosts** information to your file. Leave what is already there or any additiosn you have previously made.
+3. Open the `hosts` file as **admin or sudo** and append the below **Hosts** information to your file. Leave what is already there or any additions you have previously made.
 4. In the repo folder, run `docker compsose up --build` to build and run the container.
 5. In your browser, navigate to `https://sterbcroyalbank.localdev/` to confirm setup.
 
