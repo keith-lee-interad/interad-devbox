@@ -8,10 +8,11 @@
 4. In the repo folder, run `docker compsose up --build` to build and run the container.
 5. In your browser, navigate to `https://sterbcroyalbank.localdev/` to confirm setup.
 
-You can make changes to the "sites" folder as you would DMZ, with the same site root of "htdocs". Make changes to the `\sites\rb_wwws\htdocs\index.html` folder to reflect changes at `https://sterbcroyalbank.localdev/`. YOu can copy DVL into the htdocs folder and use the server-side includes as you would normally on Bronze. HTTP points to the *www* folders and HTTPS to the *wwws* folders.
+You can make changes to the "sites" folder as you would DMZ, with the same site root of "htdocs". Make changes to the `\sites\rb_wwws\htdocs\index.html` folder to reflect changes at `https://sterbcroyalbank.localdev/`. You can copy DVL into the htdocs folder and use the server-side includes as you would normally on Bronze. HTTP points to the *www* folders and HTTPS to the *wwws* folders.
 
 # Hosts
 
+```
 127.0.0.1 rb.localdev
 127.0.0.1 sterbc.localdev
 127.0.0.1 sterbcassurances.localdev
@@ -36,6 +37,7 @@ You can make changes to the "sites" folder as you would DMZ, with the same site 
 127.0.0.1 sterbcroyalbank.localdev
 127.0.0.1 stercapleasing.localdev
 127.0.0.1 www6.steroyalbank.localdev
+```
 
 # Run
 
