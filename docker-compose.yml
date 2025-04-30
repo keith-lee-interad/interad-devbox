@@ -1,0 +1,8 @@
+services:
+  apache_bronze_ssi:
+    build: .
+    volumes: 
+      - ./sites/:/usr/local/apache2/htdocs
+    ports:
+      - "80:80"
+      - "443:443"

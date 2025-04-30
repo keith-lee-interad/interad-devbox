@@ -1,0 +1,127 @@
+{
+	"banking" : [
+					{
+						"key" : "personal-banking",
+						"value" : "Personal Banking",
+						"url" : "http://www.rbcroyalbank.com/personal.html"
+					},
+					{
+						"key" : "business-banking",
+						"value" : "Business Banking",
+						"url" : "http://www.rbcroyalbank.com/business/index.html"
+					},
+										{
+						"key" : "commercial-banking",
+						"value" : "Commercial Banking",
+						"url" : "http://www.rbcroyalbank.com/commercial/index.html"
+					}
+				],
+	"insurance" : [
+					{
+						"key" : "personal-insurance",
+						"value" : "Personal Insurance",
+						"url" : "/personal.html"
+					},
+					{
+						"key" : "group-benefits",
+						"value" : "Group Benefits",
+						"url" : "/group-benefits/index.html"
+					},
+					{
+						"key" : "group-annuity",
+						"value" : "Group Annuity",
+						"url" : "/group-annuity/index.html"
+					},
+					{
+						"key" : "business-insurance",
+						"value" : "Business Insurance",
+						"url" : "/business-insurance/index.html"
+					},
+					{
+						"key" : "reinsurance",
+						"value" : "Re-insurance",
+						"url" : "/reinsurance/index.html"
+					},
+					{
+						"key" : "about-insurance",
+						"value" : "About RBC Insurance",
+						"url" : "/about/index.html"
+					}
+				],
+	"investing" : [
+					{
+						"key" : "investing-rbc",
+						"value" : "Investing at RBC",
+						"url" : "http://www.rbc.com/investing/personal.html"
+					},
+					{
+						"key" : "royal-bank",
+						"value" : "Royal Bank",
+						"url" : "http://www.rbcroyalbank.com/investing/index.html"
+					},
+					{
+						"key" : "direct-investing",
+						"value" : "Direct Investing",
+						"url" : "http://www.rbcdirectinvesting.com/"
+					},
+					{
+						"key" : "financial-planning",
+						"value" : "Financial Planning",
+						"url" : "http://www.rbcfinancialplanning.com/"
+					},
+					{
+						"key" : "wealth-management",
+						"value" : "Wealth Management",
+						"url" : "http://www.rbcwealthmanagement.com/canada.html"
+					},
+					{
+						"key" : "global-asset-management",
+						"value" : "Global Asset Management",
+						"url" : "http://www.rbcgam.com/landing.html?dest=http%3A%2F%2Ffunds.rbcgam.com%2F"
+					},
+					{
+						"key" : "group-advantage",
+						"value" : "Group Advantage",
+						"url" : "http://www.rbcroyalbank.com/business/group-solutions/"
+					},
+					{
+						"key" : "capital-markets",
+						"value" : "Capital Markets",
+						"url" : "https://www.rbccm.com/"
+					}
+				],
+	"wealth" :  [
+					{
+						"key" : "wealth-management",
+						"value" : "Wealth Management Homepage",
+						"url" : "http://www.rbcwealthmanagement.com/canada.html"
+					},
+					{
+						"key" : "dominion-securities",
+						"value" : "Dominion Securities",
+						"url" : "http://www.rbcds.com/"
+					},
+					{
+						"key" : "estate-and-trust-services",
+						"value" : "Estate and Trust Services",
+						"url" : "http://www.rbcwealthmanagement.com/estateandtrust/index.html"
+					},
+					{
+						"key" : "private-banking",
+						"value" : "Private Banking",
+						"url" : "http://www.rbcwealthmanagement.com/privatebanking/index.html"
+					},
+					{
+						"key" : "phn-investment-counsel",
+						"value" : "PH&N Investment Counsel",
+						"url" : "http://www.rbcphnic.com/"
+					}
+				],
+	"about" : [
+					{
+						"key" : "about-rbc",
+						"value" : "About Page",
+						"url" : "http://www.rbc.com/about-rbc.html"
+					}
+	]
+}

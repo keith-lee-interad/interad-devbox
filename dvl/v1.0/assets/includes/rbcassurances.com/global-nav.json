@@ -1,0 +1,230 @@
+{
+	"banking" : [
+					{
+						"key" : "personal-banking",
+						"value" : "Particuliers",
+						"url" : "https://www.rbcroyalbank.com/fr/personal.html"
+					},
+					{
+						"key" : "business-banking",
+						"value" : "Entreprises",
+						"url" : "https://www.rbcroyalbank.com/fr/entreprises/index.html"
+					},
+					{
+						"key" : "wealth",
+						"value" : "Patrimoine",
+						"url" : "https://www.rbcwealthmanagement.com/ca/fr"
+					},
+					{
+						"key" : "institutional",
+						"value" : "Institutionnels",
+						"url" : "#",
+						"children" : [
+							{
+								"key" : "rbc-gam",
+								"value" : "Gestion mondiale d’actifs",
+								"url" : "http://www.rbcgma.com/landing.html"
+							},
+							{
+								"key" : "capital-markets",
+								"value" : "Marchés des Capitaux",
+								"url" : "https://www.rbccm.com/fr/"
+							},
+							{
+								"key" : "investor-services",
+								"value" : "Services aux investisseurs",
+								"url" : "https://www.rbcits.com/fr/"
+							}
+						]
+					},
+					{
+						"key" : "about-rbc",
+						"value" : "À propos de RBC",
+						"url" : "https://www.rbc.com/francais/canada.html"
+					}
+				],
+	"insurance" : [
+					{
+						"key" : "personal-insurance",
+						"value" : "Individuelle",
+						"url" : "/fr/particuliers.html"
+					},
+					{
+						"key" : "business-insurance",
+						"value" : "Entreprise",
+						"url" : "/fr/assurance-entreprise/index.html"
+					},
+					{
+						"key" : "Collective",
+						"value" : "Collective",
+						"url" : "/fr/assurance-collective/index.html",
+						"children" : [
+							{
+								"key" : "group-benefits",
+								"value" : "Assurance collective",
+								"url" : "/fr/assurance-collective/index.html"
+							},
+							{
+								"key" : "group-annuity",
+								"value" : "Solution de rente collective",
+								"url" : "/fr/rente-collective/index.html"
+							}
+						]
+					},
+					{
+						"key" : "private-insurance",
+						"value" : "Privée",
+						"url" : "/fr/assurance-privee/index.html"
+					},
+					{
+						"key" : "reinsurance",
+						"value" : "Réassurance",
+						"url" : "/fr/reassurance/index.html"
+					},
+					{
+						"key" : "about-insurance",
+						"value" : "À propos de nous",
+						"url" : "/fr/a-propos/index.html"
+					}
+				],
+	"investing" : [
+					{
+						"key" : "investing-rbc",
+						"value" : "Investir à RBC",
+						"url" : "http://www.rbc.com/francais/investissements/personal.html"
+					},
+					{
+						"key" : "royal-bank",
+						"value" : "Banque Royale",
+						"url" : "http://www.rbcbanqueroyale.com/placements/index.html"
+					},
+					{
+						"key" : "direct-investing",
+						"value" : "Placements en Direct",
+						"url" : "http://www.rbcplacementsendirect.com/"
+					},
+					{
+						"key" : "financial-planning",
+						"value" : "Planification financière",
+						"url" : "https://www.rbcfinancialplanning.com/fr/index.html"
+					},
+					{
+						"key" : "wealth-management",
+						"value" : "Gestion de patrimoine",
+						"url" : "http://www.rbcgestiondepatrimoine.com/canada.html"
+					},
+					{
+						"key" : "global-asset-management",
+						"value" : "Gestion mondiale d’actifs",
+						"url" : "http://www.rbcgma.com/landing.html"
+					},
+					{
+						"key" : "group-advantage",
+						"value" : "Avantage collectif",
+						"url" : "http://www.rbcbanqueroyale.com/entreprises/group-solutions/index.html"
+					},
+					{
+						"key" : "capital-markets",
+						"value" : "Marchés des Capitaux",
+						"url" : "https://www.rbccm.com/fr/"
+					}
+				],
+	"investease" : [
+					{
+						"key" : "investing-rbc",
+						"value" : "Investir à RBC",
+						"url" : "http://www.rbc.com/francais/investissements/personal.html"
+					},
+					{
+						"key" : "royal-bank",
+						"value" : "Banque Royale",
+						"url" : "http://www.rbcbanqueroyale.com/placements/index.html"
+					},
+					{
+						"key" : "direct-investing",
+						"value" : "Placements en Direct",
+						"url" : "http://www.rbcplacementsendirect.com/"
+					},
+					{
+						"key" : "financial-planning",
+						"value" : "Planification financière",
+						"url" : "https://www.rbcfinancialplanning.com/fr/index.html"
+					},
+					{
+						"key" : "wealth-management",
+						"value" : "Gestion de patrimoine",
+						"url" : "http://www.rbcgestiondepatrimoine.com/canada.html"
+					},
+					{
+						"key" : "global-asset-management",
+						"value" : "Gestion mondiale d’actifs",
+						"url" : "http://www.rbcgma.com/landing.html"
+					}
+				],
+	"wealth" :  [
+					{
+						"key" : "wealth-management",
+						"value" : "Gestion de patrimoine",
+						"url" : "http://www.rbcgestiondepatrimoine.com/canada.html"
+					},
+					{
+						"key" : "dominion-securities",
+						"value" : "Dominion valeurs mobilières",
+						"url" : "http://www.rbcdvm.com/"
+					},
+					{
+						"key" : "estate-and-trust-services",
+						"value" : "Successions et fiducies",
+						"url" : "http://www.rbcgestiondepatrimoine.com/successionsetfiducies/index.html"
+					},
+										{
+						"key" : "private-banking",
+						"value" : "Banque privée",
+						"url" : "http://www.rbcgestiondepatrimoine.com/gestionprivee/index.html"
+					},
+					{
+						"key" : "phn-investment-counsel",
+						"value" : "PH&N Services-conseils en placements",
+						"url" : "http://www.rbcphnic.com/francais/"
+					}
+				],
+	"rbc" : 	[	
+					{
+						"key" : "canada",
+						"value" : "Canada",
+						"url" : "https://www.rbc.com/francais/canada.html"
+					},
+					{
+						"key" : "united-states",
+						"value" : "États-Unis",
+						"url" : "https://www.rbc.com/francais/united-states.html"
+					},
+					{
+						"key" : "international",
+						"value" : "International",
+						"url" : "https://www.rbc.com/francais/international.html"
+					},
+					{
+						"key" : "about-rbc",
+						"value" : "À propos de RBC",
+						"url" : "https://www.rbc.com/francais/about-rbc.html"
+					}
+				],
+	"rbcbank" : [
+					{
+						"key" : "personal-banking",
+						"value" : "Personal",
+						"url" : "https://www.rbcbank.com/index.html"
+					},
+					{
+						"key" : "business-banking",
+						"value" : "Business",
+						"url" : "https://www.rbcbank.com/cross-border/business-banking.html"
+					},
+					{
+						"key" : "about-rbc",
+						"value" : "About RBC",
+						"url" : "https://www.rbc.com/about-rbc.html"
+					}
+				]
+}

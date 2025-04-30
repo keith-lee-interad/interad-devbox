@@ -1,0 +1,38 @@
+{
+	"Canada" : [
+					{
+						"key" : "english",
+						"value" : "English",
+						"id" : "lang-en",
+						"url" : "https://www.rbcbanqueroyale.com/cgi-bin/homepage/language.cgi"
+					},
+					{
+						"key" : "french",
+						"value" : "Français",
+						"id" : "lang-fr",
+						"url" : "https://www.rbcroyalbank.com/cgi-bin/homepage/language.cgi"
+					},
+					{
+						"key" : "chinese",
+						"value" : "简体中文",
+						"id" : "lang-ch",
+						"url" : "http://www.rbc.com/newcomers/chinese/"
+					}
+				],
+	"US" : [
+					{
+						"key" : "english",
+						"value" : "English",
+						"id" : "lang-us",
+						"url" : "http://www.rbcbank.com/"
+					}
+		   ],
+	"Caribbean" : [
+					{
+						"key" : "english",
+						"value" : "English",
+						"id" : "lang-carib",
+						"url" : "http://www.rbc.com/caribbean"
+					}
+		   ]
+}

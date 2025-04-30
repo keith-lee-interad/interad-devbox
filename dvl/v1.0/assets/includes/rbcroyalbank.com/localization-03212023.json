@@ -1,0 +1,27 @@
+[
+	{
+		"country" : "Canada",
+		"value" : "Canada - EN",
+		"id" : "lang-en",
+		"url" : "https://www.rbcbanqueroyale.com/cgi-bin/homepage/language.cgi"
+
+	},
+	{
+		"country" : "Canada",
+		"value" : "Canada - FR",
+		"id" : "lang-fr",
+		"url" : "https://www.rbcroyalbank.com/cgi-bin/homepage/language.cgi"
+	},
+	{
+		"country" : "China",
+		"value" : "简体中文",
+		"id" : "lang-ch",
+		"url" : "http://www.rbc.com/newcomers/chinese/"
+	},
+	{
+		"country" : "US",
+		"value" : "U.S. - EN",
+		"id" : "lang-us",
+		"url" : "http://www.rbcbank.com/"
+	}
+]

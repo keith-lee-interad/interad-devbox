@@ -1,0 +1,14 @@
+[
+	{
+		"country" : "Canada",
+		"value" : "Canada - EN",
+		"id" : "lang-en",
+		"url" : "/cgi-bin/language/english.cgi"
+	},
+	{
+		"country" : "Canada",
+		"value" : "Canada - FR",
+		"id" : "lang-fr",
+		"url" : "/cgi-bin/language/francais.cgi"
+	}
+]

@@ -1,0 +1,16 @@
+{
+	"Canada" : [
+					{
+						"key" : "english",
+						"value" : "English",
+						"id" : "lang-en",
+						"url" : "/cgi-bin/language-toggle/language.cgi?lang=en"
+					},
+					{
+						"key" : "french",
+						"value" : "Français",
+						"id" : "lang-fr",
+						"url" : "/cgi-bin/language-toggle/language.cgi?lang=fr"
+					}
+				]
+}

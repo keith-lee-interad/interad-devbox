@@ -1,0 +1,43 @@
+<script src="/dvl/v1.0/assets/js/jquery.min.js"></script>
+<script src="/dvl/v1.0/assets/js/jquery-ui.min.js"></script>
+<script src="/dvl/v1.0/assets/js/bootstrap.min.js"></script>
+<script src="/dvl/v1.0/assets/js/underscore.min.js"></script>
+<script src="/dvl/v1.0/assets/js/bowser.min.js"></script>
+<script src="/dvl/v1.0/assets/js/dvl.min.js"></script>
+<script src="/dvl/v1.0/assets/js/carryover.min.js"></script>
+<div class="high-contrast-test" style="width: 0px; height: 0px; background-image: url(/dvl/v1.0/assets/images/ui/ui-checkmark-blue.svg)"></div>
+<script>
+    // High contrast mode checker. if there is no background-image we are in high contrast mode
+    if ($('.high-contrast-test').css('background-image') === 'none') {
+        $('html').addClass('high-contrast-mode');
+    }
+
+    // Datalyer push for the Promotions link in the header
+    $(document).ready(function() {
+
+        $('#header-promotions-link').on('click', function(event) {
+            dataLayer.push({
+                'event':'dvlEvent',
+                'category':'header DVL1_0',
+                'action':'Click Link',
+                'label':'Promotions'
+            });  
+        });
+
+        $('.side-menu-promotions-link a').on('click', function(event) {
+            dataLayer.push({
+                'event':'dvlEvent',
+                'category':'header DVL1_0',
+                'action':'Click Link',
+                'label':'Promotions'
+            });  
+        });
+          
+    });
+
+    // OneTrust Modal Trigger
+    $('.ot-sdk-show-settings').on('click', function(event) {
+        event.preventDefault();
+        OneTrust.ToggleInfoDisplay();
+    });
+</script>

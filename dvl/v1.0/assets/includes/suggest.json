@@ -1,0 +1,67 @@
+{
+	"rbc.com" : [
+					{
+						"id" : "5"
+					}
+	],
+	"rbc.com-fr" : [
+					{
+						"id" : "7"
+					}
+	],
+	"rbcroyalbank.com" : [
+					{
+						"id" : "5"
+					}
+	],
+	"rbcbanqueroyale.com" : [
+					{
+						"id" : "7"
+					}
+	],
+	"rbcdirectinvesting.com" : [
+					{
+						"id" : "18"
+					}
+	],
+	"rbcplacementsendirect.com" : [
+					{
+						"id" : "19"
+					}
+	],
+	"rbcinsurance.com" : [
+					{
+						"id" : "1"
+					}
+	],
+	"rbcassurances.com" : [
+					{
+						"id" : "2"
+					}
+	],
+	"rbcfinancialplanning.com" : [
+					{
+						"id" : "40"
+					}
+	],
+	"rbcfinancialplanning.com-fr" : [
+					{
+						"id" : "41"
+					}
+	],
+	"rbcbank.com" : [
+					{
+						"id" : "33"
+					}
+	],
+	"rbcinvestease.com" : [
+					{
+						"id" : "45"
+					}
+	],
+	"rbcinvestease.com-fr" : [
+					{
+						"id" : "47"
+					}
+	]
+}

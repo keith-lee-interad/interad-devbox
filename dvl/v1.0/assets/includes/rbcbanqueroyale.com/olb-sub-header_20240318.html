@@ -1,0 +1,25 @@
+<!--#if expr="${HTTP_HOST}=/rb.devmain/" -->
+<!--#set var='dyna_host' value='https://www1.steroyalbank.com' -->
+<!--#elif expr="${HTTP_HOST}=/rb.interadcorp.com/" -->
+<!--#set var='dyna_host' value='https://www1.steroyalbank.com' -->
+<!--#elif expr="${HTTP_HOST}=/sterbcroyalbank.com/" -->
+<!--#set var='dyna_host' value='https://www1.steroyalbank.com' -->
+<!--#elif expr="${HTTP_HOST}=/silver.rbcroyalbank.com/" -->
+<!--#set var='dyna_host' value='https://www1.steroyalbank.com' -->
+<!--#else -->
+<!--#set var='dyna_host' value='https://www1.royalbank.com' -->
+<!--#endif -->
+
+<div class="sub-header olb">
+	<div class="sub-nav">
+		<ul class="sub-links">
+			<li><a
+					href="https://www.rbcbanqueroyale.com/servicesendirect/personal/apply-for-products-and-services.html">Produits
+					et services</a></li>
+			<li><a
+					href="https://www1.royalbank.com/wps/myportal/OLB/com.rbc._3m00.olb.web.portal.pg.myacct.accountsummary">Mes
+					comptes</a></li>
+			<li><a href="<!--#echo var='dyna_host' -->/sgw1/olb/index-fr/#/help-centre">Centre d'aide</a></li>
+		</ul>
+	</div>
+</div>

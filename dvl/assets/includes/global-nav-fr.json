@@ -1,0 +1,95 @@
+{
+	"banking" : [
+					{
+						"key" : "personal",
+						"value" : "Particuliers",
+						"url" : "http://www.rbcbanqueroyale.com/personal.html"
+					},
+					{
+						"key" : "small-business",
+						"value" : "Petite entreprise",
+						"url" : "http://www.rbcbanqueroyale.com/entreprises/index.html"
+					},
+										{
+						"key" : "commercial",
+						"value" : "Entreprise commerciale",
+						"url" : "http://www.rbcbanqueroyale.com/commerciaux/index.html"
+					}
+				],
+	"investing" : [
+					{
+						"key" : "homepage",
+						"value" : "Investir à RBC",
+						"url" : "http://www.rbc.com/francais/investissements/personal.html"
+					},
+					{
+						"key" : "royal-bank",
+						"value" : "Banque Royale",
+						"url" : "http://www.rbcbanqueroyale.com/placements/index.html"
+					},
+					{
+						"key" : "direct-investing",
+						"value" : "Placements en Direct",
+						"url" : "http://www.rbcplacementsendirect.com/"
+					},
+					{
+						"key" : "financial-planning",
+						"value" : "Planification financière",
+						"url" : "http://www.rbcfinancialplanning.com/francais/index.html"
+					},
+					{
+						"key" : "wealth-management",
+						"value" : "Gestion de patrimoine",
+						"url" : "http://www.rbcgestiondepatrimoine.com/canada.html"
+					},
+					{
+						"key" : "global-asset-management",
+						"value" : "Gestion mondiale d’actifs",
+						"url" : "http://www.rbcgma.com/landing.html"
+					},
+					{
+						"key" : "group-advantage",
+						"value" : "Avantage collectif",
+						"url" : "http://www.rbcbanqueroyale.com/entreprises/group-solutions/index.html"
+					},
+					{
+						"key" : "capital-markets",
+						"value" : "Marchés des Capitaux",
+						"url" : "https://www.rbccm.com/fr/cid-155135.html"
+					}
+				],
+	"wealth" :  [
+					{
+						"key" : "homepage",
+						"value" : "Gestion de patrimoine",
+						"url" : "http://www.rbcgestiondepatrimoine.com/canada.html"
+					},
+					{
+						"key" : "dominion-securities",
+						"value" : "Dominion valeurs mobilières",
+						"url" : "http://www.rbcdvm.com/"
+					},
+					{
+						"key" : "estate-and-trust-services",
+						"value" : "Successions et fiducies",
+						"url" : "http://www.rbcgestiondepatrimoine.com/successionsetfiducies/index.html"
+					},
+										{
+						"key" : "private-banking",
+						"value" : "Banque privée",
+						"url" : "http://www.rbcgestiondepatrimoine.com/gestionprivee/index.html"
+					},
+					{
+						"key" : "phn-investment-counsel",
+						"value" : "PH&N Services-conseils en placements",
+						"url" : "http://www.rbcphnic.com/francais/"
+					}
+				],
+	"about" : [
+					{
+						"key" : "about-rbc",
+						"value" : "About Page",
+						"url" : "http://www.rbc.com/francais/about-rbc.html"
+					}
+	]
+}
