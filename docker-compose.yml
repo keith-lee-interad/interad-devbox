@@ -3,6 +3,7 @@ services:
     build: .
     volumes: 
       - ./sites/:/usr/local/apache2/htdocs
+      - ./dvl/:/usr/local/apache2/htdocs/rb_wwws/htdocs/dvl
     ports:
       - "80:80"
       - "443:443"
