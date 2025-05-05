@@ -1,1 +1,18 @@
-<h1>working</h1>
+<!--#include virtual="/dvl/v1.0/assets/includes/html-doctype.html" -->
+<!--#if expr="${HTTP_HOST}=/sterbcroyalbank.localdev/" -->
+<!--#set var='ENV' value='DEV' -->
+<!--#elif expr="${HTTP_HOST}=/sterbcroyalbank.com/" -->
+<!--#set var='ENV' value='BRONZE' -->
+<!--#elif expr="${HTTP_HOST}=/silver.rbcroyalbank.com/" -->
+<!--#set var='ENV' value='SILVER' -->
+<!--#else -->
+<!--#set var='ENV' value='PROD' -->
+<!--#endif -->
+<head>
+	<!--#include virtual="/dvl/v1.0/assets/includes/head.html" -->
+</head>
+<body>
+	<h1>working</h1>
+	<div>ENV: <span><!--#echo var="ENV" --></span></div>
+</body>
+</html>

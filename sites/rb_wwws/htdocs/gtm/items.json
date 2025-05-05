@@ -1,0 +1,685 @@
+{
+  "IAV": {
+    "item_name": "Visa Infinite Avion",
+    "price": 273
+  },
+  "MC1": {
+    "item_name": "Cashback Mastercard",
+    "price": 57
+  },
+  "CLO": {
+    "item_name": "Visa Classic Low Rate",
+    "price": 212
+  },
+  "GCP": {
+    "item_name": "Visa Platinum Avion",
+    "price": 158
+  },
+  "AVP": {
+    "item_name": "Visa Infinite Privilege Avion",
+    "price": 1274
+  },
+  "GUS": {
+    "item_name": "US Dollar Visa Gold",
+    "price": 96
+  },
+  "PLT": {
+    "item_name": "Visa Platinum",
+    "price": 140
+  },
+  "VPR": {
+    "item_name": "RateAdvantage Visa",
+    "price": 281
+  },
+  "MC4": {
+    "item_name": "Westjet RBC World Elite Mastercard",
+    "price": 181
+  },
+  "MC2": {
+    "item_name": "Westjet RBC Mastercard",
+    "price": 154
+  },
+  "BAP": {
+    "item_name": "British Airways Visa Infinite",
+    "price": 233
+  },
+  "MCP": {
+    "item_name": "Cashback Preferred World Elite Mastercard",
+    "price": 119
+  },
+  "MC6": {
+    "item_name": "Business Cashback Mastercard",
+    "price": 157
+  },
+  "AIB": {
+    "item_name": "Avion Visa Infinite Business",
+    "price": 228
+  },
+  "CCL": {
+    "item_name": "Visa CreditLine for Small Business",
+    "price": 427
+  },
+  "CPX": {
+    "item_name": "Avion Visa Business",
+    "price": 902
+  },
+  "CLX": {
+    "item_name": "Visa Business",
+    "price": 207
+  },
+  "ION": {
+    "item_name": "RBC ION Visa",
+    "price": 0
+  },
+  "IOP": {
+    "item_name": "RBC ION+ Visa",
+    "price": 48
+  },
+  "MV1": {
+    "item_name": "MOI RBC Visa",
+    "price": 0
+  },
+  "CAV": {
+    "item_name": "Commercial Avion Visa",
+    "price": 0
+  },
+  "CCB": {
+    "item_name": "Commercial Cash Back Visa",
+    "price": 0
+  },
+  "CUS": {
+    "item_name": "Commercial U.S. Dollar Visa",
+    "price": 0
+  },
+  "CSN": {
+    "item_name": "Commercial Visa",
+    "price": 0
+  },
+  "CCBV": {
+    "item_name": "Commercial Cash Back Visa",
+    "price": 0
+  },
+  "USDV": {
+    "item_name": "Commercial U.S. Dollar Visa",
+    "price": 0
+  },
+  "CV": {
+    "item_name": "Commercial Visa",
+    "price": 0
+  },
+  "020": {
+    "item_name": "RBC VIP Banking",
+    "price": 1758
+  },
+  "004": {
+    "item_name": "RBC Signature No Limit Banking",
+    "price": 933
+  },
+  "022": {
+    "item_name": "RBC Day to Day Banking",
+    "price": 671
+  },
+  "030": {
+    "item_name": "US Personal Banking",
+    "price": 0
+  },
+  "027": {
+    "item_name": "RBC High Interest eSavings",
+    "price": 0
+  },
+  "011": {
+    "item_name": "RBC Enhanced Savings",
+    "price": 0
+  },
+  "012": {
+    "item_name": "RBC Day to Day Savings",
+    "price": 0
+  },
+  "029": {
+    "item_name": "RBC US High Interest eSavings",
+    "price": 0
+  },
+  "099": {
+    "item_name": "RBC Advantage Banking",
+    "price": 0
+  },
+  "066": {
+    "item_name": "RBC Advantage Banking for students",
+    "price": 0
+  },
+  "THA": {
+    "item_name": "True House Affordability",
+    "price": 143.5
+  },
+  "PRE": {
+    "item_name": "Pre-Approval",
+    "price": 199.3
+  },
+  "MSL": {
+    "item_name": "Mortgage Specialist Locator",
+    "price": 478.32
+  },
+  "HVE": {
+    "item_name": "Home value estimator",
+    "price": 0
+  },
+  "TLF": {
+    "item_name": "Term Life",
+    "price": 1036
+  },
+  "PSA": {
+    "item_name": "Personal Accident",
+    "price": 0
+  },
+  "DIS": {
+    "item_name": "Disability Insurance",
+    "price": 107
+  },
+  "HOS": {
+    "item_name": "Hospital insurance",
+    "price": 0
+  },
+  "TRP": {
+    "item_name": "Travel Package",
+    "price": 0
+  },
+  "TRM": {
+    "item_name": "Travel Medical",
+    "price": 0
+  },
+  "TRC": {
+    "item_name": "Travel Cancellation & Interruption",
+    "price": 0
+  },
+  "VIS": {
+    "item_name": "Vistor to Canada",
+    "price": 0
+  },
+  "TRV": {
+    "item_name": "Travel",
+    "price": 0
+  },
+  "TFSA": {
+    "item_name": "Tax Free Savings Account",
+    "price": 0
+  },
+  "RRSP": {
+    "item_name": "Registered Retirment Savings Plan",
+    "price": 0
+  },
+  "RRIF": {
+    "item_name": "Registered Retirement Income Fund",
+    "price": 0
+  },
+  "RESP": {
+    "item_name": "Registered Education Savings Plan",
+    "price": 0
+  },
+  "RDSP": {
+    "item_name": "Registered Disability Savings Plan",
+    "price": 0
+  },
+  "MFD": {
+    "item_name": "Mutual Funds",
+    "price": 0
+  },
+  "PS": {
+    "item_name": "Portfolio Solutions",
+    "price": 0
+  },
+  "GIC": {
+    "item_name": "Guaranteed Investment Certificates (GICs)",
+    "price": 0
+  },
+  "SD": {
+    "item_name": "Savings Deposits",
+    "price": 0
+  },
+  "IAA": {
+    "item_name": "Investment Advantage Account",
+    "price": 0
+  },
+  "27": {
+    "item_name": "BC High Interest eSavings",
+    "price": 0
+  },
+  "tfsa_ia": {
+    "item_name": "investments tax-free savings account"
+  },
+  "rrsp_ia": {
+    "item_name": "investments registered retirement savings plan"
+  },
+  "fhsa_ia": {
+    "item_name": "investments first home savings account"
+  },
+  "resp_ia": {
+    "item_name": "investments registered education savings plan"
+  },
+  "rrif_ia": {
+    "item_name": "investments registered retirement income fund "
+  },
+  "rdsp_ia": {
+    "item_name": "investments registered disability savings plan"
+  },
+  "gics_ia": {
+    "item_name": "guaranteed investments certificates"
+  },
+  "mfd_ia": {
+    "item_name": "mutual funds or portfolio solutions"
+  },
+  "sd_ia": {
+    "item_name": "savings deposit"
+  },
+  "etfs_ia": {
+    "item_name": "exchange-traded funds"
+  },
+  "fyf_ia": {
+    "item_name": "find your fit tool"
+  },
+  "ia": {
+    "item_name": "investments accounts"
+  },
+  "tfsa_dia": {
+    "item_name": "di tax-free savings account"
+  },
+  "fhsa_dia": {
+    "item_name": "di first home savings account"
+  },
+  "resp_dia": {
+    "item_name": "di education savings plan"
+  },
+  "rrsp_dia": {
+    "item_name": "di registered retirement savings plan"
+  },
+  "rrif_dia": {
+    "item_name": "di registered retirement income fund "
+  },
+  "nonr_dia": {
+    "item_name": "di non-registered accounts"
+  },
+  "dia": {
+    "item_name": "di accounts"
+  },
+  "tfsa_iea": {
+    "item_name": "investease tax-free savings account"
+  },
+  "fhsa_iea": {
+    "item_name": "investease first home savings account"
+  },
+  "rrsp_iea": {
+    "item_name": "investease registered retirement savings plan"
+  },
+  "nonr_iea": {
+    "item_name": "investease non-registered accounts"
+  },
+  "iea": {
+    "item_name": "investease accounts"
+  },
+  "rlc_ia": {
+    "item_name": "rrsp loan calculator"
+  },
+  "rc_ia": {
+    "item_name": "rrif calculator"
+  },
+  "rbc_ia": {
+    "item_name": "retirement budget calculator"
+  },
+  "gs_ia": {
+    "item_name": "gic selector"
+  },
+  "elgr_ia": {
+    "item_name": "equity-linked gic return calculator"
+  },
+  "DIA": {
+    "item_name": "DI Account",
+    "price": 134.51
+  },
+  "dap": {
+    "item_name": "Digital Account Package",
+    "price": 80
+  },
+  "fap": {
+    "item_name": "Flexible Account Package",
+    "price": 201
+  },
+  "iap": {
+    "item_name": "All Inclusive Account Package",
+    "price": 686
+  },
+  "RBCA": {
+    "item_name": "Royal Business Community Account",
+    "price": 58
+  },
+  "USDBA": {
+    "item_name": "U.S. Dollar Business Account",
+    "price": 426
+  },
+  "BESA": {
+    "item_name": "RBC Business Essentials Savings Account",
+    "price": 51
+  },
+  "RBPIA": {
+    "item_name": "Royal Business Premium Investment Account",
+    "price": 605
+  },
+  "AA": {
+    "item_name": "AgriInvest Account",
+    "price": 24
+  },
+  "BTA": {
+    "item_name": "Business Trust Account",
+    "price": 0
+  },
+  "OFCA": {
+    "item_name": "Online Foreign Currency Account",
+    "price": 0
+  },
+  "IB": {
+    "item_name": "International Banking",
+    "price": 0
+  },
+  "UMSG": {
+    "item_name": "RBC U.S. MarketSmart GIC",
+    "price": 244
+  },
+  "CBMSG": {
+    "item_name": "RBC Canadian Banking MarketSmart GIC",
+    "price": 337
+  },
+  "CUMSG": {
+    "item_name": "RBC Canadian Utilities MarketSmart GIC",
+    "price": 0
+  },
+  "CMLG": {
+    "item_name": "Canadian Market-Linked GICs",
+    "price": 982
+  },
+  "GMLG": {
+    "item_name": "Global Market-Linked GICs",
+    "price": 1501
+  },
+  "NRG": {
+    "item_name": "Non-Redeemable and Redeemable GICs",
+    "price": 249
+  },
+  "OYCG": {
+    "item_name": "One-Year Cashable GIC",
+    "price": 740
+  },
+  "RAG": {
+    "item_name": "RateAdvantage GIC",
+    "price": 373
+  },
+  "FOG": {
+    "item_name": "Five-In-One GIC",
+    "price": 533
+  },
+  "BBG": {
+    "item_name": "Building Block GIC",
+    "price": 56
+  },
+  "UDTD": {
+    "item_name": "U.S. Dollar Term Deposits",
+    "price": 1073
+  },
+  "IBG": {
+    "item_name": "Income Builder GIC",
+    "price": 565
+  },
+  "PLCG": {
+    "item_name": "Prime-Linked Cashable GIC",
+    "price": 311
+  },
+  "BAT": {
+    "item_name": "BAT Tool",
+    "price": 0
+  },
+  "RBO": {
+    "item_name": "Royal Business Overdraft",
+    "price": 0
+  },
+  "RBOL": {
+    "item_name": "Royal Business Operating Line",
+    "price": 0
+  },
+  "CSB": {
+    "item_name": "CreditLine for Small Business",
+    "price": 0
+  },
+  "ABL": {
+    "item_name": "Asset Based Lending",
+    "price": 0
+  },
+  "TL": {
+    "item_name": "Term Loans",
+    "price": 0
+  },
+  "EL": {
+    "item_name": "Equipment Leasing",
+    "price": 0
+  },
+  "EP": {
+    "item_name": "Equipment PurchaseLine",
+    "price": 0
+  },
+  "RABM": {
+    "item_name": "RoyFarm Agriculture Business Mortgage",
+    "price": 0
+  },
+  "CM": {
+    "item_name": "Commercial Mortgage",
+    "price": 0
+  },
+  "FAQ": {
+    "item_name": "Financière Agricole du Québec",
+    "price": 0
+  },
+  "CALA": {
+    "item_name": "Canadian Agricultural Loans Act",
+    "price": 0
+  },
+  "CSBFL": {
+    "item_name": "Canada Small Business Financing Loan",
+    "price": 0
+  },
+  "FMLC": {
+    "item_name": "Farm Management Line of Credit",
+    "price": 0
+  },
+  "BLIP": {
+    "item_name": "Business Loan Insurance Plan",
+    "price": 0
+  },
+  "BLIPC": {
+    "item_name": "Business Loan Insurance Plan Claim",
+    "price": 0
+  },
+  "LC": {
+    "item_name": "Loan Calculator",
+    "price": 0
+  },
+  "abl_loan": {
+    "item_name": "asset based lending",
+    "price": 0
+  },
+  "agr_acc": {
+    "item_name": "agriinvest account",
+    "price": 0
+  },
+  "bes_acc": {
+    "item_name": "rbc business essential savings account",
+    "price": 0
+  },
+  "bst_acc": {
+    "item_name": "business trust account",
+    "price": 0
+  },
+  "cbm_gic": {
+    "item_name": "rbc canadian banking marketsmart gic",
+    "price": 0
+  },
+  "cmg_gic": {
+    "item_name": "canadian market-linked gics",
+    "price": 0
+  },
+  "cum_gic": {
+    "item_name": "rbc canadian utilities marketsmart gic",
+    "price": 0
+  },
+  "rbc_acc": {
+    "item_name": "royal business community account",
+    "price": 0
+  },
+  "eml_gic": {
+    "item_name": "rbc esg market-linked gic",
+    "price": 0
+  },
+  "ebaf_tool": {
+    "item_name": "fee estimator",
+    "price": 0
+  },
+  "fba_tool": {
+    "item_name": "find the best business account for you",
+    "price": 0
+  },
+  "icb_gic": {
+    "item_name": "income builder gic",
+    "price": 0
+  },
+  "ibb_acc": {
+    "item_name": "International Business Banking",
+    "price": 0
+  },
+  "red_gic": {
+    "item_name": "non-redeemable and redeemable gics",
+    "price": 0
+  },
+  "nam_gic": {
+    "item_name": "rbc north american marketsmart gic",
+    "price": 0
+  },
+  "oca_gic": {
+    "item_name": "one-year cashable gic",
+    "price": 0
+  },
+  "ofc_acc": {
+    "item_name": "online foreign currency account",
+    "price": 0
+  },
+  "bpi_acc": {
+    "item_name": "royal business premium investment account",
+    "price": 0
+  },
+  "plc_gic": {
+    "item_name": "prime-linked cashable gic",
+    "price": 0
+  },
+  "rad_gic": {
+    "item_name": "rateadvantage gic",
+    "price": 0
+  },
+  "usm_gic": {
+    "item_name": "rbc us marketsmart gic",
+    "price": 0
+  },
+  "udb_acc": {
+    "item_name": "us dollar business account",
+    "price": 0
+  },
+  "udt_gic": {
+    "item_name": "us dollar term deposits",
+    "price": 0
+  },
+  "bep_loan": {
+    "item_name": "black entrepreneur program",
+    "price": 0
+  },
+  "egp_trade": {
+    "item_name": "export gurantee",
+    "price": 0
+  },
+  "feg_trade": {
+    "item_name": "foreign exchange gurantee",
+    "price": 0
+  },
+  "gtos_trade": {
+    "item_name": "global trade online services",
+    "price": 0
+  },
+  "psg_trade": {
+    "item_name": "performance security gurantee",
+    "price": 0
+  },
+  "telp_trade": {
+    "item_name": "trade expansion lending program",
+    "price": 0
+  },
+  "blc_tool": {
+    "item_name": "business loan calculator",
+    "price": 0
+  },
+  "rbop_loan": {
+    "item_name": "royal business overdraft protection",
+    "price": 0
+  },
+  "csbf_loan": {
+    "item_name": "canada small business financing (csbf) line of credit",
+    "price": 0
+  },
+  "sbfl_loan": {
+    "item_name": "canada small business financing loan",
+    "price": 0
+  },
+  "cala_loan": {
+    "item_name": "canadian agricultural loans act",
+    "price": 0
+  },
+  "cmo_loan": {
+    "item_name": "commercial mortgage",
+    "price": 0
+  },
+  "els_loan": {
+    "item_name": "equipment leasing",
+    "price": 0
+  },
+  "epc_loan": {
+    "item_name": "equipment purchaseline",
+    "price": 0
+  },
+  "fmlc_loan": {
+    "item_name": "farm management line of credit",
+    "price": 0
+  },
+  "fadq_loan": {
+    "item_name": "la financière agricole du quebec (fadq)",
+    "price": 0
+  },
+  "rboc_loan": {
+    "item_name": "royal business operating line of credit",
+    "price": 0
+  },
+  "roy_loan": {
+    "item_name": "royfarm mortgage",
+    "price": 0
+  },
+  "btl_loan": {
+    "item_name": "business term loans",
+    "price": 0
+  },
+  "chequepro": {
+    "item_name": "cheque-pro",
+    "price": 0
+  },
+  "etrans": {
+    "item_name": "e-transfer for business",
+    "price": 0
+  },
+  "payedge": {
+    "item_name": "payedge",
+    "price": 0
+  },
+  "bfs": {
+    "item_name": "bfs product",
+    "price": 0
+  }
+}

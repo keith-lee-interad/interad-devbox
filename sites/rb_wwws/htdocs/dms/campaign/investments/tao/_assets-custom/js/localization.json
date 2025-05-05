@@ -1,0 +1,14 @@
+[
+  {
+    "country" : "Canada",
+    "value" : "Canada - EN",
+    "id" : "lang-en",
+    "url" : "/dms/campaign/investments/tao/index.html"
+  },
+  {
+    "country" : "Canada",
+    "value" : "Canada - FR",
+    "id" : "lang-fr",
+    "url" : "/fr/dms/campaign/investments/tao/index.html"
+  }
+]

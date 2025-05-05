@@ -1,0 +1,1199 @@
+<!--#if expr="${HTTP_HOST}=/sterbcroyalbank.localdev/" -->
+<!--#set var='olb_host' value='https://www1.steroyalbank.com' -->
+<!--#elif expr="${HTTP_HOST}=/sterbcroyalbank.com/" -->
+<!--#set var='olb_host' value='https://www1.steroyalbank.com' -->
+<!--#elif expr="${HTTP_HOST}=/silver.rbcroyalbank.com/" -->
+<!--#set var='olb_host' value='https://www1.steroyalbank.com' -->
+<!--#else -->
+<!--#set var='olb_host' value='https://www1.royalbank.com' -->
+<!--#endif -->
+
+<!--#if expr="${HTTP_HOST}=/sterbcroyalbank.localdev/" -->
+<!--#set var='dmz_host' value='https://sterbcroyalbank.localdev' -->
+<!--#elif expr="${HTTP_HOST}=/sterbcroyalbank.com/" -->
+<!--#set var='dmz_host' value='https://www.sterbcroyalbank.com' -->
+<!--#elif expr="${HTTP_HOST}=/silver.rbcroyalbank.com/" -->
+<!--#set var='dmz_host' value='https://silver.rbcroyalbank.com' -->
+<!--#else -->
+<!--#set var='dmz_host' value='https://www.rbcroyalbank.com' -->
+<!--#endif -->
+
+<!--#if expr="${HTTP_HOST}=/www.rbcroyalbank.com/" -->
+	<!--#set var='tfsa_app' value='https://applinks.rbcroyalbank.com/9BLC' -->
+<!--#else -->
+	<!--#set var='tfsa_app' value='https://applinks.sterbcroyalbank.com/1T1x' -->
+<!--#endif -->
+
+<!--#if expr="${HTTP_HOST}=/www.rbcroyalbank.com/" -->
+	<!--#set var='rrsp_app' value='https://applinks.rbcroyalbank.com/N2xH' -->
+<!--#else -->
+	<!--#set var='rrsp_app' value='https://applinks.sterbcroyalbank.com/aFM5' -->
+<!--#endif -->
+
+<!--#include virtual="/dvl/v1.0/assets/includes/html-doctype.html" -->
+<head>
+	<!-- #include virtual="/dvl/v1.0/assets/includes/head.html" -->
+	<base href='<!--#echo var="dmz_host" -->' />
+	<script>
+		let pageMode = "";
+		let params = new URLSearchParams(document.location.search);
+		if (params.size > 0) {
+			pageMode = params.get("type")?.replace(/[~`!@#$%^&*()+={}\[\];:\'\"<>.,\/\\\?-_]/g, ''); // if "TFSA" do something else
+		}
+
+		function checkPageMode() {
+			if (!pageMode) {
+				return "";
+			}
+
+			if (/mobile/i.test(pageMode)) {
+				return "mobile";
+			} else if (/olb/i.test(pageMode)) {
+				return "olb";
+			}
+
+			return "";
+		}
+
+		if (checkPageMode() != "mobile") document.querySelector("base").remove();
+	</script>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="preload" href='/dvl/v1.0/assets/fonts/Roboto-Light.woff' as="font" type="font/woff" crossorigin>
+	<link rel="preload" href='/dvl/v1.0/assets/fonts/Roboto-Regular.woff' as="font" type="font/woff" crossorigin>
+	<link rel="preload" href='/dvl/v1.0/assets/fonts/Roboto-Bold.woff' as="font" type="font/woff" crossorigin>
+	<link rel="preload" href='/dvl/v1.0/assets/fonts/Roboto-Medium.woff' as="font" type="font/woff" crossorigin>
+	<link rel="preload" href='/dvl/v1.0/assets/fonts/RBCDisplay-Light.woff' as="font" type="font/woff" crossorigin>
+	<link rel="preload" href='/dvl/v1.0/assets/fonts/RBCDisplay-Bold.woff' as="font" type="font/woff" crossorigin>
+	<link rel="preload" href='/dvl/v1.0/assets/fonts/Roboto-Italic.woff' as="font" type="font/woff" crossorigin>
+	<link rel="preload" href='/dvl/v1.0/assets/fonts/Roboto-MediumItalic.woff' as="font" type="font/woff" crossorigin>
+	<link rel="preload" href='/dvl/v1.0/assets/fonts/Roboto-LightItalic.woff' as="font" type="font/woff" crossorigin>
+	<link rel="preload" as="style" href='/dvl/v1.0/assets/css/dvl.min.css'>
+	<link rel="preload" as="script" href='/dvl/v1.0/assets/js/dvl.min.js'>
+	<link rel="stylesheet" href='/dvl/v1.0/assets/css/dvl.min.css'>
+
+	<script>var DVL = { plugins: ["overlays", "header"] };</script>
+
+
+	<title></title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta property="og:title" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:image" content="" />
+
+	<!--#if expr="$SERVER_NAME = www.sterbcroyalbank.com || $SERVER_NAME = silver.rbcroyalbank.com" -->
+    <script type="text/plain" class="optanon-category-3" src="https://client-rbc.cdn-v3.conductrics.com/ac-VyDHnrdzqf/v3/agent-api/js/f-BXnDgyehSJ/dt-dHlP3MpvHEujt11xHPJ7Ejb6WkICDf?apikey=api-twHCbSC7tgpE31tzowIfmIUpP3"></script>
+	<!--#endif -->
+
+	<script>
+		const ga4EcomInfo = {
+			view_item_list: ["tfsa_ia", "rrsp_ia"]
+		}
+		window.dataLayer = window.dataLayer || [];
+		dataLayer.push({
+			"page_language": "en", // "fr" for FR pages, "ch" for Chinese pages
+			"lob": "investments",
+			"channel": checkPageMode() ? "secure" : "public",
+			"content_group": "investments : campaign",
+			"page_title": "wis fy25 tao"
+		});
+	</script>
+	<!-- Google Tag Manager -->
+	<script>
+		if (checkPageMode() != "mobile") {
+			let code = checkPageMode() ? "GTM-K5TWTL" : "GTM-KPSBBC6";
+			(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer',code);
+		}
+	</script>
+	<!-- End Google Tag Manager -->	
+
+	<style>
+
+		.custom-btn {
+			padding: 20px !important;
+			width: 100%;
+			border: 2px solid #006AC3 !important;
+			font-size: 16px !important;
+		}
+
+		.btn.pagemode-specific-content, .btn.mobile-specific-content, .btn.olb-specific-content {
+			display: none;
+		}
+		.pagemode-specific-content, .mobile-specific-content, .olb-specific-content {
+			display: none;
+		}
+		
+		.right-bordered {
+			border-right: solid 1px #252525;
+		}
+
+		#callout-btns {
+			align-items: center; 
+			justify-content: center;
+		}
+
+		@media screen and (max-width: 639px) {
+
+			/* fix odd Chrome table disclaimer overflow  */
+
+			section.disclaimer .table-wpr .table-row .table-cell {
+				max-width: 85vw;
+			}
+
+			.mobile-center {
+				text-align: center !important;
+			}
+			.mobile-nav-btn {
+				display: none;
+			}
+			.right-bordered {
+				border-right: none;
+				position: relative;
+			}
+			.right-bordered::after {
+				content: "";
+				position: absolute;
+				bottom: -25%;
+				left: 50%;
+				transform: translate(-50%);
+				height: 1px;
+				background: #252525;
+				width: 50%;
+			}
+			#callout-btns {
+				flex-direction: column !important;
+			}
+		}
+
+		#custom-nav {
+			height: auto;
+			width: 100vw;
+			position: fixed;
+			top: 0;
+			left: 0;
+			background-color: white;
+			z-index: 100;
+			border-bottom: 3px solid #fedf01;
+		}
+		.custom-nav-inner {
+			max-width: 1000px;
+			margin: 0 auto;
+			padding: 15px;
+			padding-bottom: 15px;
+			position: relative;
+			text-align: right;
+		}
+
+		.custom-grid-wpr {
+			width: 100%;
+			display: inline-flex;
+		}
+		.custom-grid-wpr .custom-grid-one-third {
+			width: 40%;
+			margin-right: 15px;
+		}
+		.custom-grid-wpr .custom-grid-two-thirds {
+			width: 60%;
+			margin-left: 15px;
+		}
+		.custom-callout {
+			box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25) !important;
+			border-radius: 8px;
+			overflow: hidden;
+		}
+		.custom-callout .title-section {
+			padding: 24px;
+			text-align: center;
+			color: #fff;
+		}
+		.custom-grid-wpr .ways-to-invest-container {
+			border-radius: 0 !important;
+			box-shadow: none !important;
+		}
+		.custom-grid-wpr .ways-to-invest-container > div {
+			flex-basis: auto !important;
+		}
+		.custom-callout .f-14 {
+			font-family: Roboto;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 20px;
+		}
+
+		@media screen and (max-width: 768px) {
+			.custom-grid-wpr .head,
+			.custom-grid-wpr .ways-to-invest-container .check-list {
+				height: auto !important;
+			}
+			.custom-grid-wpr {
+				display: block !important;
+			}
+			.custom-grid-wpr .custom-callout {
+				box-shadow: none !important;
+			}
+			.custom-grid-wpr .custom-grid-one-third,
+			.custom-grid-wpr .custom-grid-two-thirds {
+				width: 100% !important;
+				margin-left: 0 !important;
+				margin-right: 0 !important;
+			}
+			.custom-grid-wpr .ways-to-invest-container > div {
+				box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25) !important;
+				border: solid 0.5px #e0e0e0;
+				margin-bottom: 30px !important;
+				/* border-radius: 0 0 8px 8px; */
+				overflow: hidden;
+			}
+			.custom-grid-two-thirds .ways-to-invest-container > div:last-child {
+				margin-bottom: 0px !important;
+			}
+		}
+
+		.ways-to-invest-container {
+			display: flex;
+			box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.1);
+			border-radius: 8px;
+			overflow: hidden;
+		}
+		.ways-to-invest-container > div {
+			border-left: 1px solid rgba(0, 0, 0, 0.1);
+			background-color: #fff;
+			flex-basis: 25%;
+		}
+		.ways-to-invest-container .check-list {
+			min-height: 228px;
+			display: flex;
+			flex-direction: column;
+		}
+		.ways-to-invest-container .check-list > div {
+			margin-top: auto !important;
+		}
+		.ways-to-invest-container .head-text {
+			min-height: 48px;
+		}
+		@media (max-width: 768px) {
+			.ways-to-invest-container {
+				flex-direction: column;
+			}
+			.ways-to-invest-container .check-list,
+			.ways-to-invest-container .head,
+			.ways-to-invest-container .head-text {
+				min-height: auto;
+			}
+		}
+
+	
+	</style>
+</head>
+
+<body>
+	<!--#include virtual="/gtm/gtm-body-script.html" -->
+	<div id="dvl-wpr" class="campaign" data-lang-toggle="dms/campaign/investments/tao/_assets-custom/js">
+		<header class="no-secure hide-when-pagemode-specific-content">
+            <!--#include virtual="/dvl/v1.0/assets/includes/rbcroyalbank.com/campaign-header.html" -->
+        </header>
+
+		<header class="header-secure olb-specific-content">
+			<!--#include virtual="/dvl/v1.0/assets/includes/rbcroyalbank.com/secure-header.html" -->
+		</header>
+		<!--#include virtual="/dvl/v1.0/assets/includes/side-navigation.html" -->
+
+		<main>
+			<section style="background-color: #f3f7f8">
+				<div class="section-inner pad-tb-dbl mob-pad-tb">
+					<div class="grid-wpr eh-wpr">
+
+						<!-- <div class="grid-half text-center desktop-hidden">
+							<img src="" alt="" class="w-100 banner-img" style="border-radius: 8px" />
+						</div> -->
+						<div class="grid-half">
+							<div class="banner-content">
+								<!-- <div class="snipe"><span>Limited-Time Offer</span></div> -->
+
+								<h1 id="page-title" class="page-title">
+									Open Your First RBC TFSA or RRSP Online and get 2.25% Bonus Interest<sup><a href="#" data-target="#legal-1" class="scrollto">1</a></sup> for 3 Months<sup><a href="#" data-target="#legal-2" class="scrollto">2</a></sup>
+								</h1>
+								<p>Start small. Start now. Start online!</p>
+
+								<!-- TFSA Dynamic Links -->
+								<a class="open-tfsa-btn btn primary mar-tb-0 mar-r-hlf mob-mar-r-0 mob-mar-b-qtr open hide-when-pagemode-specific-content" href='https://secure.royalbank.com/signin.html?GOTO=ToIndexPage&PARM1=GICTFSA' target="_blank">
+									Open a TFSA
+								</a>
+								<a class="open-tfsa-btn btn primary mar-tb-0 mar-r-hlf mob-mar-r-0 mob-mar-b-qtr open pagemode-specific-content olb-specific-content" href='<!--#echo var="olb_host" -->/sgw1/secureapp/sb70/gateway/account-open/?type=tfsa' target="_blank">
+									Open a TFSA
+								</a>
+								<a class="open-tfsa-btn btn primary mar-tb-0 mar-r-hlf mob-mar-r-0 mob-mar-b-qtr open pagemode-specific-content mobile-specific-content" href='<!--#echo var="tfsa_app" -->' target="_blank">
+									Open a TFSA
+								</a>
+
+								<!-- RRSP Dynamic Links -->
+								<a class="open-rrsp-btn btn primary mar-tb-0 mar-r-hlf mob-mar-r-0 mob-mar-b-qtr open hide-when-pagemode-specific-content" href='https://secure.royalbank.com/signin.html?GOTO=ToIndexPage&PARM1=GICRRSP' target="_blank">
+									Open an RRSP
+								</a>
+								<a class="open-rrsp-btn btn primary mar-tb-0 mar-r-hlf mob-mar-r-0 mob-mar-b-qtr open pagemode-specific-content olb-specific-content" href='<!--#echo var="olb_host" -->/sgw1/secureapp/sb70/gateway/account-open/?type=rrsp' target="_blank">
+									Open an RRSP
+								</a>
+								<a class="open-rrsp-btn btn primary mar-tb-0 mar-r-hlf mob-mar-r-0 mob-mar-b-qtr open pagemode-specific-content mobile-specific-content" href='<!--#echo var="rrsp_app" -->' target="_blank">
+									Open an RRSP
+								</a>
+								<p class="georgia-italic mar-t">Terms and conditions apply. <em>Offer ends July 14, 2025</em></p>
+							</div>
+						</div>
+						<div class="grid-half text-right mobile-hidden">
+							<img src='<!--#echo var="dmz_host" -->/onlineservices/campaign/investments/_assets-custom/images/banner.jpg' alt="" class="w-100 banner-img" style="border-radius: 8px" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="section-inner">
+					<h2 class="text-center">Save More with This Special Offer</h2>
+
+					<p class="text-center centered" style="max-width: 867px">
+						Whether you want to save for a big purchase, retirement or life’s more unexpected moments, you can start saving for your future in a tax-efficient way. Open and fund your first RBC Tax-Free Savings Account (TFSA) or Registered Retirement Savings Plan (RRSP) to get 2.25% bonus interest on top of the standard rate for 3 months<sup><a href="#" data-target="#legal-2" class="scrollto">2</a></sup>. 
+					</p>
+				</div>
+			</section>
+
+			<section style="background-color: #fafafa; position: relative">
+				<div class="section-inner">
+					<div class="snipe pill" style="position: absolute; top: 0; left: 50%; transform: translate(-50%, -50%); border-radius: 2.5rem">
+						<span>Special Online Offer</span>
+					</div>
+					<div class="col-wpr mar-t-0 mar-b-hlf">
+						<div class="col-5">
+							<div class="centered">
+								<img src='<!--#echo var="dmz_host" -->/onlineservices/campaign/investments/_assets-custom/images/piggybank-icon.png' alt="" class="w-100 centered" style="max-width: 173px" />
+								<p class="h2 mobile-center text-center mar-t" style="line-height: 45px; font-weight: 400"><span class="h3" style="line-height: 45px; font-weight: 400">Get the Regular Interest Rate</span><br> 0.45%<br> +<br> 2.25%<br> <span class="h3" style="line-height: 45px; font-weight: 400">Bonus Interest</span></p>
+								<p class="text-center">As of April 22, 2025</p>
+							</div>
+						</div>
+						<div class="col-7">
+							<h3 class="mar-b">
+								How to Get this Offer
+							</h3>
+							<div class="table-wpr w-mob-100" style="max-width: 407px">
+								<div class="table-row">
+									<div class="table-cell pad-b-hlf pad-r-hlf"><img src='<!--#echo var="dmz_host" -->/dvl/v1.0/assets/images/icons/icon-number-1.svg' alt="" class="icon-40" /></div>
+									<div class="table-cell pad-b-hlf" style="vertical-align: middle">
+										Open your first RBC TFSA or RRSP through RBC Online Banking<sup><a href="#" data-target="#legal-3" class="scrollto">3</a></sup> or the RBC Mobile<sup><a href="#" data-target="#legal-3" class="scrollto">3</a></sup> app by July 14, 2025.
+									</div>
+								</div>
+								<div class="table-row">
+									<div class="table-cell pad-b-hlf pad-r-hlf"><img src='<!--#echo var="dmz_host" -->/dvl/v1.0/assets/images/icons/icon-number-2.svg' alt="" class="icon-40" /></div>
+									<div class="table-cell pad-b-hlf" style="vertical-align: middle">
+										<p>Fund your TFSA or RRSP. You can transfer money from a chequing or savings account at RBC or from another financial institution.</p>
+										<div style="display: flex; flex-wrap: nowrap; gap: 7.5px;">
+											<img src="/dvl/v1.0/assets/images/icons/icon-tips.svg" class="icon-30" alt="Tips">
+											<p>Tip: Set up regular (weekly, monthly, etc.) automatic contributions into your account to help stay on track towards your savings goals.</p>
+										</div>
+									</div>
+								</div>
+								<div class="table-row">
+									<div class="table-cell pad-b-hlf pad-r-hlf"><img src='<!--#echo var="dmz_host" -->/dvl/v1.0/assets/images/icons/icon-number-3.svg' alt="" class="icon-40" /></div>
+									<div class="table-cell pad-b-hlf" style="vertical-align: middle">
+										Earn 2.25% bonus interest on top of the standard rate on your savings deposit balance in your TFSA or RRSP for up to 90 days. 
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<p class="text-center centered">
+						Your bonus interest will be deposited to your related RBC Personal Deposit Account<sup><a href="#" data-target="#legal-4" class="scrollto">4</a></sup> each month during the 90-day promotional period. All contributions qualify, up to a maximum of $1,000,000—no minimum balance required.
+					</p>
+					<p class="text-center centered">
+						<em>Need an RBC bank account? </em>
+						<!-- "Find your account now" Dynamic Links -->
+						<span class="hide-when-pagemode-specific-content">
+							<a href="/bank-accounts/index.html#new-to-rbc" class="webhook-account">Find your account now</a>.
+						</span>
+						<span class="pagemode-specific-content olb-specific-content">
+							<a href="/onlineservices/personal/bank-accounts/index.html" class="webhook-account">Find your account now</a>.
+						</span>
+						<span class="pagemode-specific-content mobile-specific-content">
+							<a href="/onlineservices/personal/bank-accounts/index.html" class="webhook-account">Find your account now</a>.
+						</span>
+					</p>
+				</div>
+			</section>
+
+			<section id="ways-to-invest-section">
+				<div class="section-inner">
+					<h2 class="text-center" id="ways-to-invest">
+						How You Can Benefit from a TFSA or RRSP
+					</h2>
+
+					<div class="col-wpr eh-wpr">
+						<div class="col-6">
+							<div class="callout">
+								<div class="pad-hlf bg-cool-white">
+									<h3 class="h5 text-center">Benefits of a TFSA</h3>
+								</div>
+								<div class="callout-content">
+										<div class="callout-copy">
+											<ul class="check-list eh">
+												<li>Pay no taxes on your investment earnings<sup><a href="#" data-target="#legal-5" class="scrollto">5</a></sup><sup>,</sup><sup><a href="#" data-target="#legal-6" class="scrollto">6</a></sup></li>
+												<li>Save for short and long-term goals, from vacations to retirement</li>
+												<li>Make up for missed contribution room<sup><a href="#" data-target="#legal-7" class="scrollto">7</a></sup> from previous years indefinitely</li>
+												<li>
+													Withdraw your money, tax-free, to use for any reason<sup><a href="#" data-target="#legal-8" class="scrollto">8</a></sup>
+												</li>
+											</ul>
+											<!-- TFSA Dynamic Links -->
+											<p class="full-width text-center mar-t hide-when-pagemode-specific-content">
+												<a class="open-tfsa-btn btn primary mar-tb-0 mar-r-hlf mob-mar-r-0 mob-mar-b-qtr open" href='https://secure.royalbank.com/signin.html?GOTO=ToIndexPage&PARM1=GICTFSA' target="_blank">
+													Open a TFSA
+												</a>
+											</p>
+											<p class="full-width text-center mar-t pagemode-specific-content olb-specific-content">
+												<a class="open-tfsa-btn btn primary mar-tb-0 mar-r-hlf mob-mar-r-0 mob-mar-b-qtr open" href='<!--#echo var="olb_host" -->/sgw1/secureapp/sb70/gateway/account-open/?type=tfsa' target="_blank">
+													Open a TFSA
+												</a>
+											</p>
+											<p class="full-width text-center mar-t pagemode-specific-content mobile-specific-content">
+												<a class="open-tfsa-btn btn primary mar-tb-0 mar-r-hlf mob-mar-r-0 mob-mar-b-qtr open" href='<!--#echo var="tfsa_app" -->' target="_blank">
+													Open a TFSA
+												</a>
+											</p>
+										</div>
+								</div>
+						</div>
+						</div>
+						<div class="col-6">
+							<div class="callout">
+								<div class="pad-hlf bg-cool-white">
+									<h3 class="h5 text-center">Benefits of an RRSP</h3>
+								</div>
+								<div class="callout-content">
+										<div class="callout-copy">
+											<ul class="check-list eh">
+												<li>
+													
+														Save for retirement while deferring taxes<sup><a href="#" data-target="#legal-8" class="scrollto">8</a></sup><sup>,</sup><sup><a href="#" data-target="#legal-9" class="scrollto">9</a></sup> on your investment earnings
+													
+												</li>
+												<li>
+													Help lower your tax bill by deducting RRSP contributions<sup><a href="#" data-target="#legal-10" class="scrollto">10</a></sup> from your income
+												</li>
+												<li>
+													Make up for missed contribution<sup><a href="#" data-target="#legal-10" class="scrollto">10</a></sup> room from previous years
+												</li>
+												<li>
+													
+														Borrow money from your RRSP to go to school<sup><a href="#" data-target="#legal-11" class="scrollto">11</a></sup> or buy your first home<sup><a href="#" data-target="#legal-12" class="scrollto">12</a></sup>
+													
+												</li>
+											</ul>
+											<!-- RRSP Dynamic Links -->
+											<p class="full-width text-center mar-t hide-when-pagemode-specific-content">
+												<a class="open-rrsp-btn btn primary" href='https://secure.royalbank.com/signin.html?GOTO=ToIndexPage&PARM1=GICRRSP' target="_blank">
+												Open an RRSP
+											</a>
+											</p>
+											<p class="full-width text-center mar-t pagemode-specific-content olb-specific-content">
+												<a class="open-rrsp-btn btn primary" href='<!--#echo var="olb_host" -->/sgw1/secureapp/sb70/gateway/account-open/?type=rrsp' target="_blank">
+												Open an RRSP
+											</a>
+											</p>
+											<p class="full-width text-center mar-t pagemode-specific-content mobile-specific-content">
+												<a class="open-rrsp-btn btn primary" href='<!--#echo var="rrsp_app" -->' target="_blank">
+												Open an RRSP
+											</a>
+											</p>
+										</div>
+								</div>
+						</div>
+						</div>
+					</div>
+					
+					<!-- <section class="section-tabs tabs-scroll full-width mar-t-0" aria-label="How You Can Benefit from a TFSA or RRSP">
+						<div class="section-inner pad-b-0">
+							<ul class="tab-nav" role="tablist" style="border: 0 !important; justify-content: center;">
+								<li role="presentation" class="active"><a href='#benefit-tfsa' id="section-tab-1" role="tab" data-toggle="tab" aria-controls="benefit-tfsa" aria-selected="true" class="active">TFSA</a></li>
+								<li role="presentation"><a href='#benefit-rrsp' id="section-tab-2" role="tab" data-toggle="tab" aria-controls="benefit-rrsp" aria-selected="false">RRSP</a></li>
+							</ul>
+							<div class="tab-content mob-pad-lr-0" style="border: 0 !important;">
+							  <div role="tabpanel" class="tab-pane active mob-pad-0" aria-labelledby="section-tab-1" id="benefit-tfsa">
+								<p class="text-center">Benefits of a TFSA</p>
+								<div class="ways-to-invest-container">
+									<div>
+										<div class="text-center head" style="padding: 16px">
+											<p class="head-text"><strong>Pay no taxes on your investment earnings<sup><a href="#" data-target="#legal-6" class="scrollto">6</a></sup><sup>,</sup><sup><a href="#" data-target="#legal-7" class="scrollto">7</a></sup></strong></p>
+										</div>
+									</div>
+									<div>
+										<div class="text-center head" style="padding: 16px">
+											<p class="head-text"><strong>Save for short and long-term goals, from vacations to retirement</strong></p>
+										</div>
+									</div>
+									<div>
+										<div class="text-center head" style="padding: 16px">
+											<p class="head-text"><strong>Make up for missed contribution room<sup><a href="#" data-target="#legal-8" class="scrollto">8</a></sup> from previous years indefinitely</strong></p>
+										</div>
+									</div>
+									<div>
+										<div class="text-center head" style="padding: 16px">
+											<p class="head-text">
+												<strong>Withdraw your money, tax-free, to use for any reason<sup><a href="#" data-target="#legal-9" class="scrollto">9</a></sup></strong>
+											</p>
+										</div>
+									</div>
+								</div>
+
+								
+
+							  </div>
+							  <div role="tabpanel" class="tab-pane" aria-labelledby="section-tab-2" id="benefit-rrsp">
+								<p class="text-center">Benefits of an RRSP</p>
+								<div class="ways-to-invest-container">
+									<div>
+										<div class="text-center head" style="padding: 16px">
+											<p class="head-text">
+												<strong>
+													Save for retirement while deferring taxes<sup><a href="#" data-target="#legal-9" class="scrollto">9</a></sup><sup>,</sup><sup><a href="#" data-target="#legal-10" class="scrollto">10</a></sup> on your investment earnings
+												</strong>
+											</p>
+										</div>
+									</div>
+									<div>
+										<div class="text-center head" style="padding: 16px">
+											<p class="head-text"><strong>
+												Help lower your tax bill by deducting RRSP contributions<sup><a href="#" data-target="#legal-11" class="scrollto">11</a></sup> from your income
+											</strong></p>
+										</div>
+									</div>
+									<div>
+										<div class="text-center head" style="padding: 16px">
+											<p class="head-text"><strong>
+												Make up for missed contribution<sup><a href="#" data-target="#legal-11" class="scrollto">11</a></sup> room from previous years
+											</strong></p>
+										</div>
+									</div>
+									<div>
+										<div class="text-center head" style="padding: 16px">
+											<p class="head-text">
+												<strong>
+													Borrow money from your RRSP to go to school<sup><a href="#" data-target="#legal-12" class="scrollto">12</a></sup> or buy your first home<sup><a href="#" data-target="#legal-13" class="scrollto">13</a></sup>
+												</strong>
+											</p>
+										</div>
+									</div>
+								</div>
+
+								
+							  </div>
+							</div>
+						</div>
+					</section> -->
+
+					<!-- <div class="text-center">
+						<h3>
+							Looking for a Different Registered Investment Account?
+						</h3>
+						<p>
+							You can also get up to $300 when you open and fund a Registered Education Savings Plan (RESP)<sup><a href="#" data-target="#legal-1" class="scrollto">1</a>,<a href="#" data-target="#legal-11" class="scrollto">11</a></sup>, or Registered Disability Savings Plan (RDSP).<sup><a href="#" data-target="#legal-1" class="scrollto">1</a></sup> Speak with an RBC advisor to open your account and take advantage of this special offer.
+						</p>
+						<p class="full-width mar-t hide-when-pagemode-specific-content">
+							<a class="btn primary dynamic-link" href='https://secure.royalbank.com/statics/login-service-ui/index#/full/signin?GOTO=SingleSignOn&PARM2=CAB&_gl=1*17az1p7*_gcl_au*MTgwMzU0MDQuMTcyOTY5Njc1Ng..*_ga*Njc5MzE3MzMxLjE2ODc0MzQ5OTU.*_ga_89NPCTDXQR*MTczNTY1ODgyNy42Ny4xLjE3MzU2NTkxNjAuNTkuMC4w&LANGUAGE=ENGLISH' target="_blank" data-dig-id="investments-bdLrClyALXpe-3" data-dig-details="wis fy25 tao - different account book an appointment">
+								Book an Appointment
+							</a>
+						</p>
+						<p class="full-width mar-t pagemode-specific-content olb-specific-content">
+							<a class="btn primary dynamic-link" href='!--#echo var="olb_host" --/sgw1/olb/index-en/' data-dig-id="investments-W8TT5oJnsa1L-3" data-dig-details="wis fy25 tao - different account book an appointment">
+								Book an Appointment
+							</a>
+						</p>
+						<p class="full-width text-center mar-t pagemode-specific-content mobile-specific-content">
+							<a class="btn primary dynamic-link webhook-appointment-trigger" href='javascript:void(0);' data-dig-id="">
+								Book an Appointment
+							</a>
+						</p>
+					</div> -->
+				</div>
+			</section>
+
+			<section>
+				<div class="section-inner">
+					<h2 class="text-center">Offer FAQs</h2>
+					<div class="accordion" id="accordionSet1">
+						<div class="accordion-panel centered">
+								<button id="accordion-title1" class="collapse-toggle collapsed" data-target="#accordion1" data-toggle="collapse" data-parent="#accordionSet1" aria-expanded="false" aria-controls="accordion1">Can I get bonus interest if I don’t have an RBC chequing or savings account?</button>
+								<div class="collapse-content collapse" id="accordion1" role="region" aria-labelledby="accordion-title1">
+										<div class="collapse-inner">
+											<p>No. You must have a related RBC Personal Deposit Account<sup><a href="#" data-target="#legal-4" class="scrollto">4</a></sup> to qualify for this offer and receive your bonus interest. If you don’t have an RBC bank account, open one today.</p>
+											<a href="/onlineservices/personal/bank-accounts/index.html" class="standalone-link webhook-account">Explore Bank Accounts</a>
+										</div>
+								</div>
+						</div>
+						<div class="accordion-panel centered">
+								<button id="accordion-title2" class="collapse-toggle collapsed" data-target="#accordion2" data-toggle="collapse" data-parent="#accordionSet1" aria-expanded="false" aria-controls="accordion2">Is there a minimum balance I need to maintain in my TFSA or RRSP to receive bonus interest?</button>
+								<div class="collapse-content collapse" id="accordion2" role="region" aria-labelledby="accordion-title2">
+										<div class="collapse-inner">
+											<p>There is no minimum balance required. Funds in any amount—up to $1,000,000—that are deposited and held in a savings deposit in your TFSA or RRSP during the 90-day qualifying period will earn interest at the promotional interest rate. See <a href="/dms/investments/tao-offer/conditions/index.html">full terms and conditions</a> for details. </p>
+										</div>
+								</div>
+						</div>
+						<div class="accordion-panel centered">
+								<button id="accordion-title3" class="collapse-toggle collapsed" data-target="#accordion3" data-toggle="collapse" data-parent="#accordionSet1" aria-expanded="false" aria-controls="accordion3">Am I eligible for a TFSA if I also have an RRSP?</button>
+								<div class="collapse-content collapse" id="accordion3" role="region" aria-labelledby="accordion-title3">
+										<div class="collapse-inner">
+											<p>Yes! You can open a TFSA and enjoy tax-free savings while also putting money towards retirement in an RRSP.</p>
+										</div>
+								</div>  
+						</div>
+				</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="section-inner">
+					<div style="box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.0683184), inset 0px 4px 0px #006AC3;" class="pad-dbl">
+						<div style="max-width: 810px; margin: 0 auto;">
+							<h2 class="text-center">You can get 2.25% Bonus Interest<sup><a href="#" data-target="#legal-1" class="scrollto">1</a></sup> for 3 Months<sup><a href="#" data-target="#legal-2" class="scrollto">2</a></sup></h2>
+					<p class="text-center">Start small. Start now. Start online.</p>
+					<p class="text-center">Terms and conditions apply. Offer expires July 14, 2025.</p>
+					<div id="callout-btns" class="text-center flex">
+						<!-- TFSA Dynamic Links -->
+						<a class="mob-mar-r-0 mob-mar-b-hlf open-tfsa-btn btn primary mar-tb-0 mar-r-hlf hide-when-pagemode-specific-content" href='https://secure.royalbank.com/signin.html?GOTO=ToIndexPage&PARM1=GICTFSA' target="_blank">
+							Open a TFSA Online
+						</a>
+						<a class="mob-mar-r-0 mob-mar-b-hlf open-tfsa-btn btn primary mar-tb-0 mar-r-hlf pagemode-specific-content olb-specific-content" href='<!--#echo var="olb_host" -->/sgw1/secureapp/sb70/gateway/account-open/?type=tfsa' target="_blank">
+							Open a TFSA Online
+						</a>
+						<a class="mob-mar-r-0 mob-mar-b-hlf open-tfsa-btn btn primary mar-tb-0 mar-r-hlf pagemode-specific-content mobile-specific-content" href='<!--#echo var="tfsa_app" -->' target="_blank">
+							Open a TFSA Online
+						</a>
+						<!-- RRSP Dynamic Links -->
+						<a class="open-rrsp-btn btn primary mar-tb-0 hide-when-pagemode-specific-content" href='https://secure.royalbank.com/signin.html?GOTO=ToIndexPage&PARM1=GICRRSP' target="_blank">
+							Open an RRSP Online
+						</a>
+						<a class="open-rrsp-btn btn primary mar-tb-0 pagemode-specific-content olb-specific-content" href='<!--#echo var="olb_host" -->/sgw1/secureapp/sb70/gateway/account-open/?type=rrsp' target="_blank">
+							Open an RRSP Online
+						</a>
+						<a class="open-rrsp-btn btn primary mar-tb-0 pagemode-specific-content mobile-specific-content" href='<!--#echo var="rrsp_app" -->' target="_blank">
+							Open an RRSP Online
+						</a>
+					</div>
+
+					<!-- "Find your account now" Dynamic Links -->
+					<p class="text-center mar-t hide-when-pagemode-specific-content"><em>Need an RBC bank account?</em> <a href="/bank-accounts/index.html#new-to-rbc" class="webhook-account">Find your account now</a>.</p>
+					<p class="text-center mar-t pagemode-specific-content olb-specific-content"><em>Need an RBC bank account?</em> <a href="/onlineservices/personal/bank-accounts/index.html" class="webhook-account">Find your account now</a>.</p>
+					<p class="text-center mar-t pagemode-specific-content mobile-specific-content"><em>Need an RBC bank account?</em> <a href="/onlineservices/personal/bank-accounts/index.html" class="webhook-account">Find your account now</a>.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section aria-label="Legal Disclaimers" class="disclaimer">
+				<div class="section-inner pad-tb">
+					<p>
+						<button
+							id="disclaimer-btn"
+							class="collapse-toggle collapsed"
+							data-target="#legal-disclaimer"
+							data-toggle="collapse"
+							aria-expanded="false"
+							aria-controls="legal-disclaimer">
+							<span>View Legal Disclaimers</span><span>Hide Legal Disclaimers</span>
+						</button>
+					</p>
+					<div class="collapse-content collapse w-100" id="legal-disclaimer">
+						<div class="collapse-inner">
+							<span>Registered trademarks of Royal Bank of Canada. RBC and Royal Bank are registered trademarks of Royal Bank of Canada.</span>
+							<div class="table-wpr mar-t-hlf">
+								<!-- <div class="table-row" id="legal-1">
+									<div class="table-cell">1)</div>
+									<div class="table-cell">
+										<p>
+											The Bonus Interest Rate of 2.25% within the RBC New Digital Registered Savings Welcome Offer (“Offer”) is available to residents of Canada who are of the age of majority in the province or territory in which they reside as of the date the RBC Registered Retirement Savings Account or RBC Tax-Free Savings Account (“Eligible Account”) is opened using the digital account opening process (RBC Online Banking or RBC Mobile App) and who were not the Primary Owner of an Eligible Account at any time in the last five years before the beginning of the Qualifying Period (as defined below), and who opens an Eligible Account (or Accounts) as the Primary Owner between April 22, 2025 and July 14, 2025 (the “Qualifying Period”). The Bonus Interest Rate on April 22, 2025 was 2.25% and is only applicable to the total sum of Eligible Savings Deposits held in the Eligible Account(s) for 89 days from the date the first Eligible Account was open, for a total of 90 days (the “Promotional Period”), up to a total maximum balance of $1,000,000. Any balances bringing the total over $1,000,000 will not earn Bonus Interest. All savings deposit balances held in Eligible Accounts will also earn interest at the Regular Interest Rate. At the end of the Promotional Period, all balances will earn interest at the Regular Interest Rate only. The Regular Interest Rate is subject to change without notice, and the most current rate is posted on our Registered Investments webpage, which may be viewed at <a href="/rates/rsp.html">https://www.rbcroyalbank.com/rates/rsp.html</a>. Regular Interest Rate and Bonus Interest Rate are annualized rates, and (subject to certain exceptions) are calculated daily. The Regular Interest is paid at the end of June and December. Bonus Interest is paid within the first fifteen days after the month in which it was earned to a Personal Deposit Account in the Primary Owner’s name. Any Eligible Account that, prior to the payment of interest at the Bonus Interest Rate, is closed will forfeit any such interest calculated during the month in which the Eligible Account is closed. Offer and interest rates are subject to change without notice. Offer may be withdrawn at any time. Conditions apply. For other defined terms and complete terms and conditions that apply to this Offer, please visit <a href="/dms/investments/tao-offer/conditions/index.html">https://rbcroyalbank.com/dms/investments/tao-offer/conditions/index.html</a>
+										</p>
+									</div>
+								</div>
+								<div class="table-row" id="legal-2">
+									<div class="table-cell">2)</div>
+									<div class="table-cell">
+										<p>
+											<strong>Total of 90 days:</strong> For the purpose of this Offer and any related marketing, any reference to a period of 3 months means a period of 90 calendar days regardless of how many calendar days may fall within any given calendar 3-month period.
+										</p>
+									</div>
+								</div>
+								<div class="table-row" id="legal-3">
+									<div class="table-cell">3)</div>
+									<div class="table-cell">
+										<p>
+											All interest rates described are annual interest rates. They follow a simple interest calculation. Interest is calculated daily on the closing balance. Interest rates are subject to change at any time without notice. For full terms and conditions, please refer to <a href="/dms/investments/tao-offer/conditions/index.html">https://www.rbcroyalbank.com/dms/investments/tao-offer/conditions/index.html</a>.
+										</p>
+									</div>
+								</div> -->
+								
+								<div class="table-row" id="legal-1">
+									<div class="table-cell">1)</div>
+									<div class="table-cell">
+										<p>
+											The Bonus Interest Rate of 2.25% within the RBC New Digital Registered Savings Welcome Offer (“Offer”) is available to residents of Canada who are of the age of majority in the province or territory in which they reside as of the date the RBC Registered Retirement Savings Account or RBC Tax-Free Savings Account (“Eligible Account”) is opened using the digital account opening process (RBC Online Banking or RBC Mobile App) and who were not the Primary Owner of an Eligible Account at any time in the last five years before the beginning of the Qualifying Period (as defined below), and who opens an Eligible Account (or Accounts) as the Primary Owner between April 22, 2025 and July 14, 2025 (the “Qualifying Period”). The Bonus Interest Rate on April 22, 2025 was 2.25% and is only applicable to the total sum of Eligible Savings Deposits held in the Eligible Account(s) for 89 days from the date the first Eligible Account was open, for a total of 90 days (the “Promotional Period”), up to a total maximum balance of $1,000,000. Any balances bringing the total over $1,000,000 will not earn Bonus Interest. All savings deposit balances held in Eligible Accounts will also earn interest at the Regular Interest Rate. At the end of the Promotional Period, all balances will earn interest at the Regular Interest Rate only. The Regular Interest Rate is subject to change without notice, and the most current rate is posted on our Registered Investments webpage, which may be viewed at <a style="overflow-wrap: break-word;" href="/rates/rsp.html">https://www.rbcroyalbank.com/rates/rsp.html</a>. Regular Interest Rate and Bonus Interest Rate are annualized rates, and (subject to certain exceptions) are calculated daily. The Regular Interest is paid at the end of June and December. Bonus Interest is paid within the first fifteen days after the month in which it was earned to a Personal Deposit Account in the Primary Owner’s name. Any Eligible Account that, prior to the payment of interest at the Bonus Interest Rate, is closed will forfeit any such interest calculated during the month in which the Eligible Account is closed. Offer and interest rates are subject to change without notice. Offer may be withdrawn at any time. Conditions apply. For other defined terms and complete terms and conditions that apply to this Offer, please visit <a style="overflow-wrap: break-word;" href="/dms/investments/tao-offer/conditions/index.html">https://rbcroyalbank.com/dms/investments/tao-offer/conditions/index.html</a>
+										</p>
+									</div>
+								</div>
+								<div class="table-row" id="legal-2">
+									<div class="table-cell">2)</div>
+									<div class="table-cell">
+										<p>
+											All interest rates described are annual interest rates. They follow a simple interest calculation. Interest is calculated daily on the closing balance. Interest rates are subject to change at any time without notice. For full terms and conditions, please refer to <a style="overflow-wrap: break-word;" href="/dms/investments/tao-offer/conditions/index.html">https://www.rbcroyalbank.com/dms/investments/tao-offer/conditions/index.html</a>.
+										</p>
+									</div>
+								</div>
+								<div class="table-row" id="legal-3">
+									<div class="table-cell">3)</div>
+									<div class="table-cell">
+										<p>
+											Total of 90 days: For the purpose of this Offer and any related marketing, any reference to a period of 3 months means a period of 90 calendar days regardless of how many calendar days may fall within any given calendar 3-month period.
+										</p>
+									</div>
+								</div>
+								
+								<div class="table-row" id="legal-4">
+									<div class="table-cell">4)</div>
+									<div class="table-cell">
+										<p>
+											RBC Online Banking is operated by Royal Bank of Canada. RBC Mobile is operated by Royal Bank of Canada, RBC Direct Investing Inc. and RBC Dominion Securities Inc.
+										</p>
+									</div>
+								</div>
+								<div class="table-row" id="legal-5">
+									<div class="table-cell">5)</div>
+									<div class="table-cell">
+										<p>
+											Interest will be deposited into your “Related RBC Personal Deposit Account” This means the personal chequing or savings account where the Eligible Client is the primary owner of the account, and the account is active and in good standing.  
+										</p>
+									</div>
+								</div>
+								<div class="table-row" id="legal-6">
+									<div class="table-cell">6)</div>
+									<div class="table-cell">
+										<p>
+											Assets in a TFSA must be Qualified Investments under the Income Tax Act. If the TFSA holds non-Qualified Investments, it could be subject to tax.
+										</p>
+									</div>
+								</div>
+								<div class="table-row" id="legal-7">
+									<div class="table-cell">7)</div>
+									<div class="table-cell">
+										<p>
+											Provided you make Contributions in such amounts as are permitted under the Tax Act, excess contributions are taxable. It is your sole responsibility to ensure that the amount of Contributions is within the limits permitted under the Tax Act. 
+										</p>
+									</div>
+								</div>
+								<div class="table-row" id="legal-8">
+									<div class="table-cell">8)</div>
+									<div class="table-cell">
+										<p>
+											Your contribution room determines the maximum amount that you can contribute to your TFSA. You can find your most up-to-date contribution room through CRA online services such as My Account and the MyCRA mobile app. 
+										</p>
+									</div>
+								</div>
+								<div class="table-row" id="legal-9">
+									<div class="table-cell">9)</div>
+									<div class="table-cell">
+										<p>
+											While you can take money out of a TFSA for any reason, your timing does depend on the investments you hold in it. For example, non-redeemable GICs must be held until maturity. 
+										</p>
+									</div>
+								</div>
+								<div class="table-row" id="legal-10">
+									<div class="table-cell">10)</div>
+									<div class="table-cell">
+										<p>
+											Assets in an RRSP must be Qualified Investments under the Income Tax Act. If the RRSP holds non-Qualified Investments, it could be subject to tax.
+										</p>
+									</div>
+								</div>
+								<div class="table-row" id="legal-11">
+									<div class="table-cell">11)</div>
+									<div class="table-cell">
+										<p>
+											Your contribution room determines the maximum amount that you can contribute to your RRSP. You can find your most up-to-date contribution room through CRA online services such as My Account and the MyCRA mobile app. 
+										</p>
+									</div>
+								</div>
+								<div class="table-row" id="legal-12">
+									<div class="table-cell">12)</div>
+									<div class="table-cell">
+										<p>
+											Under the Lifelong Learning Plan, you can withdraw up to $10,000 per calendar year for your own or your spouse's full–time training or post–secondary education. The total amount that can be withdrawn is $20,000 each with withdrawals over a maximum of four consecutive years. At least 10% of the amount borrowed must be repaid each year, over a maximum period of 10 years.
+										</p>
+									</div>
+								</div>
+								<div class="table-row" id="legal-13">
+									<div class="table-cell">13)</div>
+									<div class="table-cell">
+										<p>
+											You can withdraw up to $60,000 from your RRSP to buy your first home under the Home Buyer’ Plan. To be eligible, you must be a Canadian resident and considered a first-time homebuyer. The funds must have been on deposit at least 90 days before you withdrew them, and a signed written agreement to buy or build a qualifying home is required. Funds withdrawn under the HBP must be repaid to their RRSP over a 15-year period. At least 1/15 of your withdrawal must be repaid to the RRSP each year. The repayment period begins as of the second year after the first withdrawal was made under the Home Buyers Plan (HBP). For withdrawals between January 1, 2022 and December 31, 2025, the repayment period begins as of the fifth year after the withdrawal was made. For details see Canada Revenue Agency Home Buyers’ Plan.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		
+		<footer class="hide-when-pagemode-specific-content">
+			<!--#include virtual="/dvl/v1.0/assets/includes/rbcroyalbank.com/footer.html" -->
+		</footer>
+
+		<footer class="pagemode-specific-content olb-specific-content">
+			<!--#include virtual="/dvl/v1.0/assets/includes/rbcroyalbank.com/campaign-footer.html" -->
+		</footer>
+
+		<div id="investor-profile" class="modal" role="region" aria-label="Investor Profile">
+			<div class="modal-inner">
+				<h3>Investor Profile</h3>
+				<p>Your Investor Profile reflects information about you and your investment preferences (investment objectives, risk tolerance and time horizon), which may differ for each of your investment accounts. You must have a current Investor Profile that has been updated in the last 12 months to purchase a mutual fund or portfolio solution.</p>
+			</div>
+			<button class="close" aria-label="Close"><span>Close</span></button>
+		</div>
+
+		<div id="eligible-accounts" class="modal" role="region" aria-label="Eligible Accounts">
+			<div class="modal-inner">
+				<h3 id="modal-title">Investment Accounts Eligible for This Offer<sup><a href="#" data-target="#legal-1" class="scrollto">1</a></sup></h3>
+				<p>The following registered RBC investment accounts are eligible for this offer:</p>
+				<p><strong>Tax-Free Savings Account (TFSA)</strong></p>
+				<p>Invest for any goal—tax free<sup><a href="#" data-target="#legal-3" class="scrollto">3</a>,<a href="#" data-target="#legal-4" class="scrollto">4</a></sup>. Pay no taxes on any investment earnings and withdraw your money at any time for any reason<sup><a href="#" data-target="#legal-6" class="scrollto">6</a></sup>.</p>
+				<p><strong>Registered Retirement Savings Plan (RRSP)</strong> &ltContribute by March 31, 2025 for 2024 deductions!&gt</p>
+				<p>Invest for retirement by deferring taxes on your investment earnings<sup><a href="#" data-target="#legal-4" class="scrollto">4</a>,<a href="#" data-target="#legal-7" class="scrollto">7</a></sup>. Contributions<sup><a href="#" data-target="#legal-8" class="scrollto">8</a></sup> are tax-deductible and could help lower your tax bill.</p>
+				<p><strong>Registered Education Savings Plan (RESP)</strong></p>
+				<p>Invest for a child’s post-secondary education with tax-deferred investment growth and direct government assistance<sup><a href="#" data-target="#legal-11" class="scrollto">11</a></sup>.</p>
+				<p><strong>Registered Disability Savings Plan (RDSP)</strong></p>
+				<p>Invest for yourself or a loved one—if eligible for the Disability Tax Credit (DTC). </p>
+				<p><sup>*</sup>All accounts must be single accountholder.</p>
+			</div>
+			<button class="close" aria-label="Close"><span>Close</span></button>
+		</div>
+
+		<div id="eligible-products" class="modal" role="region" aria-label="Eligible Products">
+			<div class="modal-inner">
+				<h3 id="modal-title">Investment Products Eligible for This Offer<sup><a href="#" data-target="#legal-1" class="scrollto">1</a></sup></h3>
+				<p>The following investment products are eligible for this offer:</p>
+				<ul class="disc-list">
+					<li>RBC Registered Savings Deposit</li>
+					<li>RBC Mutual Funds (distributed by Royal Mutual Funds Inc. (RMFI<sup><a href="#" data-target="#legal-2" class="scrollto">2</a></sup>)) </li>
+					<li>RBC Canadian Dollar Guaranteed Investment Certificates (GICs) <strong>with terms of 3 years or longer</strong></li>
+				</ul>
+			</div>
+			<button class="close" aria-label="Close"><span>Close</span></button>
+		</div>
+
+		<div id="personal-accounts" class="modal" role="region" aria-label="Personal RBC Bank Account">
+			<div class="modal-inner">
+				<h3 id="modal-title">Eligible Personal RBC Bank Accounts</h3>
+				<p>To receive your cash payments, you must have one of the following personal bank accounts:</p>
+				<ul class="disc-list">
+					<li>RBC Day to Day Banking</li>
+					<li>RBC No Limit Banking</li>
+					<li>RBC Signature No Limit Banking</li>
+					<li>RBC VIP Banking</li>
+					<li>RBC Advantage Banking</li>
+					<li>RBC Day to Day Savings</li>
+					<li>RBC Enhanced Savings</li>
+					<li>RBC High Interest eSavings</li>
+				</ul>
+			</div>
+			<button class="close" aria-label="Close"><span>Close</span></button>
+		</div>
+	</div>
+
+
+	<script src='/dvl/v1.0/assets/js/jquery.min.js'></script>
+	<script src='/dvl/v1.0/assets/js/jquery-ui.min.js'></script>
+	<script src='/dvl/v1.0/assets/js/bootstrap.min.js'></script>
+	<script src='/dvl/v1.0/assets/js/underscore.min.js'></script>
+	<script src='/dvl/v1.0/assets/js/bowser.min.js'></script>
+	<script src='/dvl/v1.0/assets/js/dvl.min.js'></script>
+	<script src='/dvl/v1.0/assets/js/carryover.min.js'></script>
+	<script src='/dvl/v1.0/assets/js/accordion.min.js'></script>
+
+	<!-- #include virtual="/dvl/v1.0/assets/includes/scripts.html" -->
+
+	<!-- upperFunnelHandler.js -->
+	<script src="/gtm/upperFunnelHandler.js"></script>
+	<script src="/gtm/upperFunnelTagger.js"></script>
+
+	<script type="text/javascript">
+
+		const IS_IPAD = navigator.userAgent.match(/iPad/i) !== null;
+		const IS_IPHONE = !IS_IPAD && (navigator.userAgent.match(/iPhone/i) !== null || navigator.userAgent.match(/iPod/i) !== null);
+		const IS_IOS = IS_IPAD || IS_IPHONE
+		const IS_ANDROID = navigator.userAgent.match(/android/i) !== null;
+		const isMobile = () => /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+		$(document).ready(function () {
+			triggerGAWebhook({
+				"version": "1.2",
+				"name": "screen_view",
+				"type": "view",
+				"screen_name": "wis fy25 tao",
+				"content_group": "campaign" 
+			})
+
+			$(".open-tfsa-btn").on("click", function() {
+				triggerNavWebhook({
+					"version": "1.2",
+					"type": "inApp",
+					"destination": "bi_tfsa"
+				});
+			});
+
+			$(".open-rrsp-btn").on("click", function() {
+				triggerNavWebhook({
+					"version": "1.2",
+					"type": "inApp",
+					"destination": "bi_rrsp"
+				});
+			});
+
+			$(".webhook-account").on("click", function() {
+				triggerNavWebhook({
+					"version": "1.2",
+					"type": "inApp",
+					"destination": "account_open"
+				});
+			});
+
+			$(".webhook-tfsa-trigger, .webhook-rrsp-trigger, .webhook-appointment-trigger").on("touchstart", function(){
+				const dataLayerObject = {
+					"webhook-tfsa-trigger": {
+						"version": "1.2",
+						"type": "click",
+						"name": "tap",
+						"details": "wis fy25 tao - tfsa open online",
+						"element_type": "button"
+	                },
+    	            "webhook-rrsp-trigger": {
+						"version": "1.2",
+						"type": "click",
+						"name": "tap",
+            	        "details": "wis fy25 tao - rrsp open online",
+                	    "element_type": "button"
+               		 },
+	                "webhook-appointment-trigger": {
+						"version": "1.2",
+						"type": "click",
+						"name": "tap",
+                	    "details": "wis fy25 tao - different account book an appointment",
+                    	"element_type": "button"
+	                }					
+				};
+
+				Object.keys(dataLayerObject).forEach((btnClassName) =>{
+					if($(this).hasClass(btnClassName)){
+						// console.log(dataLayerObject[btnClassName]);
+						triggerGAWebhook(dataLayerObject[btnClassName]);
+					}
+				})
+			})
+
+			if (checkPageMode()) {
+				// will only get into here if "type" is set to be "mobile" or "olb"
+				//console.log("we don't show header footer, mobile webview instead and change the links")
+
+				if (checkPageMode() == "mobile") {
+					$("header, footer").hide();
+				}
+				$(".hide-when-pagemode-specific-content").hide();
+				$("#custom-nav").remove();
+				// $(".pagemode-specific-content").show();
+				if (checkPageMode() === "mobile")
+					$(".mobile-specific-content").show();
+				if (checkPageMode() === "olb")
+					$(".olb-specific-content").show();
+
+				setTimeout(() => {
+					//webview ecommernce event
+					triggerGAWebhook({
+						"version": "1.2",
+						"name": "view_item",
+						"type": "ecommerce",
+						"items": [
+							{
+								"item_id": "tfsa_ia",
+								"item_name": "investments tax-free savings account",
+								"item_category2": "accounts",
+								"item_category": "investments",
+								"price ": "0",
+							},
+						],
+						"currency": "cad",
+					})
+				}, 1000) //wait for upperfunnel ecommerce null event
+			}
+		});
+
+
+		$(".webhook-tfsa-trigger").click(function(e) {
+
+			const isTop = !$(e.target).hasClass("webhook-tfsa-trigger-bottom");
+			triggerGAWebhook({
+				"version": "1.2",
+				"name": "select_item",
+				"type": "ecommerce",
+				"details": "select_item - begin_checkout",
+				"items": [
+					{
+						"item_id": "tfsa_ia",
+						"item_name": "investments tax-free savings account",
+						"item_category2": "accounts",
+						"item_category": "investments",
+					},
+				]
+			});
+
+			var data = {
+				"version": "1.2",
+				"type": "inApp",
+				"destination": "bi_tfsa"
+			};
+			triggerNavWebhook(data);
+			
+		});
+
+		$(".webhook-rrsp-trigger").click(function(e) {
+
+			triggerGAWebhook({
+				"version": "1.2",
+				"name": "select_item",
+				"type": "ecommerce",
+				"details": "select_item - begin_checkout",
+				"items": [
+					{
+						"item_id": "rrsp_ia",
+						"item_name": "investments registered retirement savings plan",
+						"item_category2": "accounts",
+						"item_category": "investments",
+					},
+				]
+			});
+
+			var data = {
+				"version": "1.2",
+				"type": "inApp",
+				"destination": "bi_rrsp"
+			};
+			triggerNavWebhook(data);
+		});
+
+		$(".webhook-appointment-trigger").click(function(e) {
+
+			var data = {
+				"version": "1.2",
+				"type": "inApp",
+				"destination": "appointment_booking"
+			}
+			triggerNavWebhook(data);
+		});
+
+		$("#section-tab-1").click(function(e) {
+
+			if (checkPageMode() === "mobile") {
+				triggerGAWebhook({
+					"version": "1.2",
+					"name": "view_item",
+					"type": "ecommerce",
+					"items": [
+						{
+							"item_id": "tfsa_ia",
+							"item_name": "investments tax-free savings account",
+							"item_category2": "accounts",
+							"item_category": "investments",
+							"price ": "0",
+						},
+					],
+					"currency": "cad",
+				})
+			}
+
+		});
+
+		$("#section-tab-2").click(function(e) {
+
+			if (checkPageMode() === "mobile") {
+				triggerGAWebhook({
+					"version": "1.2",
+					"name": "view_item",
+					"type": "ecommerce",
+					"details": "Track when user views the RRSP item",
+					"items": [
+						{
+							"item_id": "rrsp_ia",
+							"item_name": "investments registered retirement savings plan",
+							"item_category2": "accounts",
+							"item_category": "investments",
+							"price ": "0",
+						},
+					],
+					"currency": "cad",
+				})
+			}
+
+		});
+
+		function triggerNavWebhook(data) {
+
+			if (!data) return;
+
+			if (IS_IOS) {
+				window.webkit.messageHandlers.navigate.postMessage(JSON.stringify(data));
+			} else {
+				const javascriptInterface = window.WebViewFragment;
+				if (javascriptInterface){
+					javascriptInterface.onNavigateWebHook(JSON.stringify(data));
+				} 
+			}
+		};
+
+		function triggerGAWebhook(data) {
+
+			if (!data) return;
+
+			if (IS_IOS) {
+				window.webkit.messageHandlers.analyticsFrameworkEvent.postMessage(JSON.stringify(data));
+			} else {
+				const javascriptInterface = window.WebViewFragment;
+				if (javascriptInterface){
+					javascriptInterface.onAnalyticsFrameworkEvent(JSON.stringify(data));
+				} 
+			}
+		};
+
+		if (IS_IOS || IS_ANDROID) {
+			$(".open-tfsa-online").attr("href", '<!--#echo var="tfsa_app" -->');
+			$(".open-rrsp-online").attr("href", '<!--#echo var="rrsp_app" -->');
+		}
+		
+		/**
+		 * resolving the issue that clicking the legal bug from modal, the page
+		 * will scroll down, but closing the modal will jump back to the top
+		 * of the parent accordion (All the Ways to Waive the Maintenance Fee)
+		 */
+		$(".modal a").on("click", function(e) {
+			$('#investor-profile').popup('hide');
+			$('#eligible-accounts').popup('hide');
+			$('#eligible-products').popup('hide');
+			$('#personal-accounts').popup('hide');
+		});
+	</script>
+</body>
+</html>
