@@ -1,0 +1,68 @@
+{
+  "name": "RBC THOUGHT LEADERSHIP",
+  "url": "https://thoughtleadership.rbc.com/",
+  "children": [
+    {
+      "name": "Economics",
+      "url": "https://thoughtleadership.rbc.com/economics/",
+    
+      "children":[
+        {
+          "name": "Economics",
+          "url": "https://thoughtleadership.rbc.com/economics/"
+        },
+        {
+          "name": "Special Reports",
+          "url": "https://thoughtleadership.rbc.com/economics/special-reports/"
+          
+      },{
+        "name": "Canadian Housing",
+        "url": "https://thoughtleadership.rbc.com/economics/canadian-housing/"
+      },{
+        "name": "Economy and Markets",
+        "url": "https://thoughtleadership.rbc.com/economics/economy-markets/"
+      },{
+        "name": "Canadian Fiscal Analysis",
+        "url": "https://thoughtleadership.rbc.com/economics/canadian-fiscal-analysis/"
+      }
+    ]
+  },
+  {
+    "name": "Economics Email Subscription",
+    "url": "/economics-subscriber/index.html"
+  },
+  {
+    "name": "Disruptors",
+    "url": "https://thoughtleadership.rbc.com/rbc-disruptors/"
+  },
+  {
+    "children":[
+      {
+        "name": "Topics",
+        "url": "https://thoughtleadership.rbc.com/#"
+      },
+        {
+          "name": "Skills",
+          "url": "https://thoughtleadership.rbc.com/skills/"
+        },{
+          "name": "Innovation",
+          "url": "https://thoughtleadership.rbc.com/innovation/"
+        },{
+          "name": "Climate",
+          "url": "https://thoughtleadership.rbc.com/climate/"
+        },{
+          "name": "The RBC Conversation",
+          "url": "https://thoughtleadership.rbc.com/the-rbc-conversation/"
+        }
+    ]
+  },
+  {
+    "name": "View By Topic",
+    "url": "https://thoughtleadership.rbc.com/topics/"
+  },
+  {
+    "name": "About RBC Thought Leadership",
+    "url": "https://thoughtleadership.rbc.com/about-us/"
+  }
+  ]
+}

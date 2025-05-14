@@ -1,0 +1,254 @@
+<!--#include virtual="/dvl/v1.0/assets/includes/html-doctype.html" -->
+<head>
+	<!--#include virtual="/dvl/v1.0/assets/includes/head-ensighten.html" -->
+	<title>Email Subscription - RBC Economics</title>
+	<meta name="description" content="Receive economics research, analysis and forecasts via email, brought to you by RBC Economics Research." />
+	<meta name="keywords" content="RBC Economics, RBC Financial Group Economics, economy, economic research, economic analysis, free subscriptions to economics publications, economic forecasts, economic outlook, provincial economic outlook, provincial forecasts, provincial current trends, interest rate forecasts, interest rate forecasts, fx, foreign exchange, currency, currency, forecasts, market trends, financial, financial markets, economic indicators, key economic indicators, data, economic data, economic statistics" />
+	<meta property="og:title" content="Economics Email Subscription" />
+	<meta property="og:description" content="Receive economics research, analysis and forecasts via email, brought to you by RBC Economics Research." />
+	<meta property="og:image" content="/dvl/v1.0/assets/images/logos/rbc-logo-shield.svg" />
+	<link rel="stylesheet" href="/economics-subscriber/_assets-custom/css/styles.css">
+	<link rel="canonical" href="https://www.rbc.com/economics-subscriber/">
+  <!-- Google Tag Manager -->
+  <script>var dataLayer=window.dataLayer=window.dataLayer||[];dataLayer.push({"LOB":"economics"});
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-K5TWTL');</script>
+  <!-- End Google Tag Manager -->
+</head>
+<style>
+	.side-menu-promotions-link, .side-menu-secondary-menu{
+		display: none !important;
+	}
+
+	.inner-list li:nth-child(1){
+		background-color: #444 !important;
+	}
+	.inner-list:hover li:nth-child(1){
+		background-color: #fae487 !important;
+	}
+	.inner-list:hover li:nth-child(1) a{
+		color: black !important;
+	}
+	.dropdown button{
+		display: none !important;
+	}
+	.lvl-toggle::before{
+		content: "" !important;
+	}
+	.lvl-toggle::after{
+		content: "" !important;
+	}
+	.inner-list{
+		display: block !important;
+	}
+</style>
+<body >
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K5TWTL" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+	<!-- <div id="dvl-wpr"> -->
+	<div id="dvl-wpr" data-lang-toggle="economics-subscriber/_assets-custom/js/">
+    <header class="n-search n-language n-contact n-secure" data-loc="personal-banking" data-lob="economics">
+      <!--#include virtual="/dvl/v1.0/assets/includes/rbc.com/master-header.html" -->
+      <!--#include virtual='/dvl/v1.0/assets/includes/rbc.com/sub-header.html' -->
+    </header>
+    <!--#include virtual="/dvl/v1.0/assets/includes/side-navigation.html" -->
+    <main role="main" data-menu="/economics-subscriber/_assets-custom/js/menu-email-sub.json" >
+      <div class="nav-bar">
+        <div class="nav-inner">
+          <button class="nav-btn"><span>MENU</span></button>
+          <h1 id="page-title" class="nav-location">Economics Email Subscription</h1>
+        </div>
+      </div>
+      <section role="banner" class="banner html-bnr" aria-label="Economic & Financial Market Outlook">
+        <div class="section-inner">
+          <div class="banner-wpr">
+            <div class="banner-img" data-img="/economics-subscriber/_assets-custom/images/EmailSubscription.jpg"></div>
+            <div class="banner-text">
+              <h2>Economics Email Subscription</h2>
+              <p>As a subscriber to any of the publications listed below, you will receive an email alert with a link as soon as that publication goes live on the RBC Economics website.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+      	<div class="section-inner" >
+      			<div class="notice fail" role="complementary" style="display: none;">
+					<div class="notice-title">Attention</div>
+					<div class="notice-content">
+						<p>Please review the items below to continue your application.</p>
+						<ul class="chevron-list err-cont">
+						</ul>
+					</div>
+				</div>
+
+				<div class="notice success" role="complementary" style="display: none;">
+					<h2 class="notice-title">Confirmed</h2>
+					<div class="notice-content">
+						<p>Your request was submitted successfully.</p>
+					</div>
+				</div>
+
+      			<form id="subform" action="https://cloud.rbcgam.rbc.com/epchandleren"  method="post" novalidate>
+				<!-- error list to show -->
+				<fieldset id="subscription" class="checkbox-wpr required">
+				<legend class="offscreen">Subscriptions</legend>
+					<h3 class="mar-t-0">Subscriptions</h3>
+					<div class="grid-wpr">
+						<div class="grid-half">
+							<input id="lang" name="lang" type="hidden" value="EN">
+							<input type="checkbox" name="DailySub" id="DailyID" value="Daily Economic Update" class='{roles: true} chkbx' onchange='removeCheckBoxError()'/>
+							<label id="DailyID-l" for="DailyID" class="mar-b-hlf">
+								<h5>Daily Economic Update</h5> 
+								<p class="mar-t-hlf">RBC economists review each day's Canadian and U.S. economic data releases.</p>
+							</label>
+							<input type="checkbox" name="FMMSub" id="FMMID" value="Financial Markets Monthly" class='{roles: true} chkbx' onchange='removeCheckBoxError()'/>
+							<label id="FMMID-l" for="FMMID">
+								<h5>Financial Markets Monthly</h5>
+								<p class="mar-t-hlf">Forward-looking analysis of Canadian, U.S. and international financial market trends,
+								including interest rate and currency forecasts.</p>
+							</label>
+							<input type="checkbox" name="ForecastSub" id="ForecastID" value="Economic and Financial Market Outlook" class='{roles: true} chkbx' onchange='removeCheckBoxError()'/>
+							<label id="ForecastID-l" for="ForecastID">
+								<h5>Economic and Financial Market Outlook</h5>
+								<p class="mar-t-hlf">Two-year economic and financial markets forecasts for Canada, the United States
+								and key international economies.</p>
+							</label>
+						</div>
+						<div class="grid-half">
+							<input type="checkbox" name="HousingSub" id="HousingID" value="Housing Affordability" class='{roles: true} chkbx' onchange='removeCheckBoxError()'/>
+							<label id="HousingID-l" for="HousingID">
+								<h5>Housing Affordability </h5>
+								<p class="mar-t-hlf">A report on trends in housing affordability in each province and in major metropolitan housing markets. </p>
+							</label>
+							<input type="checkbox" name="ProvincialSub" id="ProvincialID" value="Provincial and City Economies" class='{roles: true} chkbx' onchange='removeCheckBoxError()'/>
+							<label id="ProvincialID-l" for="ProvincialID">
+								<h5>Provincial and City Economies</h5>
+								<p class="mar-t-hlf">Current trend updates for the provinces and major Canadian cities and quarterly forecasts for each provincial economy.</p>
+							</label>
+							<input type="checkbox" name="USEconSub" id="USEconID" value="U.S. Economic Analysis" class='{roles: true} chkbx' onchange='removeCheckBoxError()'/>
+							<label id="USEconID-l" for="USEconID">
+								<h5>U.S. Economic Analysis</h5>
+								<p class="mar-t-hlf">Commentary on economic data, policy and market trends in the U.S. economy</p>
+							</label>
+						</div>
+					</div>	
+				</fieldset>
+				<h3>Subscriber Information</h3>
+				<div class="grid-wpr">
+					<div class="grid-one-third">
+						<div class="input-wpr required  ">
+							<label id="hf_2_s_First_NameIDID" for="hf_2_s_First_NameID">First Name</label>
+
+							<span id="hf_2_s_First_Name-text" class="error-msg"></span>
+
+							<input name="FirstName" type="text" id="hf_2_s_First_NameID" maxlength="50" class="w-100" required onchange='removeInputError("FirstName")'/>
+
+						</div>
+					</div>
+					<div class="grid-one-third">
+						<div class="input-wpr required  ">
+							<label id="hf_3_s_Last_NameIDID" for="hf_3_s_Last_NameID">Last Name</label>
+
+							
+							<span id="hf_3_s_Last_Name-text" class="error-msg"></span>
+							<input name="LastName" type="text" id="hf_3_s_Last_NameID" maxlength="50" class="w-100" onchange='removeInputError("LastName")'/>
+						</div>
+					</div>
+					<div class="grid-one-third">
+						<div class="input-wpr required  ">
+							<label id="hf_4_s_Email_AddressIDID" for="hf_4_s_Email_AddressID">E-mail address</label>
+
+							
+							<span id="hf_4_s_Email_Address-text" class="error-msg"></span>
+							<input name="hf_4_s_Email_Address" type="text" id="hf_4_s_Email_AddressID" maxlength="50" class="w-100" onchange='removeInputError("hf_4_s_Email_Address")'/>
+						</div>
+					</div>
+				</div>
+				
+				<input type="checkbox" name="terms&conditions" id="termsID" value="Terms" class="chkbx">
+							<label id="termsID-l" for="termsID">
+								<p>By checking this box I agree to receiving news, updates, offers, and much more from RBC Economics all to my inbox. I can unsubscribe at any time. Royal Bank of Canada, 200 Bay Street, South Tower, 9th Floor, Toronto, ON M5J 2J2 l <a href="http://www.rbc.com/economics">www.rbc.com/economics</a></p>
+							</label>
+
+				<button href="#" class="btn tertiary mar-b-0" onclick="clearForm();" style="display: inline-block;">Clear<span class="offscreen"> form.</span></button>
+				
+
+				<button class="btn disabled" id="sendBtn" type="submit" style="float: right; display: inline-block;">Send <span class="offscreen"> form.</span></button>
+		</form>	
+      	</div>
+      </section>
+		<section class="disclaimer" id="disclaimer" >
+        <div class="section-inner">
+          <p><a href="#collapse-legal" data-toggle="collapse" class="collapse-toggle collapsed"><span>View Legal Disclaimers</span><span>Hide Legal Disclaimers</span></a></p>
+          <div class="collapse-content collapse" id="collapse-legal">
+            <div class="collapse-inner">
+              <div class="table-wpr">
+                <div class="table-row">
+                  <div class="table-cell" id="legal-copyright"></div>
+                  <div class="table-cell">This information is required to create your free account, establish your connection with RBC and conduct simple demographic analysis. All information is completely confidential and secure and will not be shared with any other parties.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+  </section>	
+	</main>
+
+	<footer>
+		  <!--#include virtual="/economics-subscriber/_assets-custom/includes/fat-footer.html" -->
+		  <!--#include virtual="/dvl/v1.0/assets/includes/rbc.com/footer.html" -->
+	</footer>
+	</div>
+<!--#include virtual="/dvl/v1.0/assets/includes/scripts.html" -->
+<script type="text/javascript">
+
+$('.chkbx').change(function(){
+    if($('#termsID').is(":checked") && $('#DailyID').is(":checked")) {
+    	$('#sendBtn').removeClass("btn disabled");
+        $('#sendBtn').addClass("btn primary");
+
+    } else if($('#termsID').is(":checked") && $('#DigestID').is(":checked")) {
+    	$('#sendBtn').removeClass("btn disabled");
+        $('#sendBtn').addClass("btn primary");
+
+    } else if($('#termsID').is(":checked") && $('#FMMID').is(":checked")) {
+    	$('#sendBtn').removeClass("btn disabled");
+        $('#sendBtn').addClass("btn primary");
+
+    } else if($('#termsID').is(":checked") && $('#ESCOPEID').is(":checked")) {
+    	$('#sendBtn').removeClass("btn disabled");
+        $('#sendBtn').addClass("btn primary");
+
+    } else if($('#termsID').is(":checked") && $('#ForecastID').is(":checked")) {
+    	$('#sendBtn').removeClass("btn disabled");
+        $('#sendBtn').addClass("btn primary");
+
+    } else if($('#termsID').is(":checked") && $('#HousingID').is(":checked")) {
+    	$('#sendBtn').removeClass("btn disabled");
+        $('#sendBtn').addClass("btn primary");
+
+    } else if($('#termsID').is(":checked") && $('#ProvincialID').is(":checked")) {
+    	$('#sendBtn').removeClass("btn disabled");
+        $('#sendBtn').addClass("btn primary");
+
+	} else if($('#termsID').is(":checked") && $('#USEconID').is(":checked")) {
+    	$('#sendBtn').removeClass("btn disabled");
+        $('#sendBtn').addClass("btn primary");
+    
+    } else {
+        $('#sendBtn').removeClass("btn primary");
+        $('#sendBtn').addClass("btn disabled");
+    }
+});
+	
+</script>
+<script type="text/javascript" src="/economics-subscriber/_assets-custom/js/jquery.validate.js"></script>
+<script type="text/javascript" src="/economics-subscriber/_assets-custom/js/submit.js"></script>
+
+</body>
+</html>
