@@ -1,0 +1,802 @@
+<!--#include virtual="/dvl/v1.0/assets/includes/html-doctype.html" -->
+<head>
+	<!--#include virtual="/dvl/v1.0/assets/includes/head.html" -->
+	<title>Avion Rewards - RBC Royal Bank</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="Avion Rewards, Avion Rewards Travel, Avion points, Avion Rewards Loyalty program">
+	<meta name="PI_PageID"content="REWARDS_HOMEPAGE">
+	<link rel="stylesheet" type="text/css" href="_assets-custom/css/styles.min.css">
+	<style type="text/css">
+		@media (max-width: 994px){
+			.hide-tablet {display: none !important}
+		}
+		@media (max-width: 639px){
+			.mob-no-min {min-height: auto !important}
+		}
+
+		/*.banner {
+			background-position: center -360px !important; 
+		}
+
+		@media (max-width: 1190px){
+			.banner {
+				background-position: center !important; 
+			}
+		}
+
+		@media (max-width: 639px){
+			.banner {
+				background-position: center -100px !important; 
+			}
+		}*/
+
+		.anchor-bar2 {
+			box-shadow: none !important;
+		}
+
+		.anchor-bar2 .rewards-links li {
+			border-bottom: 1px solid #E0E0E0;
+		}
+
+		.anchor-bar2 .rewards-links li.active:after {
+			width: 100%;
+			left: 0;
+		}
+
+		.anchor-bar2 .rewards-links li:before {
+			display: none;
+		}
+
+		.anchor-bar2 .rewards-links li a {
+			color: #6F6F6F;
+		}
+
+		.anchor-bar2 .rewards-links li.active a {
+			color: #006AC3 !important;
+		}
+
+		/*#sign-in-top {
+			color: #9EA2A2 !important;
+		}*/
+
+		.btn.btn-blue {
+			background-color: #133C8F !important;
+			color: #FFFFFF !important;
+			padding: 15px 30px;
+			border: 1.5px solid #133C8F;
+			border-radius: 100px;
+			text-transform: initial;
+		}
+		.disclaimer .pdf-link:before {
+        width: 14px !important;
+        height: 14px !important;
+        }
+        .disclaimer .pdf-link {
+        padding-left: 29px !important;
+        }
+
+		@media (max-width: 639px){
+			.iphone-x {
+				height: 250px;
+    		object-fit: contain;
+			}
+		}
+		a:focus { outline-offset: 2px; }
+	</style>
+	<!-- Google Tag Manager -->
+	<script>var dataLayer=window.dataLayer=window.dataLayer||[];dataLayer.push({"LOB":"Rewards"});
+	(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-K5TWTL');</script>
+	<!-- End Google Tag Manager -->
+	<!-- Load `web-vitals` using a classic script that sets the global `webVitals` object. -->
+	<script defer src="https://unpkg.com/web-vitals@0.2.3/dist/web-vitals.es5.umd.min.js"></script>
+	<script>
+	function sendToGTM({name, delta, id}) {
+	  // Assumes the global `dataLayer` array exists, see:
+	  // https://developers.google.com/tag-manager/devguide
+	  dataLayer.push({
+		event: 'web-vitals',
+		category: 'Web Vitals',
+		action: name,
+		// Google Analytics metrics must be integers, so the value is rounded.
+		// For CLS the value is first multiplied by 1000 for greater precision
+		// (note: increase the multiplier for greater precision if needed).
+		value: Math.round(name === 'CLS' ? delta * 1000 : delta),
+		// The `id` value will be unique to the current page load. When sending
+		// multiple values from the same page (e.g. for CLS), Google Analytics can
+		// compute a total by grouping on this ID (note: requires `eventLabel` to
+		// be a dimension in your report).
+		label: id,
+	  });
+	}
+	addEventListener('DOMContentLoaded', function() {
+	  webVitals.getCLS(sendToGTM);
+	  webVitals.getFID(sendToGTM);
+	  webVitals.getLCP(sendToGTM);
+	});
+	</script>
+	</head>
+	<body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K5TWTL"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<div id="dvl-wpr" data-lang-toggle="rbcrewards/_assets-custom/js">
+		<header data-loc="personal-banking">
+			<!--#include virtual="/dvl/v1.0/assets/includes/rbcroyalbank.com/master-header.html" -->
+			<!--#include virtual="/_assets-custom/mega-menu/mega-menu-personal.html" -->
+		</header>
+		<!--#include virtual="/dvl/v1.0/assets/includes/side-navigation.html" -->
+		<main data-menu="/rbcrewards/_assets-custom/js/menu.json">
+			<div class="nav-bar">
+				<div class="nav-inner">
+					<button class="nav-btn"><span>MENU</span></button>
+					<h1 id="page-title" class="nav-location">Avion Rewards</h1>
+				</div>
+			</div>
+			<section class="banner fw-bnr img-center" data-img="_assets-custom/images/banner-image.jpg" data-mob-img="_assets-custom/images/banner-image.jpg">
+				<div class="section-inner">
+					<div class="grid-wpr eh-wpr w-33 fl-l mar-b bg-blue w-mob-100 mob-mar-b-0" style="max-width: 275px;">
+						<div class="grid-full">
+							<h2 class="text-white h5">Sign into Avion Rewards</h2>
+							<p class="text-script">Sign in to check your points, shop and redeem.</p>
+							<div class="select-wpr w-100 mar-b-hlf">
+								<label for="sign-in-top" class="offscreen">Sign into Avion Rewards</label>
+								<select name="sign-in-top" id="sign-in-top">
+									<option value="">Select...</option>
+									<option id="top-sign-in-online-banking" value="https://www1.royalbank.com/cgi-bin/rbaccess/rbunxcgi?F21=IB&F22=IB&F6=1&F7=IB&GOTO=RewardsRefresh&LANGUAGE=ENGLISH&PARM2=SignInFromOLB&REQUEST=ClientSignin">Online Banking</option>
+									<optgroup label="Credit Cards">
+										<option id="top-sign-in-personal" value="https://www1.royalbank.com/cgi-bin/rbaccess/rbunxcgi?CHOICE=Personal&F21=IB&F22=IB&F6=1&F7=IB&GOTO=RewardsRefresh&LANGUAGE=ENGLISH&REQUEST=ErnexLink">Personal</option>
+										<option id="top-sign-in-business" value="https://www1.royalbank.com/cgi-bin/rbaccess/rbunxcgi?CHOICE=Business&F21=IB&F22=IB&F6=1&F7=IB&GOTO=RewardsRefresh&LANGUAGE=ENGLISH&REQUEST=ErnexLink">Business</option>
+										<option id="top-sign-in-commercial" value="https://www1.royalbank.com/cgi-bin/rbaccess/rbunxcgi?CHOICE=Commercial&F21=IB&F22=IB&F6=1&F7=IB&GOTO=RewardsRefresh&LANGUAGE=ENGLISH&REQUEST=ErnexLink">Commercial</option>
+									</optgroup>
+								</select>
+							</div>
+						<div>
+							<button type="button" class="btn primary no-wrap sign-in-go-top" data-dig-id="Rewards-rbc-rewards-program-1" data-dig-category="RBC Royal Bank/Rewards English" data-dig-action="Click Button" data-dig-label="Sign into Avion Rewards Sign into check your points, shop and redeem." style="text-transform: none;">Sign in</button>
+						</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="anchor-bar2">
+					<div class="anchor-inner">
+						<ul class="horizontal rewards-links">
+							<li class="text-center"><a href="#" id="menu-ways-to-earn" data-target="#cash-back" class="scrollto">Earn Cash Back and Points</a></li>
+							<li class="text-center"><a href="#" id="menu-use-your-points" data-target="#use" class="scrollto">Use Your Points</a></li>
+							<li class="text-center"><a href="#" id="menu-access-your-points" data-target="#access" class="scrollto">Access your Cash back and Points</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="section-inner mar-t mar-b-dbl">
+					<div class="col-wpr eh-wpr" style="max-width: 864px; margin: 0 auto;">
+						<div class="col-6">
+							<h2>Cash back, Points and Savings – Get it all with Avion Rewards</h2>
+						</div>
+						<div class="col-6">
+							<p>
+								Avion Rewards, Canada’s largest bank-owned loyalty program, brings you more ways to shop, earn, save, and redeem every day. With 3 membership levels: Avion Select, Avion Premium and Avion Elite, it’s easy to get rewarded, no matter how you shop or where you bank.
+							</p>
+							<p>
+								<strong>Anyone can become a member for free!</strong> Once you join, you have access to amazing value and exclusive member experiences that are only available through the Avion Rewards program. 
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="section-inner">
+					<div class="col-wpr eh-wpr">
+						<div class="col-6" style="display: flex; align-items: center;">
+							<div style="max-width: 432px;">
+								<h3>How to join Avion Rewards</h3>
+								<p>If you have an RBC product or account, you already have an Avion Rewards account. <a href="https://www.avionrewards.com/login/sign-in.html">Sign in</a> with your RBC online banking info.</p>
+								<p class="mar-b-0"><strong>Don’t have an RBC product or account?</strong></p>
+								<p><a href="https://www.avionrewards.com/login/join.html">Create an Avion Rewards account</a> – it's quick, easy and you don’t have to bank with RBC</p>
+								<!-- <a href="https://www.avionrewards.com/login/join.html" class="w-100 btn btn-blue underline">Create an Avion Rewards account</a> -->
+								<p>or</p>
+								<p><a href="/rbcrewards/credit-cards.html">Apply for an Avion Rewards credit card</a> and become a member on approval</p>
+							</div>
+						</div>
+						<div class="col-6">
+							<img src="/rbcrewards/_assets-custom/images/avion-how-to-join.jpg" alt="" class="w-100">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section style="background-color: #F3F7F8;" class="pad-tb anchor" id="cash-back">
+				<div class="section-inner">
+					<div class="text-center" style="max-width: 770px; margin: 0 auto;">
+						<h2 class="text-black h1">Earn Cash Back and Points</h2>
+						<p>All Avion Rewards members can get cash back at over 2,400 retailers and earn points on purchases. Plus, Avion Rewards members with an eligible RBC card get extra everyday value at our partners. </p>
+					</div>
+					<div class="col-wpr eh-wpr mar-t-dbl">
+						<div class="col-4">
+							<img src="/rbcrewards/_assets-custom/images/card.svg" class="icon-80" alt="Card" style="margin-bottom: 24px;">
+							<h3 class="h5">Avion Rewards Credit Cards</h3>
+							<ul class="disc-list mar-b mob-pad-l">
+								<li>Start earning, get perks, have access to exclusive experiences, events and much more</li>
+								<li>Choose from 9 Avion Rewards credit cards and get travel perks, fuel savings and more<sup><a href="#" data-target="#legal-1" class="scrollto">1</a></sup></li>
+								<li>Earn points faster with everyday purchases like gas and travel using select cards<sup><a href="#" data-target="#legal-1" class="scrollto">1</a></sup></li>
+							</ul>
+							<a href="/rbcrewards/credit-cards.html" class="standalone-link">Learn More about Avion Rewards Credit Cards</a>
+						</div>
+						<div class="col-4">
+							<img src="/dvl/v1.0/assets/images/icons/icon-wallet.svg" class="icon-80" alt="Wallet" style="margin-bottom: 24px;">
+							<h3 class="h5">Shop More. Save More. Earn More</h3>
+							<ul class="disc-list mar-b mob-pad-l">
+								<li>Access special offers with points and savings at well-known brands</li>
+								<li>Earn cash back and points. Shop over 2,400 retailers</li>
+								<li>Get deals that pop while you shop with Avion Rewards ShopPlus browser extension – up to 40% cash back</li>
+								<li>Get bonus Avion points on eligible purchases you make with an Avion Rewards credit card<sup><a href="#" data-target="#legal-1" class="scrollto">1</a></sup></li>
+								<li>Get great savings on eligible purchases using select RBC credit and debit cards<sup><a href="#" data-target="#legal-1" class="scrollto">1</a></sup></li>
+							</ul>
+							<a href="https://www.avionrewards.com/shop.html" class="standalone-link">See More Ways to Save and Earn</a>
+						</div>
+						<div class="col-4">
+							<img src="/dvl/v1.0/assets/images/icons/icon-rewards.svg" class="icon-80" alt="Rewards" style="margin-bottom: 24px;">
+							<h3 class="h5">Get More at Partners with a Linked RBC Card</h3>
+							<ul class="disc-list mar-b mob-pad-l">
+								<li>Earn 1 extra Moi point for every $2 spent at <a href="https://www.avionrewards.com/partnerships/moi-rewards/">Metro, Food Basics, Super C, Jean Coutu, Brunet and Première Moisson</a><sup><a href="#legal-asterisk" data-target="#legal-asterisk" class="scrollto">*</a></sup></li>
+								<li>Earn 2X More Rewards points<sup><a href="#legal-caret" data-target="#legal-caret" class="scrollto">^</a></sup> at Save-On-Foods, Quality Foods, Buy-Low Foods, PriceSmart Foods, Nesters Market and Urban Fare locations</li>
+								<li>Get $0 delivery fees with free <a href="/doordash">DashPass</a> – a savings of up to $120</li>
+								<li>
+									Instantly save 3 c/L at <a href="/petro-canada">Petro-Canada</a> and earn 20% more Petro-Points and Avion points on every fill-up<sup><a href="#" data-target="#legal-1" class="scrollto">1</a></sup>
+								</li>
+								<li>Get 5X more Be Well points at <a href="/rexall">Rexall</a></li>
+								<!--<li>Save up to 10% on qualifying purchases at <a href="/home-improvement/index.html?RONA11">RONA</a></li>-->
+							</ul>
+							<a href="https://www.avionrewards.com/index.html#power-up" class="standalone-link">Learn More</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="use" class="anchor">
+				<div class="section-inner mar-tb-dbl">
+					<div class="text-center" style="max-width: 854px; margin: 0 auto;">
+						<h2>Use your Avion Points</h2>
+						<p>
+							When it comes to using your points, your options are nearly endless. From travelling the world to redeeming for your favourite brands, the Avion Rewards program offers something for everyone.
+						</p>
+						
+					</div>
+					<div class="accordion w-66 w-mob-100 centered-margin mar-b" id="accordionSet1">
+						<div class="accordion-panel">
+							<button id="accordion-title1" class="collapse-toggle collapsed h3" data-target="#accordion1" data-toggle="collapse" data-parent="#accordionSet1" aria-expanded="false" aria-controls="accordion1"><img src="_assets-custom/images/Travel.svg" class="icon-40 mar-r" alt="">Travel</button>
+							<div class="collapse-content collapse" id="accordion1" role="region" aria-labelledby="accordion-title1">
+								<div class="collapse-inner pad-r-0">
+									<h3 class="h4 text-center">See the world</h3>
+									<p class="text-center w-75 w-mob-100 centered-margin">From weekend retreats to bucket-list experiences, it’s easier than ever to get there with your Avion points.</p>
+
+									<div class="grid-wpr">
+										<div class="grid-one-third text-center">
+											<img src="_assets-custom/images/Flights.svg" class="icon-80 content-img" alt="">
+											<p class="text-script">Flights</p>
+										</div>
+										<div class="grid-one-third text-center">
+											<img src="_assets-custom/images/Hotel.svg" class="icon-80 content-img" alt="">
+											<p class="text-script">Hotels</p>
+										</div>
+										<div class="grid-one-third text-center">
+											<img src="_assets-custom/images/Hotel_flights.svg" class="icon-80 content-img" alt="">
+											<p class="text-script">Flight + Hotel</p>
+										</div>
+									</div>
+									<div class="grid-wpr">
+										<div class="grid-one-third text-center">
+											<img src="_assets-custom/images/Car.svg" class="icon-80 content-img" alt="">
+											<p class="text-script">Car Rental</p>
+										</div>
+										<div class="grid-one-third text-center">
+											<img src="_assets-custom/images/Packages.svg" class="icon-80 content-img" alt="">
+											<p class="text-script">Vacation Packages</p>
+										</div>
+										<div class="grid-one-third text-center">
+											<img src="_assets-custom/images/Cruises.svg" class="icon-80 content-img" alt="">
+											<p class="text-script">Cruises</p>
+										</div>
+									</div>
+									
+									<p><a href="https://www.avionrewards.com/travel/index.html" id="redeem-learn-more-travel" target="_blank">Learn More</a> about Travel</p>
+									<!-- <p><a href="https://www.rbcrewards.com/travel-rewards/new/#how-to" id="redeem-learn-more-video-travel" target="_blank">Check out these videos</a> to see how easy it is to book a flight with points</p> -->
+									
+								</div>
+							</div>
+						</div>
+						<div class="accordion-panel">
+							<button id="accordion-title2" class="collapse-toggle collapsed h3 flex flex-direction-row" data-target="#accordion2" data-toggle="collapse" data-parent="#accordionSet1" aria-expanded="false" aria-controls="accordion2">
+								<div class="table-wpr">
+									<div class="table-cell va-m">
+										<img src="_assets-custom/images/Merchandise_Gift.svg" class="icon-40 mar-r" alt="">
+									</div>
+									<div class="table-cell va-m">
+										Merchandise & <span class="no-wrap">Gift Cards</span><span class="no-wrap">Gift Cards</span>
+									</div>
+								</div>
+							</button>
+							<div class="collapse-content collapse" id="accordion2" role="region" aria-labelledby="accordion-title2">
+								<div class="collapse-inner pad-r-0">
+									<h3 class="h4 text-center">Take Your Points Shopping</h3>
+									<p class="text-center w-75 w-mob-100 centered-margin">Whether it’s the latest tech or must-have kitchen gadgets, discover a world of rewards that you deserve. Coming soon for Avion Select members!</p>
+
+									<!-- <h4>Merchandise</h4>
+									<p>Bring home the latest Top Brands in Electronics, Accessories, Kitchen and more.</p> -->
+
+									<div class="grid-wpr">
+										<div class="grid-one-fourth text-center">
+											<img src="_assets-custom/images/Apple.png" class="img-resp" alt="Apple">
+										</div>
+										<div class="grid-three-fourths">
+											<h5>Apple</h5>
+											<p>Get exclusive access to the latest Apple products the moment they hit the market<sup><a href="#" data-target="#legal-1" class="scrollto">1</a></sup></p>
+
+										</div>
+									</div>
+									<div class="grid-wpr">
+										<div class="grid-one-fourth text-center">
+											<img src="_assets-custom/images/Best_Buy.png" class="img-resp" alt="Best Buy">
+										</div>
+										<div class="grid-three-fourths">
+											<h5>Best Buy</h5>
+											<p>Shop everything Best Buy has to offer, plus enjoy exclusive features such as Reserve Online and pick up in store, free shipping, and more<sup><a href="#" data-target="#legal-1" class="scrollto">1</a></sup></p>
+
+										</div>
+									</div>
+									<div class="grid-wpr">
+										<div class="grid-one-fourth text-center">
+											<img src="_assets-custom/images/Merchandise.png" class="img-resp" alt="Merchandise">
+										</div>
+										<div class="grid-three-fourths">
+											<h5>Merchandise</h5>
+											<p>Bring home the latest Top Brands in Electronics, Accessories, Kitchen and more.</p>
+										</div>
+									</div>
+									<div class="grid-wpr">
+										<div class="grid-one-fourth text-center">
+											<img src="_assets-custom/images/Cards.png" class="img-resp" alt="Gift Cards">
+										</div>
+										<div class="grid-three-fourths">
+											<h5>Gift Cards</h5>
+											<p>Shop over 60 leading gift card brands like Amazon, <span class="no-wrap">Petro-Canada</span>, Winners, Starbucks, The Keg and Indigo. </p>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-panel">
+							<button id="accordion-title3" class="collapse-toggle collapsed h3" data-target="#accordion3" data-toggle="collapse" data-parent="#accordionSet1" aria-expanded="false" aria-controls="accordion3"><img src="_assets-custom/images/Financial_Rewards.svg" class="icon-40 mar-r" alt="">RBC Financial Rewards</button>
+							<div class="collapse-content collapse" id="accordion3" role="region" aria-labelledby="accordion-title3">
+								<div class="collapse-inner pad-r-0">
+									<h3 class="h4 text-center">RBC Financial Rewards<sup>&reg;</sup></h3>
+									<p class="text-center w-75 w-mob-100 centered-margin">Use your Avion points to save for retirement, contribute to your investments or children’s education fund, or pay down your loans:</p>
+									<div class="grid-wpr w-mob-100 centered-margin" style="max-width: 600px;">
+										<div class="grid-half">
+											<ul class="disc-list">
+												<li>RBC Registered Rewards<sup>&reg;</sup></li>
+												<li>RBC Homeline Plan Reward&trade;</li>
+												<li>RBC Mortgage Reward&trade;</li>
+											</ul>
+										</div>
+										<div class="grid-half">
+											<ul class="disc-list">
+												<li>RBC Credit Line Reward&trade;</li>
+												<li>RBC Personal Loan Reward&trade;</li>
+												<li>Trade with Points&trade;</li>
+											</ul>
+										</div>
+									</div>
+									<p>Available to Avion Premium and Elite members. Avion Select members are not able to redeem for financial rewards.</p>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-panel">
+						    <button id="accordion-title4" class="collapse-toggle collapsed h3" data-target="#accordion4" data-toggle="collapse" data-parent="#accordionSet1" aria-expanded="false" aria-controls="accordion4">
+						    	<div class="table-wpr">
+						        	<div class="table-cell va-m">
+						    			<img src="_assets-custom/images/Pay_With_Points.svg" class="icon-40 mar-r" alt="">
+						    		</div>
+						    		<div class="table-cell va-m">
+						    			Pay with Points
+						    		</div>
+						    	</div>
+						    </button>
+						    <div class="collapse-content collapse" id="accordion4" role="region" aria-labelledby="accordion-title4">
+						        <div class="collapse-inner pad-r-0">
+						        	<h3 class="h4 text-center">Pay with Points</h3>
+						        	<p class="text-center w-75 w-mob-100 centered-margin">You can use your Avion points as cash!</p>
+
+						        	<div class="grid-wpr mar-lr-hlf eh-wpr">
+
+									<div class="grid-half text-mob-center">
+										<img src="_assets-custom/images/Pay_Card.svg" class="icon-80 content-img" alt="">
+										<div class="eh mar-b-hlf mob-no-min">
+											<h5 class="">Pay your Credit Card Balance</h5>
+											<p class="">Pay down your balance with points<sup><a href="#" data-target="#legal-1" class="scrollto">1</a></sup>.</p>
+										</div>
+										<a href="https://www1.royalbank.com/cgi-bin/rbaccess/rbunxcgi?F6=1&F7=IB&F21=IB&F22=IB&REQUEST=ClientSignin&GOTO=RewardsRefresh&LANGUAGE=ENGLISH&PARM1=L3BheXdpdGhwb2ludHM=&PARM2=SignInFromOLB" id="redeem-learn-more-pwp-credit-card" class="standalone-link" target="_blank">Pay Credit Card Balance</a>
+									</div>
+
+									<div class="grid-half text-mob-center">
+										<img src="_assets-custom/images/Pay_Store.svg" class="icon-80 content-img" alt="">
+										<div class="eh mar-b-hlf mob-no-min">
+											<h5>Pay In-Store</h5>
+											<p class="">Use your points at your favourite retailers<sup><a href="#" data-target="#legal-1" class="scrollto">1</a></sup> for select transactions<sup><a href="#" data-target="#legal-1" class="scrollto">1</a></sup>, plus discover great promotions.</p>
+										</div>
+										<a href="https://www.rbcroyalbank.com/ways-to-bank/mobile/rbc-wallet-app/index.html#pwppos" id="redeem-learn-more-pwp-in-store" class="standalone-link" target="_blank">How to Pay in Store</a>
+										<div class="hide-tablet">&nbsp;</div>
+									</div>
+
+								</div>
+
+
+
+								<div class="grid-wpr mar-lr-hlf eh-wpr">
+
+									<div class="grid-half text-mob-center">
+										<img src="_assets-custom/images/Pay_Bill.svg" class="icon-80 content-img" alt="">
+										<div class="eh mar-b-hlf mob-no-min">
+											<h5>Pay your Bills</h5>
+											<p class="">Use your points to pay your bills<sup><a href="#" data-target="#legal-1" class="scrollto">1</a></sup>.</p>
+										</div>
+										<a href="https://secure.royalbank.com/signin.html" id="redeem-learn-more-pwp-bills" class="standalone-link" target="_blank">Pay Bills</a>
+									</div>
+
+									<div class="grid-half text-mob-center">
+										<img src="/dvl/v1.0/assets/images/icons/icon-email-transfer.svg" class="icon-80 content-img" alt="">
+										<div class="eh mar-b-hlf mob-no-min">
+											<h5>Send an e-transfer</h5>
+											<p class="">Put your points towards an <em>Interac</em> e-transfer.</p>
+										</div>
+										<a href="https://www1.royalbank.com/cgi-bin/rbaccess/rbunxcgi?F21=IB&F22=IB&F6=1&F7=IB&GOTO=RewardsRefresh&LANGUAGE=ENGLISH&PARM1=aHR0cHM6Ly93d3cxLnJveWFsYmFuay5jb20vd3BzL215cG9ydGFsL09MQi9jb20ucmJjLl8zbTAwLm9sYi53ZWIucG9ydGFsLnBnLm15YWNjdC5iYW5raW5nLnBhLnBidGZkZXRhaWxzP1BSRUZPVkVSUklERVM9RkxBVk9VUixSRVFVRVNULFhSRVFVRVNUJkYyMj1JQklCUE9SVEFMJkZST01TSUdOSU49Tk8mUkJVTlhDR0k9L2NnaS1iaW4vcmJhY2Nlc3MvcmJjZ2kzbTAxJlJFUVVFU1Q9UkJDT25saW5lUGF5bWVudHMmTEFOR1VBR0U9RU5HTElTSCZGTEFWT1VSPVBXUA--&PARM2=SignInFromOLB&REQUEST=ClientSignin" id="redeem-learn-more-pwp-bills" class="standalone-link" target="_blank">Send an e-transfer</a>
+									</div>
+
+								</div>
+
+								<!-- <p class="text-disclaimer">Not all Avion Rewards cards are eligible for these services. For details, please refer to the <a href="https://www.rbcrewards.com/#!/terms-and-conditions" class="no-wrap" target="_blank">Avion Rewards Terms and Conditions</a></p> -->
+								<p>Available to Avion Premium and Elite members with eligible RBC cards. Avion Select members are not able to pay with points.</p>
+
+						        </div>
+						    </div>
+						</div>
+						<div class="accordion-panel">
+							<button id="accordion-title5" class="collapse-toggle collapsed h3" data-target="#accordion5" data-toggle="collapse" data-parent="#accordionSet1" aria-expanded="false" aria-controls="accordion5">
+								<div class="table-wpr">
+									<div class="table-cell va-m">
+										<img src="_assets-custom/images/Convert_Points.svg" class="icon-40 mar-r" alt="">
+									</div>
+									<div class="table-cell va-m">
+										Convert your Points
+									</div>
+								</div>
+							</button>
+							<div class="collapse-content collapse" id="accordion5" role="region" aria-labelledby="accordion-title5">
+								<div class="collapse-inner pad-r-0">
+									<h3 class="h4 text-center">Convert Avion Points</h3>
+									<p class="text-center w-75 w-mob-100 centered-margin">Convert your Avion points to a wide variety of partner loyalty programs that we designate from time to time<sup><a href="#" data-target="#legal-1" class="scrollto">1</a></sup>.</p>
+									<!-- <p class="text-center text-script">Some of our partners include:</p> -->
+
+									<div class="grid-wpr eh-wpr">
+										<div class="grid-one-third text-center">
+											<img src="_assets-custom/images/American_Airlines.png" class="mar-b-hlf img-resp eh" alt="American Airlines">
+											<p>American Airlines</p>
+										</div>
+										<div class="grid-one-third text-center">
+
+											<img src="_assets-custom/images/asia-miles-logo.jpg" class="mar-b-hlf img-resp eh" alt="Asia Miles">
+											<p>Asia Miles</p>
+										</div>
+										<div class="grid-one-third text-center">
+											<img src="_assets-custom/images/British_Airways.png" class="mar-b-hlf img-resp eh" alt="ritish Airways">
+											<p>British Airways</p>
+										</div>
+									</div>
+									<div class="grid-wpr eh-wpr">
+										<div class="grid-half text-center">
+											<img src="_assets-custom/images/West_jet.png" class="mar-b-hlf img-resp eh" alt="WestJet">
+											<p>WestJet</p>
+										</div>
+										<div class="grid-half text-center">
+											<img src="_assets-custom/images/Hudson_Bay.png" class="mar-b-hlf img-resp eh" alt="HBC Rewards">
+											<p>HBC Rewards</p>
+										</div>
+									</div>
+									<p>Not all Avion Rewards members are eligible to covert points to all partner loyalty programs.</p>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-panel">
+							<button id="accordion-title6" class="collapse-toggle collapsed h3" data-target="#accordion6" data-toggle="collapse" data-parent="#accordionSet1" aria-expanded="false" aria-controls="accordion6"><img src="_assets-custom/images/Donate_to_Charity.svg" class="icon-40 mar-r" alt="">Donate to Charity</button>
+							<div class="collapse-content collapse" id="accordion6" role="region" aria-labelledby="accordion-title6">
+								<div class="collapse-inner pad-r-0">
+									<h3 class="h4 text-center">Donate your Points to Charity</h3>
+									<p class="text-center w-75 w-mob-100 centered-margin">Help others by donating your Avion points to great charities like these:</p>
+
+									<div class="grid-wpr">
+										<div class="grid-full text-center">
+											<img src="_assets-custom/images/RMHC.png" class="mar-b img-resp" alt="Ronald McDonald House">
+											<p>Ronald McDonald House</p>
+										</div>
+									</div>
+									<div class="grid-wpr eh-wpr">
+										<div class="grid-one-third text-center">
+											<img src="_assets-custom/images/Hope_Air.png" class="mar-b img-resp eh" alt="Hope Air">
+											<p>Hope Air</p>
+										</div>
+										<div class="grid-one-third text-center">
+											<img src="_assets-custom/images/Own_the_podium.png" class="mar-b img-resp eh" alt="Own the Podium<">
+											<p>Own the Podium</p>
+										</div>
+										<div class="grid-one-third text-center">
+											<img src="_assets-custom/images/David-Foster.png" class="mar-b img-resp eh" alt="The David Foster Foundation">
+											<p>The David Foster Foundation</p>
+										</div>
+									</div>
+									<p>Coming soon for Avion Select members!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="access" class="anchor" style="background-color: #F3F7F8;">
+				<div class="section-inner pad-b-0 pad-t" style="max-width: 970px;">
+					<div class="grid-wpr eh-wpr mar-b-0">
+						<div class="grid-two-thirds" style="display: flex; align-items: center;">
+							<div>
+								<h2>Access your Cash back and Avion Points</h2>
+								<p class="mar-b-0">It’s easy to easy to track your cash back and points and redeem your points online or the Avion Rewards app.</p>
+								<p id="download-app"><strong>Download the Avion Rewards app today</strong></p>
+
+								<ul class="horizontal mar-t">
+									<li class="pad-r mar-b-0">
+										<p>Download the app for Android</p>
+										<a href="https://play.google.com/store/apps/details?id=com.rbc.mobile.rjj0" id="use-points-download-app-google" target="_blank" data-dig-id="Rewards-rbc-rewards-program-7" data-dig-category="RBC Royal Bank/Rewards English" data-dig-action="Click Button" data-dig-label="Download the app for Android CTA"><img src="_assets-custom/images/google-play.png" alt="Google Play"></a>
+									</li>
+									<li>
+										<p>Download the app for iOS</p>
+										<a href="https://itunes.apple.com/ca/app/rbc-rewards/id1132694061?mt=8" id="use-points-download-app-apple" target="_blank" data-dig-id="Rewards-rbc-rewards-program-8" data-dig-category="RBC Royal Bank/Rewards English" data-dig-action="Click Button" data-dig-label="Download the app for iOS CTA"><img src="_assets-custom/images/apple-store.png" alt="Apple Store"></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="grid-one-third">
+							<img src="/rbcrewards/_assets-custom/images/phone-en.png" class="img-100 iphone-x" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section-cool-white" id="signin-section">
+				<div class="section-inner">
+
+					<div class="grid-wpr dividers">
+						<div class="grid-half text-center">
+							<h3 class="mar-b">Not a Member</h3>
+							<!-- <p class="content-img"><img src="/dvl/v1.0/assets/images/icons/icon-credit-cards.svg" class="icon-80" alt="Explore Avion Rewards Credit Cards"></p> -->
+							<!-- <p><a href="/credit-cards/all-credit-cards.html#/rbcrewards" id="bottom-apply-credit-card" target="_blank" class="btn primary">Explore Now</a></p> -->
+							<!-- <p>
+								<a href="/rbcrewards/credit-cards.html" style="text-decoration: none;" class="standalone-link" data-dig-id="Rewards-rbc-rewards-program-9" data-dig-category="RBC Royal Bank/Rewards English" data-dig-action="Click Link" data-dig-label="Not a Member - Explore Avion Rewards Credit Cards CTA">Explore Avion Rewards Credit Cards</a>
+							</p>
+							<p><a href="https://www.rbcroyalbank.com/accounts/value-program.html" style="text-decoration: none;" class="standalone-link" data-dig-id="Rewards-rbc-rewards-program-10" data-dig-category="RBC Royal Bank/Rewards English" data-dig-action="Click Link" data-dig-label="Not a Member - Learn more about the Value Program CTA">Learn more about the Value Program</a></p> -->
+							<p><a href="https://www.avionrewards.com/login/join.html">Join for Free Today</a></p>
+						</div>
+						<div class="grid-half text-center">
+							<h3 class="mar-t-0">Already a Member</h3>
+							<p>Sign Into Your Account</p>
+							<!-- <p class="content-img"><img src="/dvl/v1.0/assets/images/icons/icon-online.svg" class="icon-80" alt="Sign Into Your Account"></p> -->
+							<div class="table-wpr w-66 w-mob-100 centered-margin">
+								<div class="table-cell pad-r-hlf">
+									<div class="select-wpr w-100">
+										<label for="sign-in-bottom" class="offscreen">Sign Into Your Account</label>
+										<select name="sign-in-bottom" id="sign-in-bottom">
+											<option value="">Select...</option>
+											<option value="https://www1.royalbank.com/cgi-bin/rbaccess/rbunxcgi?F21=IB&amp;F22=IB&amp;F6=1&amp;F7=IB&amp;GOTO=RewardsRefresh&amp;LANGUAGE=ENGLISH&amp;PARM2=SignInFromOLB&amp;REQUEST=ClientSignin" id="bottom-sign-in-online-banking">Online Banking</option>
+											<optgroup label="Credit Cards">
+												<option id="sign-in-personal" value="https://www1.royalbank.com/cgi-bin/rbaccess/rbunxcgi?CHOICE=Personal&amp;F21=IB&amp;F22=IB&amp;F6=1&amp;F7=IB&amp;GOTO=RewardsRefresh&amp;LANGUAGE=ENGLISH&amp;REQUEST=ErnexLink">Personal</option>
+												<option value="https://www1.royalbank.com/cgi-bin/rbaccess/rbunxcgi?CHOICE=Business&amp;F21=IB&amp;F22=IB&amp;F6=1&amp;F7=IB&amp;GOTO=RewardsRefresh&amp;LANGUAGE=ENGLISH&amp;REQUEST=ErnexLink" id="bottom-sign-in-business">Business</option>
+												<option value="https://www1.royalbank.com/cgi-bin/rbaccess/rbunxcgi?CHOICE=Commercial&amp;F21=IB&amp;F22=IB&amp;F6=1&amp;F7=IB&amp;GOTO=RewardsRefresh&amp;LANGUAGE=ENGLISH&amp;REQUEST=ErnexLink" id="bottom-sign-in-commercial">Commercial</option>
+										  </optgroup>
+										</select>
+									</div>
+								</div>
+								<div class="table-cell w-min va-m ">
+									<button type="button" class="btn tertiary no-wrap sign-in-go-bottom" data-dig-id="Rewards-rbc-rewards-program-11" data-dig-category="RBC Royal Bank/Rewards English" data-dig-action="Click Button" data-dig-label="Already a Member - sign in CTA">Sign in</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="disclaimer" id="disclaimer">
+				<div class="section-inner">
+					<p><button data-target="#collapse-disclaimer" data-toggle="collapse"  aria-expanded="false" class="collapse-toggle collapsed" aria-controls="collapse-disclaimer"><span>View Legal Disclaimers</span><span>Hide Legal Disclaimers</span></button></p>
+					<div class="collapse-content collapse w-100" id="collapse-disclaimer">
+						<div class="collapse-inner">
+							<div class="table-wpr">
+								<div class="table-row" id="legal-asterisk">
+									<div class="table-cell" id="legal-1">*</div>
+									<div class="table-cell">This offer is not transferable. To take advantage of this offer, you must link one of your eligible RBC Royal Bank debit or credit card(s) ** (“Eligible RBC card”) to your Moi card to earn one (1) extra Moi point for every $2 spent (“Bonus Points”) at any Metro or Food Basics. Minimum spend of $60, calculated on the final price of your purchases after taxes, required (“Qualifying Purchase”). This offer may not be combined or used in conjunction with any other offers, and cannot be applied retroactively to previous purchases. Offer only applicable for members who have linked their Moi Rewards card to an eligible RBC debit or credit card for first time. Members who unlink and link again multiple times are not eligible for this offer. Qualifying Purchase excludes gift cards, tobacco products, Western Union, lottery, transit tickets, gift card purchases, prescription, prescription services and other professional Pharmacy services. Some products are not available online. Subject to Metro eCommerce Terms and Conditions. Details at <a href="https://www.metro.ca/en" class="newwindow-link" target="_blank">https://www.metro.ca/en</a>. **For a list of eligible RBC debit and credit cards (“RBC cards”) and ineligible purchases of the Avion Rewards and Moi Linked Loyalty program, please refer to the complete terms and conditions available at <a href="https://linkedloyalty.avionrewards.com/moi/linked-loyalty-terms-en.pdf" target="_blank" class="pdf-link">https://linkedloyalty.avionrewards.com/moi/linked-loyalty-terms-en.pdf</a>. Metro Inc., not Royal Bank of Canada (“RBC"), is responsible for the sales, returns and terms and conditions applicable to your Qualifying Purchase. RBC reserves the right to cancel, modify or withdraw this offer at any time, even after you have activated it. </div>
+								</div>
+								<div class="table-row">
+									<div class="table-cell" id="legal-caret"><sup>^</sup></div>
+									<div class="table-cell">Receive 1 extra More Rewards point for every $1 spent (2X the base earn More Rewards points). To receive your bonus More Rewards points, you must scan your More Rewards card, pay with your linked RBC card at participating More Rewards grocery partners such as Save-On-Foods, Buy-Low Foods, Quality Foods, Nesters Market, Urban Fare and PriceSmart Foods. For a full list of participating retailers visit <a href="https://www.morerewards.ca" target="_blank">www.morerewards.ca</a>.</div>
+								</div>
+								<div class="table-row">
+									<div class="table-cell" id="legal-1"><sup>1</sup></div>
+									<div class="table-cell">Terms and conditions apply.</div>
+								</div>
+								<br>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<footer>
+			<!-- *** Fat Footer Start *** -->
+			<div class="fat-footer">
+				<div class="fat-footer-inner">
+					<h2 class="fat-footer-heading">Footer Links</h2>
+					<div class="grid-wpr eh-wpr">
+						<div class="grid-one-third">
+							<h3 class="footer-links-title">Avion Rewards</h3>
+							<ul class="chevron-list">
+								<li><a href="https://www.rbcrewards.com/#!/faq" target="_blank">FAQs</a></li>
+								<li><a href="https://www.rbcrewards.com/#!/cards-and-benefits" target="_blank">Cards & Benefits</a></li>
+								<li><a href="https://www.rbcrewards.com/#!/terms-and-conditions" target="_blank">Terms & Conditions</a></li>
+							</ul>
+						</div>
+						<div class="grid-one-third">
+							<h3 class="footer-links-title">RBC Royal Bank</h3>
+							<ul class="chevron-list">
+								<li><a href="https://www.rbc.com/canada.html" target="_blank">About RBC</a></li>
+								<li><a href="https://maps.rbcroyalbank.com/" target="_blank">Locations</a></li>
+								<li><a href="/customer-service/index.html" target="_blank">Customer Service</a></li>
+							</ul>
+						</div>
+						<div class="grid-one-third">
+							<h3 class="footer-links-title">Avion Rewards Apps</h3>
+							<ul>
+								<li><a href="https://play.google.com/store/apps/details?id=com.rbc.mobile.rjj0" class="android-link" target="_blank">For Android</a></li>
+								<li><a href="https://itunes.apple.com/ca/app/rbc-rewards/id1132694061?mt=8" class="apple-link" target="_blank">For iPhone</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- *** Fat Footer End *** -->
+			<!--#include virtual="/dvl/v1.0/assets/includes/rbcroyalbank.com/footer.html" -->
+		</footer>
+
+		<div id="desktop-video-modal" class="modal" data-width="800" role="region" aria-label="How to redeem points on desktop">
+			<div class="modal-inner">
+				<div class="video-wpr" id="desktop-video">
+					<video class="video-player" poster="_assets-custom/images/video_desktop.png" ga-on="click" ga-event-category="Public" ga-event-action="Click" ga-event-label="Public - Non Redeemer - Play Video">
+						 <source src="_assets-custom/video/RBC_Rewards_v8.mp4" type="video/mp4" />
+						 <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+					</video>
+				</div>
+			</div>
+			<button class="close" aria-label="Close"><span>Close</span></button>
+		</div>
+		<div id="mobile-video-modal" class="modal" data-width="800" role="region" aria-label="How to redeem points on mobile">
+			<div class="modal-inner">
+				<div class="video-wpr" id="mobile-video">
+					<video class="video-player" poster="_assets-custom/images/video_mobile.png" ga-on="click" ga-event-category="Public" ga-event-action="Click" ga-event-label="Public - Non Redeemer - Play Video">
+						 <source src="_assets-custom/video/RBC_Rewards_Mobile_v4.mp4" type="video/mp4" />
+						 <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+					</video>
+				</div>
+			</div>
+			<button class="close" aria-label="Close"><span>Close</span></button>
+		</div>
+	</div>
+	<!--#include virtual="/dvl/v1.0/assets/includes/scripts.html" -->
+	<script>
+		$(document).ready(function() {
+			$('#header-contact-list .phone-link .tel-number').text("1-800-769-2511");
+
+			$('#sign-in-top').on('change', function(event) {
+				if ($(this).val() != "") {
+					$('.sign-in-go-top').removeClass('tertiary').addClass('secondary');
+				} else {
+					$('.sign-in-go-top').removeClass('secondary').addClass('tertiary');
+				}
+			});
+			$('#sign-in-bottom').on('change', function(event) {
+				if ($(this).val() != "") {
+					$('.sign-in-go-bottom').removeClass('tertiary').addClass('secondary');
+				} else {
+					$('.sign-in-go-bottom').removeClass('secondary').addClass('tertiary');
+				}
+			});
+			$('.sign-in-go-top').on('click', function(event) {
+				var secURL = $('#sign-in-top').val();
+				if (secURL == "") {
+					return;
+				} else {
+					window.open(secURL)
+					//location.href = secURL;
+				}
+			});
+			$('.sign-in-go-bottom').on('click', function(event) {
+				var secURL = $('#sign-in-bottom').val();
+				if (secURL == "") {
+					return;
+				} else {
+					window.open(secURL)
+					//location.href = secURL;
+				}
+			});
+
+			$('#accordion4, #accordion5').on('shown.bs.collapse', function () {
+				DVL.fn.equalHeight();
+			});
+
+			var $sections = $('.anchor');
+
+			$(window).scroll(function(){
+				var currentScroll = $(this).scrollTop() + 200;
+				var $currentSection;
+
+				$sections.each(function(){
+					var divPosition = $(this).offset().top;
+
+					if( divPosition - 1 < currentScroll ){
+						$currentSection = $(this);
+					} else {
+						return;
+					}
+
+					var id = $currentSection.attr('id');
+					$('a').parent().removeClass('active');
+					$('[data-target="#'+id+'"]').parent().addClass('active');
+				})
+			});
+
+			$.getScript	({
+				url: "/dvl/v1.0/assets/js/jquery.sticky.min.js",
+				success: function() {
+					var $anchorbar = $(".anchor-bar2");
+
+					_stickAnchor2 = function() {
+
+						$(".nav-bar").addClass('anchor-exist')
+
+						var $nbHeight = $(".nav-bar").outerHeight();
+
+						if ($(window).width() < 768) {
+							$nbHeight = 0;
+						}
+
+						$anchorbar.sticky({
+							topSpacing: $nbHeight,
+							responsiveWidth: true,
+							zIndex: 101,
+							getWidthFrom: "#dvl-wpr"
+						});
+					}
+					_stickAnchor2();
+
+					$(window).resize(function() {
+						_stickAnchor2();
+					});
+				}
+			})
+
+		});
+	</script>
+	</body>
+	</html>
