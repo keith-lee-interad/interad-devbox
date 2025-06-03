@@ -105,24 +105,18 @@
 								<h5>Actualités économiques du jour</h5> 
 								<p class="mar-t-hlf">Revue des statistiques économiques canadiennes et américaines du jour et aperçu des rapports économiques qui doivent paraître.</p>
 							</label>
-							<input type="checkbox" name="DigestSub" id="DigestID" value="Condensé économique" class='{roles: true} chkbx' onchange='removeCheckBoxError()'/>
-							<label id="DigestID-l" for="DigestID" class="mar-b-hlf">
-								<h5>Condensé économique</h5> 
-								<p class="mar-t-hlf">Brefs résumés de tous les rapports publiés chaque mois par Recherche économique RBC, accompagnés d'un bon de commande de rapports.</p>
-							</label>
 							<input type="checkbox" name="FMMSub" id="FMMID" value="Le mensuel des marchés financiers" class='{roles: true} chkbx' onchange='removeCheckBoxError()'/>
 							<label id="FMMID-l" for="FMMID">
 								<h5>Le mensuel des marchés financiers</h5>
 								<p class="mar-t-hlf">Analyse prospective des tendances sur les marchés financiers canadien, américain et international, notamment les prévisions de taux d'intérêt et de change. Disponible en anglais seulement.</p>
 							</label>
-						</div>
-						<div class="grid-half">
 							<input type="checkbox" name="ForecastSub" id="ForecastID" value="Perspectives économiques et financières" class='{roles: true} chkbx' onchange='removeCheckBoxError()'/>
 							<label id="ForecastID-l" for="ForecastID">
 								<h5>Perspectives économiques et financières</h5>
 								<p class="mar-t-hlf">Prévisions économiques et des marchés financiers sur deux ans pour le Canada, les États-Unis et les autres grandes économies internationales.</p>
 							</label>
-
+						</div>
+						<div class="grid-half">
 							<input type="checkbox" name="HousingSub" id="HousingID" value="Indice d'accessibilité à la propriété immobilière" class='{roles: true}' onchange='removeCheckBoxError()'/>
 							<label id="HousingID-l" for="HousingID">
 								<h5>Indice d'accessibilité à la propriété immobilière</h5>
@@ -212,10 +206,6 @@
 
 $('.chkbx').change(function(){
     if($('#termsID').is(":checked") && $('#DailyID').is(":checked")) {
-    	$('#sendBtn').removeClass("btn disabled");
-        $('#sendBtn').addClass("btn primary");
-
-    } else if($('#termsID').is(":checked") && $('#DigestID').is(":checked")) {
     	$('#sendBtn').removeClass("btn disabled");
         $('#sendBtn').addClass("btn primary");
 
