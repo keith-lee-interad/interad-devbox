@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /pensioners/
+Disallow: /hsbc-canada/
