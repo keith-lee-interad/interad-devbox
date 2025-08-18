@@ -1,0 +1,1402 @@
+<!--#if expr="${HTTP_HOST}=/rb.dev/" -->
+
+<!--#set var='mizdotnet_host' value='https://appsasm.steroyalbank.com' -->
+
+<!--#elif expr="${HTTP_HOST}=/sterbcroyalbank.com/" -->
+
+<!--#set var='mizdotnet_host' value='https://appsasm.steroyalbank.com' -->
+
+<!--#elif expr="${HTTP_HOST}=/silver.rbcroyalbank.com/" -->
+
+<!--#set var='mizdotnet_host' value='https://appssai.steroyalbank.com' -->
+
+<!--#else -->
+
+<!--#set var='mizdotnet_host' value='https://apps.royalbank.com' -->
+
+<!--#endif -->
+
+<!--#include virtual="/dvl/v1.0/assets/includes/html-doctype.html" -->
+
+<head>
+
+    <!--#include virtual="/dvl/v1.0/assets/includes/head.html" -->
+
+    <!--#if expr="${HTTP_HOST}=/sterbcroyalbank.com/" -->
+       <!--#set var='app_link' value='https://public-uat.sterbcroyalbank.com' -->
+    <!--#elif expr="${HTTP_HOST}=/silver.rbcroyalbank.com/" -->
+       <!--#set var='app_link' value='https://public-uat.sterbcroyalbank.com' -->
+    <!--#else -->
+       <!--#set var='app_link' value='https://public.rbcroyalbank.com' -->
+    <!--#endif -->
+
+    <title>Welcome to RBC Personal Banking - RBC Royal Bank</title>
+
+    <meta name="description" content="Explore the personal banking services and products available from RBC Royal Bank to help you manage your finances, buy a home, invest and more.">
+
+    <meta name="keywords" content="personal banking, bank accounts, credit cards, loans, mortgages, rbc, royal bank of canada">
+
+    <meta property="og:title" content="Get the Personal Banking Products and Services You Need">
+
+    <meta property="og:description" content="Whatever you need, RBC Royal Bank has a wide range of personal banking products, services and tools to help you manage your finances, save for retirement, buy a home and much more.">
+
+    <link rel="stylesheet" href="/_assets-custom/homepage/css/styles.min.css">
+    
+    <link rel="stylesheet" href="/_assets-custom/homepage/css/homepage-hero.min.css">
+
+    <style type="text/css">
+        #ms-account-Airpods_banner_lvl_3-click .callout-img {
+
+            background-size: contain;
+
+            background-position: 50% 50% !important
+        }
+
+        .font-fix {
+
+            font-size: 18px !important;
+
+        }
+
+        a:hover span {
+
+            text-decoration: underline !important;
+
+        }
+
+        .banner.html-bnr {
+
+            background: linear-gradient(97deg, #006AC3 45.82%, #0091DA 70.21%);
+
+            position: relative;
+
+            max-height: 700px;
+
+            display: flex;
+
+            align-items: center;
+
+        }
+
+        .banner.html-bnr .section-inner {
+
+            width: 100%;
+
+            z-index: 1;
+
+        }
+
+        .banner.html-bnr .banner-wpr .banner-img {
+
+            width: 40%;
+
+        }
+
+        .banner.html-bnr .banner-wpr .banner-text {
+
+            width: 60%;
+
+        }
+
+
+
+        .banner h2 {
+
+            font-size: 6.0rem !important;
+
+            font-weight: 500 !important;
+
+            line-height: 7.2rem !important;
+
+            max-width: 593px;
+
+        }
+
+
+        .products-section {
+            background-color: #FAFAFA;
+        }
+
+        .products-section .section-inner {
+            margin-top: 0;
+            padding-top: 60px !important;
+            padding-bottom: 0 !important;
+            position: relative;
+            top: -80px;
+        }
+        @media only screen and (max-width: 639px) {
+            .products-section .section-inner {
+                top: -35px;
+            }
+        }
+
+        .discover-and-learn-section {
+            background-color: #FAFAFA;
+        }
+
+        @media only screen and (max-width: 1200px) {
+
+            .banner h2 {
+
+                font-size: 4.8rem !important;
+
+                line-height: 5.4rem !important;
+
+            }
+
+        }
+
+        @media only screen and (max-width: 960px) {
+
+            .banner h2 {
+
+                font-size: 3.2rem !important;
+
+                line-height: 3.8rem !important;
+
+            }
+
+        }
+
+        @media only screen and (max-width: 639px) {
+
+            .banner.html-bnr {
+
+                display: block;
+
+            }
+
+            .banner.html-bnr .banner-wpr .banner-img {
+
+                width: 100%;
+
+            }
+
+            .banner.html-bnr .banner-wpr .banner-img img {
+
+                max-width: 240px;
+
+            }
+
+            .banner.html-bnr .banner-wpr .banner-text {
+
+                width: 100%;
+
+            }
+
+
+
+            .banner h2 {
+
+                font-size: 2.8rem !important;
+
+                line-height: 3.5rem !important;
+
+            }
+
+            .products-section .section-inner {
+
+                margin-top: 0px;
+
+                padding-top: 15px !important;
+
+            }
+
+        }
+
+        .branch-locator-section .section-inner {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            min-height: 387px;
+        }
+
+
+        .branch-locator-section h2 {
+            font-size: 30px;
+            line-height: 38px;
+        }
+
+        .branch-locator-section .callout {
+            max-width: 569px;
+            min-height: 293px
+        }
+
+        .branch-locator-section form p {
+            font-family: "Georgia";
+            font-size: 18px;
+            font-style: italic;
+            line-height: 27px;
+        }
+
+        .branch-locator-section form button {
+            font-size: 14px !important;
+            line-height: 20px !important;
+        }
+
+        #branch-atm-search {
+            padding: 14px;
+            border: 1px solid #006AC3;
+        }
+
+        @media only screen and (max-width: 640px) {
+
+            .branch-locator-section .section-inner {
+
+                height: 479px;
+            }
+
+
+            .branch-locator-section h2 {
+                font-size: 20px;
+                line-height: 25px;
+            }
+
+            .branch-locator-section form p,
+            .branch-locator-section form label {
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            .branch-locator-section form button {
+                font-size: 14px !important;
+                line-height: 20px !important;
+            }
+
+            #branch-atm-search {
+                padding: 14px;
+                border: 1px solid #006AC3;
+            }
+
+            .branch-locator-section form div.flex {
+                flex-direction: column;
+
+            }
+            
+        }
+
+        @media only screen and (min-width: 640px) {
+                    .custom-mob-pad-0 {
+                        padding-top: inherit;                    
+                        padding-left: inherit;                    
+                        padding-right: inherit;                    
+                    }
+                }
+
+                @media only screen and (min-width: 480px) {
+                    .custom-mob-pad-0 {
+                        padding-top: 0px !important;                    
+                        padding-left: 0px !important;                    
+                        padding-right: 0px !important;    
+                    }
+                }
+
+
+        #banner {
+            /* background-image: url("/_assets-custom/images/banner-bg.svg"); */
+            background-size: cover;
+            background-position: center;
+            min-height: 629px;
+            display: flex;
+        }
+        #banner .section-inner {
+            display: flex;
+            align-items: center;
+/*            gap: 96px;*/
+        }
+        #banner .text {
+/*            width: 60%;*/
+/*            flex-basis: 50%;*/
+        }
+        #banner .pill {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #FFBA00;
+            padding: 4px 8px;
+            color: #1F1F1F;
+            font-family: Roboto;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 16px;
+        }
+        #banner h2 {
+            color: #006AC3;
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 71px;
+            margin-top: 32px;
+            margin-bottom: 15px;
+        }
+        #banner h1 span {
+            color: #FFF;
+            font-size: 48.125px;
+            font-weight: 700;
+            line-height: 57.75px;
+            display: block;
+            margin-top: 9px;
+        }
+        #banner p {
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 16px;
+        }
+        .timer__date {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            margin-top: 32px;
+            margin-bottom: 32px;
+        }
+        /* #banner a {
+            border: 2.178px solid #006AC3;
+            background: #fff;
+            padding: 15.249px 21.784px;
+        } */
+        @media only screen and (max-width: 768px) {
+            #banner .section-inner {
+                gap: 30px;
+            }
+        }
+        @media only screen and (max-width: 639px) {
+            #banner .section-inner {
+                flex-direction: column;
+                gap: 15px;
+            }
+            #banner {
+                min-height: auto;
+                display: block;
+            }
+            #banner .text {
+                width: 100%;
+                order: 1;
+            }
+            #banner .section-inner > div {
+                flex-basis: auto;
+            }
+            #banner h2 {
+                font-size: 2.8rem !important;
+                line-height: 3.5rem !important;
+                margin-top: 16px;
+                margin-bottom: 8px;
+            }
+            #banner img {
+                width: 153px;
+            }
+            .timer__date {
+                margin-top: 16px;
+            }
+        }
+
+        .example1-p {
+            font-size: 14px !important;
+            font-weight: 400 !important;
+            line-height: 20px !important;
+        }
+        .example1_open>.trigger-icon:before {
+            content: none;
+        }
+        .cash-cta-pill {
+            border-radius: 4px;
+            background: #FFBA00;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 16px;
+            text-transform: uppercase;
+            padding: 3px 10px;
+        }
+    </style>
+
+    <script>
+
+        window.dataLayer = window.dataLayer || [];
+
+        dataLayer.push({
+
+            "lob": "toh"
+
+        });
+
+    </script>
+
+    <!--#set var="gtm_lob" value="toh" -->
+
+    <!--#include virtual="/gtm/gtm-main-script.html" -->
+<!-- 
+    <script>
+        const ga4EcomInfo = {
+            view_promotion: {
+                "accounts_fy25q3ipad_20250703": "banner"
+            }
+            view_item: ["004"]
+        } 
+     </script>
+ -->
+    <script>
+
+        dataLayer.push({
+
+            'event': 'impression',
+
+            'promoLib': {
+
+                'hb-vantage-ID16_vantage-click': {
+
+                    'id': '00000',
+
+                    'name': 'accounts_fy25q3ipad_20250703',
+
+                    'creative': '/_assets-custom/images/bnr-en.png',
+
+                    'position': 'hero-banner',
+
+                    'adType': 'other'
+
+                }
+
+            }
+
+        });
+
+    </script>
+
+</head>
+
+<body>
+
+    <div id="dvl-wpr">
+
+        <header data-loc="personal-banking">
+
+            <!--#include virtual="/_assets-custom/includes/smart-banners/smart-banner-rbcapp.html" -->
+
+            <!--#include virtual='/_assets-custom/homepage/includes/main-header-custom.html' -->
+
+            <!--#include virtual='/_assets-custom/homepage/includes/sub-header-custom.html' -->
+
+        </header>
+
+        <!--#include virtual="/dvl/v1.0/assets/includes/side-navigation.html" -->
+
+        <main data-menu="/_assets-custom/homepage/js/menu.json">
+
+
+
+            <h1 class="offscreen">Welcome to RBC Personal banking</h1>
+
+
+
+            <!-- Support ticket #9512593 - Commenting out dynamic banner in place of static banner until further notice -->
+
+            <!-- <section role="banner" class="banner fw-bnr invisible gaHero energy-lines-grey elg-right"> -->
+
+            <!-- Replaced with dynamic content -->
+
+            <!-- </section> -->
+
+            <!-- <section class="get-450-1 banner html-bnr">
+
+                <div class="section-inner pad-tb-dbl mob-mar-0 mob-pad-0">
+
+                    <div class="banner-wpr no-border">
+
+                        <div class="banner-img text-center">
+
+                            <img src="_assets-custom/images/bnr-en.png" class="img-100" alt="Get $450" />
+
+                        </div>
+
+                        <div class="banner-text mob-pad-tb-dbl">
+
+                            <div class="snipe pill"><span>RBC Chequing Account Offer</span></div>
+
+                            <h2 id="page-title" class="banner-title text-white h1">
+
+                                Open an eligible RBC<br class="mobile-hidden" /> chequing account<br class="mobile-hidden" /> and <span class="no-wrap" style="color: #FEDF01;">get $450</span>
+
+                            </h2>
+
+
+
+                            <p class="text-white roboto-regular mar-b mob-mar-b-dbl">Offer Ends February 10, 2025. Conditions apply.</p>
+
+                            <p><a href="/accounts/chequing-accounts-offers.html" class="btn tertiary w-mob-100" target="_blank" id="hb-vantage-ID16_vantage-click" aria-label="View Offer Details (opens in a new tab)">View Offer Details</a></p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section> -->
+
+            <section id="banner">
+                <div class="section-inner pad-lr">
+                    <div class="text pad-l-hlf mob-pad-0 mob-mar-b-dbl" >
+                        <div class="mobile-bnr-img mobile-only">
+                            <img src="/bank-accounts/_assets-custom/images/banner-ipad-mob.png" class="img-responsive centered mar-b-dbl" alt="iPad">
+                        </div>
+                        <span class="cash-cta-pill">RBC Chequing Account Offer</span>
+                        <h2 class="mar-tb-hlf mob-mar-b" id="page-title">
+                            Open an Eligible RBC <br class="mobile-only">Chequing Account
+                            <span class="text-black h3" style="display: block; margin-top: 5px; text-transform: none;">and Get the New iPad</span>
+                        </h2>
+                        <div class="timer__date">
+                            <img src="/dms/pba/open-an-account/_assets-custom/images/timer.svg" alt="timer icon" style="width:16px; height: 16px;">
+                            <p>Offer Ends November 3, 2025. Conditions apply.</p>
+                        </div>
+                        
+                        <a href="/bank-accounts/chequing-accounts-offers.html" class="btn primary w-mob-100 mar-0 pad-hlf mob-mar-b" target="_blank" id="hb-vantage-ID16_vantage-click" aria-label="View Offer Details (opens in a new tab)">View Offer Details</a>
+
+                        <!-- <a target="_blank" href="" class="btn primary w-mob-100 pad-hlf" style="margin: 24px 0 !important;" data-select-promotion="accounts_fy25q3ipad_20250703" data-select-item="004" data-item-details="begin_checkout" data-dig-id="accounts-u6oUZb9nzXec-1" data-dig-details="hero banner cta - open signature no limit account">Open Signature No Limit Account Online</a> -->
+
+                        <!-- <p class="example1-p mar-t">Find out how you can upgrade to an <span class="bold">iPad Pro</span> or <span class="bold">MacBook Air</span>. <button class="tooltip-trigger" data-id="example1" data-dig-id="accounts-JiVpTL81oMFY-3" data-dig-details="offer upgrade CTA - see more">See More</button></p>
+
+                        <div id="example1" class="tooltip" data-h="leftedge" data-v="bottom" aria-describedby="example1-content" aria-hidden="true">
+                            <div id="example1-content" class="tooltip-inner">
+                                <p>
+                                    Contribute $50,000 in new funds across eligible RBC investment accounts, including TFSAs, RRSPs, RESPs, FHSAs, Non-Registered Investment Accounts and more. See <a href="/dms/pba/open-an-account/_assets-custom/includes/ipad-terms-and-conditions.html" target="_blank" class="newwindow-link" data-dig-id="accounts-JiVpTL81oMFY-4" data-dig-details="offer upgrade pop-up - terms and conditions">terms and conditions</a> for full listing of eligible accounts.
+                                </p>
+                            </div>
+                            <button class="close"><span>Close</span></button>
+                        </div> -->
+
+                    </div>
+                    <div class="img mob-pad-tb w-mob-100">
+                        <video width="100%" height="500" autoplay muted playsinline style="object-fit: contain;" class="desktop-only" aria-label="Get the New Apple Watch Series 10">
+                            <source src="/bank-accounts/_assets-custom/videos/ipad-animation.mp4?11" type="video/mp4" />
+                        </video>
+                        <!-- <div class="mobile-only">
+                            <img src="/_assets-custom/images/1-applewatch-en.png" class="centered" style="max-height: 200px; width: auto;" alt="Get the New Apple Watch Series 10" />
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section class="products-section">
+
+                <div class="section-inner section-grey">
+
+                    <div class="grid-wpr eh-wpr">
+
+                        <div class="grid-one-third">
+
+                            <div class="callout better-banking-callout">
+
+                                <div class="callout-content">
+
+                                    <div class="callout-copy">
+
+                                        <h2 class="text-center h3 eh">RBC Products and Services</h2>
+
+                                        <p class="lead">Whatever you need, we’ve got you covered.</p>
+
+
+                                        <ul class="icon-list invisible" id="better-banking-list">
+
+                                            <li id="l_mortgage"><a href="/mortgages/index.html" class="icon-list-l_mortgage" id="bb-explore-mortgage" aria-label="Link to explore mortgage options">Explore Mortgage Options</a></li>
+
+                                            <li id="l_loan"><a href="/borrowing-solutions/index.html" class="icon-list-l_loan2" id="bb-learn-about-loans" aria-label="Link to learn about loans & lines of credit">Loans & Lines of Credit</a></li>
+
+                                            <li id="l_account"><a href="/accounts/index.html" class="icon-list-l_account" id="bb-find-the-right-account" aria-label="Link to open a bank account">Open a Bank Account</a></li>
+
+                                            <li id="l_investing"><a href="/investments/index.html" class="icon-list-l_investing" id="bb-saving-and-investing" aria-label="Link to learn about personal investing">Personal Investing</a></li>
+
+                                            <li id="l_credit-card"><a href="/credit-cards/index.html" class="icon-list-l_credit-card" id="bb-compare-credit-cards" aria-label="Link to find a credit card">Find a Credit Card</a></li>
+
+                                        </ul>
+
+                                        <!-- <ul class="icon-list invisible" id="better-banking-list">
+
+                                            <li id="l_mortgage"><a href="/mortgages/index.html" class="icon-list-l_mortgage" id="bb-explore-mortgage" aria-label="Explore
+
+                                                    mortgage options">Explore
+
+                                                    mortgage options</a></li>
+
+                                            <li id="l_account"><a href="/accounts/index.html" class="icon-list-l_account" id="bb-find-the-right-account" aria-label="Find the
+
+                                                    right account">Find the
+
+                                                    right account</a></li>
+
+                                            <li id="l_investing"><a href="/investments/index.html" class="icon-list-l_investing" id="bb-saving-and-investing" aria-label="Saving
+
+                                                    and investing">Saving
+
+                                                    and investing</a></li>
+
+                                            <li id="l_credit-card"><a href="/credit-cards/index.html" class="icon-list-l_credit-card" id="bb-compare-credit-cards" aria-label="Compare
+
+                                                    credit cards">Compare
+
+                                                    credit cards</a></li>
+
+                                            <li id="l_loan"><a href="/borrowing-solutions/index.html" class="icon-list-l_loan2" id="bb-learn-about-loans" aria-label="Learn about
+
+                                                    loans">Learn about
+
+                                                    loans</a></li>
+
+                                        </ul> -->
+
+                                    </div>
+
+                                    <div class="callout-link"><a href="/applyonline.html" class="goto-link" id="join-rbc" aria-label="View all products and services">View all</a></div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="grid-one-third">
+
+                            <div class="callout customer-service-callout flex-wpr">
+
+                                <div class="callout-content">
+
+                                    <div class="callout-copy">
+
+                                        <h2 class="text-center h3 eh">Customer Service</h2>
+
+                                        <!-- <div class="callout-img focus-right" data-img="/_assets-custom/homepage/images/callout-1.jpg"></div> -->
+
+                                        <!-- <p>We’re committed to keeping you informed and providing the support you need. -->
+
+                                        </p>
+
+                                        <div class="table-wpr">
+
+                                            <div class="table-row">
+
+                                                <div class="table-cell"><img src="/_assets-custom/homepage/images/Connect_icon.svg" class="icon-40 mar-r-hlf" alt="" /></div>
+
+                                                <div class="table-cell">
+
+                                                    <h3 class="h5">How can we help you?</h3>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="table-row">
+
+                                                <div class="table-cell"></div>
+
+                                                <div class="table-cell">
+
+                                                    <ul class="chevron-list">
+
+                                                        <li><a href="/customer-service/index.html" id="customer-service" aria-label="Visit our help centre for support">Help Centre</a></li>
+
+                                                        <li><a href="https://maps.rbcroyalbank.com/" id="find-branch-or-atm" aria-label="Click here to find a branch or ATM">Find a Branch or ATM</a></li>
+
+                                                        <li><a href="/book-an-appointment/book-an-appointment.html" id="book-an-appointment" aria-label="Click here to book an appointment">Book an Appointment</a></li>
+
+                                                    </ul>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="table-wpr">
+
+                                            <div class="table-row">
+
+                                                <div class="table-cell"><img src="/dvl/v1.0/assets/images/icons/icon-online.svg" class="icon-40 mar-r-hlf" alt="" /></div>
+
+                                                <div class="table-cell">
+
+                                                    <h3 class="h5">Benefits of Digital Banking:</h3>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="table-row">
+
+                                                <div class="table-cell"></div>
+
+                                                <div class="table-cell">
+
+                                                    <ul class="chevron-list">
+
+                                                        <li><a href="/ways-to-bank/mobile/rbc-mobile-app/index.html" id="save-time-bank-on-the-go" aria-label="Click here to learn about banking on RBC mobile app">RBC Mobile App</a></li>
+
+                                                        <li><a href="/ways-to-bank/online-banking/index.html" id="get-more-from-online-banking" aria-label="Click here to learn about RBC online banking">RBC Online Banking</a>
+
+                                                        </li>
+
+                                                        <li><a href="/ways-to-bank/tutorials/index.html" id="view-tutorials" onclick="triggerDataLayer('click','Customer Service - View Tutorial')" aria-label="Click here to view tutorials about banking with RBC">View Tutorials</a></li>
+
+                                                    </ul>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="grid-one-third">
+
+                            <div class="callout special-offers-callout">
+
+                                <!-- Replaced with dynamic content -->
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="help-section">
+
+                <div class="section-inner">
+
+                    <h2 class="text-center mar-b">How can we help you today?</h2>
+
+                    <ul class="col-wpr mar-t-0 mar-b clearfix">
+
+                        <li class="mar-t mob-mar-t-dbl col-3">
+
+
+                            <a href="/rates/index.html" id="today-rates" class="icon-link" aria-label="Today’s Rates"><img src="/_assets-custom/homepage/images/rates-icn.svg" class="icon-40" alt=""><span>Today’s Rates</span></a>
+
+                        </li>
+
+                        <li class="mar-t mob-mar-t-dbl col-3">
+
+                            <a href="https://apps.royalbank.com/apps/foreign-exchange-calculator" id="foreign-exchange" class="icon-link" aria-label="Foreign Exchange"><img src="/_assets-custom/homepage/images/currx-icn.svg" class="icon-40" alt=""><span>Foreign Exchange</span></a>
+
+                        </li>
+
+                        <li class="mar-t mob-mar-t-dbl col-3">
+
+                            <a href="https://apps.royalbank.com/apps/mortgages/mortgage-payment-calculator/" id="calculate-mortgage-payments" class="icon-link" aria-label="Calculate My Mortgage Payments"><img src="/dvl/v1.0/assets/images/icons/icon-calc.svg" class="icon-40" alt=""><span>Calculate My Mortgage Payments</span></a>
+
+                        </li>
+
+                        <li class="mar-t mob-mar-t-dbl col-3">
+
+                            <a href="/investments/rrsp/rrsp-calculator.html" id="boost-my-rrsp" class="icon-link" aria-label="Boost My RRSP Savings"><img src="/dvl/v1.0/assets/images/icons/icon-bank-accounts.svg" class="icon-40" alt=""><span>Boost My RRSP Savings</span></a>
+
+                        </li>
+
+                    </ul>
+
+                    <div class="accordion" id="help-accordion">
+
+                        <div class="grid-wpr">
+
+                            <div class="grid-half">
+
+                                <div class="accordion-panel">
+
+                                    <a href="#accordion1" id="buying-a-home" class="collapse-toggle collapsed" role="button" aria-expanded="false" data-toggle="collapse" data-parent="#help-accordion" aria-label="Buying a Home" aria-controls="accordion1">Buying a Home</a>
+
+                                    <div class="collapse-content collapse" id="accordion1">
+
+                                        <div class="collapse-inner pad-l-hlf">
+
+                                            <ul class="chevron-list">
+
+                                                <li><a href="/mortgages/first-time-home-buyers.html" id="buying-first-home" aria-label="I’m buying my first home">I’m buying my first home</a></li>
+
+                                                <li><a href="/mortgages/buying-next-home.html" id="selling-home-and-moving" aria-label="I’m selling my home and moving">I’m selling my home and moving</a>
+
+                                                </li>
+
+                                                <li><a href="/mortgages/buying-a-second-property.html" id="buying-another-property" aria-label=">I’m buying another property">I’m buying another property</a>
+
+                                                </li>
+
+                                                <li><a href="/mortgages/renewing-your-mortgage.html" id="renew-mortgage" aria-label="I want to renew my mortgage">I want to renew my mortgage</a></li>
+
+                                                <li><a href="/mortgages/switch-to-rbc.html" id="switch-to-rbc" aria-label="I want to
+
+                                                        switch to RBC">I want to
+
+                                                        switch to RBC</a></li>
+
+                                            </ul>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="accordion-panel">
+
+                                    <a href="#accordion2" id="paying-for-school" class="collapse-toggle collapsed" role="button" aria-expanded="false" data-toggle="collapse" data-parent="#help-accordion" aria-label="Going to School" aria-controls="accordion2">Going to School</a>
+
+                                    <div class="collapse-content collapse" id="accordion2">
+
+                                        <div class="collapse-inner pad-l-hlf">
+
+                                            <ul class="chevron-list">
+
+                                                <li><a href="/student-solution/find-the-right-account.html" id="student-account" aria-label="Find the Right Student Account">Find the Right Student Account</a></li>
+
+                                                <li><a href="/student-solution/perks-rewards.html" id="rewards-and-benefits" aria-label="Enjoy Rewards & Benefits">Enjoy Rewards & Benefits</a></li>
+
+                                                <li><a href="/student-solution/build-your-career.html" id="build-your-career" aria-label="Build Your Career">Build Your Career</a></li>
+
+                                                <li><a href="/student-solution/index.html" id="doing-some-good" aria-label="Doing
+
+                                                        Some Good">Doing
+
+                                                        Some Good</a></li>
+
+                                            </ul>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="accordion-panel">
+
+                                    <a href="#accordion5" id="senior-resources" class="collapse-toggle collapsed" role="button" aria-expanded="false" data-toggle="collapse" data-parent="#help-accordion" onclick="triggerDataLayer('accordion menu click ','how can we help - Resources for Seniors ')" aria-label="Resources
+
+                                        for Seniors" aria-controls="accordion5">Resources
+
+                                        for Seniors</a>
+
+                                    <div class="collapse-content collapse" id="accordion5">
+
+                                        <div class="collapse-inner pad-l-hlf">
+
+                                            <ul class="chevron-list">
+
+                                                <li><a href="/seniors-resource-centre.html#bank" id="start-digital" onclick="triggerDataLayer('accordion menu click ','how can we help - Resources for Seniors - getting started')" aria-label="Getting
+
+                                                        started with digital banking">Getting
+
+                                                        started with digital banking</a></li>
+
+                                                <li><a href="/seniors-resource-centre.html#protect" id="protect-your-money" onclick="triggerDataLayer('accordion menu click ','how can we help - Resources for Seniors - protect money')" aria-label="How
+
+                                                        to protect your money">How
+
+                                                        to protect your money </a></li>
+
+                                                <li><a href="/seniors-resource-centre.html#future" id="your-future" onclick="triggerDataLayer('accordion menu click ','how can we help - Resources for Seniors - planning')" aria-label="Planning
+
+                                                        for the future">Planning
+
+                                                        for the future </a></li>
+
+                                            </ul>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="grid-half">
+
+                                <div class="accordion-panel">
+
+                                    <a href="#accordion3" id="moving-to-canada" class="collapse-toggle collapsed" role="button" aria-expanded="false" data-toggle="collapse" data-parent="#help-accordion" aria-label="New to Canada" aria-controls="accordion3">New to Canada</a>
+
+                                    <div class="collapse-content collapse" id="accordion3">
+
+                                        <div class="collapse-inner pad-l-hlf">
+
+                                            <ul class="chevron-list">
+
+                                                <li><a href="https://www.rbc.com/newcomers/index.html" id="resident">I
+
+                                                        am a resident</a></li>
+
+                                                <li><a href="https://www.rbc.com/newcomers/foreign-workers-in-canada.html" id="foreig-worker" aria-label="I am a foreign worker">I am a foreign worker</a></li>
+
+                                                <li><a href="https://www.rbc.com/newcomers/international-students-in-canada.html" id="student" aria-label="I am a student">I am a student</a></li>
+
+                                                <li><a href="https://www.rbc.com/newcomers/business-owners-entrepreneurs-in-canada.html" id="business" aria-label="I have a business">I have a business</a></li>
+
+                                            </ul>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="accordion-panel">
+
+                                    <a href="#accordion4" id="saving-for-retirerment" class="collapse-toggle collapsed" role="button" aria-expanded="false" data-toggle="collapse" data-parent="#help-accordion" aria-label="Retirement Planning" aria-controls="accordion4">Retirement Planning</a>
+
+                                    <div class="collapse-content collapse" id="accordion4">
+
+                                        <div class="collapse-inner pad-l-hlf">
+
+                                            <ul class="chevron-list">
+
+                                                <!-- <li><a href="https://www.rbcfinancialplanning.com/retirement-planning.html" id="thinking-of-retirement">I’m thinking of retirement</a></li>
+
+											<li><a href="https://www.rbcfinancialplanning.com/early-retirement.html" id="early-retirement">I’m planning for early retirement</a></li>
+
+											<li><a href="https://www.rbcfinancialplanning.com/empty-nest.html" id="empty-nest">I have an empty nest</a></li>
+
+											<li><a href="https://www.rbcfinancialplanning.com/turning-65-or-71.html" id="living-in-retirement">I’m living in retirement</a></li>
+
+											<li><a href="https://www.rbcfinancialplanning.com/investment-planning.html" id="back-on-track">I’m getting back on track</a></li> -->
+
+                                                <li><a href="/retirement/saving-planning/index.html" id="saving-and-planning" aria-label="">I’m Saving and Planning</a></li>
+
+                                                <li><a href="/retirement/getting-close/index.html" id="getting-close" aria-label="">I’m Getting Close</a></li>
+
+                                                <li><a href="/retirement/retired/index.html" id="already-retired" aria-label="">I’m
+
+                                                        Already Retired</a></li>
+
+                                            </ul>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="accordion-panel">
+
+                                    <a href="#accordion6" id="online-and-mobile-banking-tutorials" class="collapse-toggle collapsed" role="button" aria-expanded="false" data-toggle="collapse" data-parent="#help-accordion" onclick="triggerDataLayer('accordion menu click ','how can we help - OLB and Mobile Tutorials')" aria-label="Online
+
+                                        & Mobile Banking Tutorials" aria-controls="accordion6">Online
+
+                                        & Mobile Banking Tutorials</a>
+
+                                    <div class="collapse-content collapse" id="accordion6">
+
+                                        <div class="collapse-inner pad-l-hlf">
+
+                                            <ul class="chevron-list">
+
+                                                <li><a href="/ways-to-bank/tutorials/general/online-banking-password-reset.html" id="reset-password" onclick="triggerDataLayer('accordion menu click ','how can we help - OLB and Mobile Tutorials - Reset Password')" aria-label="How
+
+                                                        to Reset Your Password">How
+
+                                                        to Reset Your Password</a></li>
+
+                                                <li><a href="/ways-to-bank/tutorials/pay-bills/how-to-pay-bills-online.html" id="pay-a-bill" onclick="triggerDataLayer('accordion menu click ','how can we help - OLB and Mobile Tutorials - Pay a Bill')" aria-label="How
+
+                                                        to Pay a Bill ">How
+
+                                                        to Pay a Bill </a></li>
+
+                                                <li><a href="/ways-to-bank/tutorials/send-and-receive-money/how-to-send-money-to-someone.html" id="how-to-send-money" aria-label="How to Send Money">How to Send Money</a></li>
+
+                                                <li><a href="/ways-to-bank/tutorials/index.html" id="view-all-tutorials" onclick="triggerDataLayer('accordion menu click ','how can we help - OLB and Mobile Tutorials - All Tutorials ')" aria-label="View
+
+                                                        All Tutorials">View
+
+                                                        All Tutorials</a></li>
+
+                                            </ul>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <form method="get" action="/search-public/index.html" id="intellResponse_form">
+
+                        <div class="callout horizontal pad ask-callout">
+
+                            <input type="hidden" name="IR_INTERFACE_ID" value="5">
+
+                            <input type="hidden" name="type" value="0">
+
+                            <label for="intelli-search" class="ask-callout-title mar-r text-script">Still need help?</label>
+
+                            <div class="flex w-100">
+
+                                <input type="text" name="question" id="intelli-search" class="ui-autocomplete-input mar-r" autocomplete="off" aria-label="Type your question here">
+
+                                <button id="ask-button" type="submit" class="btn primary disabled mar-0">Find</button>
+
+                            </div>
+
+                        </div>
+
+                    </form>
+
+
+
+                </div>
+
+            </section>
+
+            <!-- <section class="section-grey discover-and-learn-section"> -->
+
+            <!-- <section class="section-grey discover-and-learn-section"> -->
+
+            <section class="discover-and-learn-section">
+
+                <div class="section-inner">
+
+                    <h2 class="text-center mar-b">My Money Matters</h2>
+
+                    <p class="text-center">My Money Matters brings articles and resources for you to take control of your financial wellbeing, build confidence, and reach your life goals.</p>
+
+                    <div id="test-wp"></div>
+
+                    <div class="grid-wpr eh-wpr">
+
+                        <!-- Replaced with dynamic content -->
+
+                        <div class="grid-one-third flex ga-trigger-onload" id="money-matters-article-0">
+
+                            <a href="" data-dig-id="enterprise-yDJ7wfwYxdQc-3" style=" flex-grow:1;">
+
+                                <div class="callout" style="height:100%">
+
+                                    <div class="callout-img grid-mob-half" ></div>
+
+                                    <div class="callout-content grid-mob-half">
+
+                                        <div class="callout-copy">
+
+                                            <div class="callout-img"></div>
+                                            <span class="h4 text-black"></span>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div>
+
+                        <div class="grid-one-third flex ga-trigger-onload" id="money-matters-article-1">
+
+                            <a href="" data-dig-id="enterprise-yDJ7wfwYxdQc-2" style="z-index: 10; flex-grow:1;">
+
+                                <div class="callout" style="height:100%">
+
+                                    <div class="callout-img grid-mob-half" ></div>
+
+                                    <div class="callout-content grid-mob-half">
+
+                                        <div class="callout-copy">
+
+                                            <div class="callout-img"></div>
+                                            <span class="h4 text-black"></span>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div>
+
+                        <div class="grid-one-third flex ga-trigger-onload" id="money-matters-article-2">
+
+                            <a href=""data-dig-id="enterprise-yDJ7wfwYxdQc-1" style="z-index: 10; flex-grow:1;">
+
+                                <div class="callout" style="height:100%">
+
+                                    <div class="callout-img grid-mob-half"></div>
+
+                                    <div class="callout-content grid-mob-half">
+
+                                        <div class="callout-copy">
+
+                                            <div class="callout-img"></div>
+                                            <span class="h4 text-black"></span>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="text-center">
+
+                        <a href="https://www.rbcroyalbank.com/en-ca/my-money-matters/" class="btn tertiary">Discover More</a>
+
+                        <!-- <a href="https://discover.rbcroyalbank.com/?ref=rb-hp" class="btn tertiary">Discover More</a> -->
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="fw-bnr branch-locator-section" data-img="/_assets-custom/images/map-bg.jpg" style="background-image:url('/_assets-custom/images/map-bg.jpg')">
+                <div class="section-inner">
+                    <div class="callout">
+                        <div class="callout-inner pad mob-pad-dbl">
+                            <form action="https://maps.rbcroyalbank.com" method="post">
+                                <h2 class="text-black">Find a Branch or ATM Near You</h2>
+                                <p>
+                                    Be sure to check before you visit as some branches may have reduced hours.
+                                </p>
+                                <div class="divider"></div>
+                                <input type="hidden" id="lang" value="English" name="lang">
+                                <input type="hidden" id="searchBranch" name="searchBranch" value="1">
+                                <input type="hidden" id="searchATM" name="searchATM" value="1">
+                                <label for="q">Search by address, city, postal code, or transit number:</label>
+                                <div class="flex flex-align-center flex-justify-between flex-nowrap w-100">
+                                    <div class="flex-item pad-r-hlf pad-lr-0 w-mob-100 mob-mar-b">
+                                        <input type="text" id="q" name="q" class="w-100">
+                                    </div>
+                                    <div class="w-mob-100">
+                                        <button type="submit" class="btn primary fl-r w-mob-100" id="branch-atm-search">Search</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- OpinionLab Survey -->
+
+                <!--#include virtual="/_assets-custom/onlineopinionV5/scripts.html" -->
+
+            </section>
+
+        </main>
+
+        <footer>
+
+            <div class="fat-footer">
+
+                <div class="fat-footer-inner">
+
+                    <div class="grid-wpr eh-wpr">
+
+                        <div class="grid-one-fourth">
+
+                            <div class="h6">About RBC</div>
+
+                            <ul class="chevron-list">
+
+                                <li class="roboto-regular"><a href="https://www.rbc.com/investor-relations/index.html" id="footer-investor-relations" aria-label="Investor Relations">Investor Relations</a></li>
+
+                                <li class="roboto-regular"><a href="https://www.rbc.com/newsroom/index.html" id="footer-media-newsroom" aria-label="Media Newsroom">Media Newsroom</a></li>
+
+                                <li class="roboto-regular"><a href="https://thoughtleadership.rbc.com/economics/" id="footer-economics" aria-label="Economics">Economics</a></li>
+
+                            </ul>
+
+                            <div class="h6">Work at RBC</div>
+
+                            <ul class="chevron-list">
+
+                                <li class="roboto-regular"><a href="https://jobs.rbc.com/ca/en/work-at-rbc" id="footer-careers-at-rbc" aria-label="Careers at RBC">Careers at RBC</a></li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="grid-one-fourth">
+
+                            <div class="h6">Customer Service</div>
+
+                            <ul class="chevron-list">
+
+                                <li class="roboto-regular"><a href="/applyonline.html" id="footer-apply-online">Apply
+
+                                        Online</a></li>
+
+                                <li class="roboto-regular"><a href="https://maps.rbcroyalbank.com" id="footer-branch-atm-locator" aria-label="Branch & ATM Locator">Branch &amp; ATM Locator</a></li>
+
+                                <li class="roboto-regular"><a href="https://www.rbc.com/voluntary-codes-public-commitments.html" id="footer-voluntary-codes" aria-label="Voluntary Codes & Public Commitments">Voluntary Codes &amp; Public Commitments</a></li>
+
+                                <li class="roboto-regular"><a href="tel:18007692511" id="footer-1-800-769-2511" taria-label="1-800-769-2511">1-800-769-2511</a></li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="grid-one-fourth">
+
+                            <div class="h6">Daily Numbers</div>
+
+                            <ul class="chevron-list">
+
+                                <li class="roboto-regular"><a href='<!--#echo var="mizdotnet_host" -->/apps/foreign-exchange-calculator' id="footer-foreign-exchange" aria-label="Foreign Exchange">Foreign Exchange</a></li>
+
+                                <li class="roboto-regular"><a href="/rates/index.html" id="footer-rates" aria-label="Rates">Rates</a></li>
+
+                                <li class="roboto-regular"><a href="/mortgages/mortgage-rates.html" id="footer-mortgage-rates" aria-label="Mortgage Rates">Mortgage Rates</a></li>
+
+                                <li class="roboto-regular"><a href="https://www.rbcgam.com/en/ca/products/mutual-funds/index?tab=overview&series=f" id="footer-mutual-funds" aria-label="Mutual Funds">Mutual Funds</a></li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="grid-one-fourth">
+
+                            <div class="h6 mar-t-0">Protecting Your Money</div>
+
+                            <ul class="chevron-list mar-b-hlf">
+
+                                <li><a href="/partners/cdic/index.html" aria-label="Canada Deposit Insurance Corporation Member
+
+                                        Info">Canada Deposit Insurance Corporation Member
+
+                                        Info</a></li>
+
+                            </ul>
+
+                            <a href="https://www.cdic.ca/your-coverage/protecting-your-deposit/" aria-label="Deposit Protection">
+
+                                <img src="/accounts/_assets-custom/images/cdic-digital-symbol-en.svg" style="width: 139px" alt="CDIC logo">
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--#include virtual='/_assets-custom/homepage/includes/footer-custom.html' -->
+
+        </footer>
+
+    </div>
+
+    <!--#include virtual="/dvl/v1.0/assets/includes/scripts.html" -->
+
+    <script async src="/_assets-custom/homepage/js/home.min-sf.js"></script>
+
+    <script src="/_assets-custom/includes/smart-banners/smart-banners.js"></script>
+
+    <script async src="/personal/_assets-custom/js/main.js"></script>
+
+    <script async src="/personal/_assets-custom/js/intelli.js"></script>
+
+
+
+    <script>
+
+        function dataLayerpush(digID, digDet) {
+
+            window.dataLayer = window.dataLayer || [];
+
+            window.dataLayer.push({
+
+                "event": "click",
+
+                "data-dig-id": digID,
+
+                "data-dig-details": digDet
+
+            });
+
+        }
+
+    </script>
+    
+    <script>
+
+        function pznFallback(element){
+
+            dataLayer.push({
+
+                event: 'error_generic',
+
+                details: 'error_generic - homepage - pzn - external javascript failed to load'
+
+            });
+
+            dataLayer.push({
+
+                event: 'track',
+
+                details: 'track - homepage - generic experience'
+
+            });
+
+            showGenericBanner();
+
+        }
+
+    </script>
+
+    <!--#include virtual="/mortgages/_assets-custom/includes/_mortgages_banner_data.html" -->
+
+    <!--#include virtual="/credit-cards/_assets-custom/includes/_credit_cards_banner_data.html" -->
+
+    <!--#include virtual="/investments/_assets-custom/includes/_investments_banner_data.html" -->
+
+    <script src="/_assets-custom/homepage/js/homepage-hero.min.js" onerror="pznFallback(this);"></script>
+
+    <script>
+        $(document).ready(function() {
+          $.ajax({
+                type: 'GET',
+                url: 'https://www.rbcroyalbank.com/en-ca/wp-json/wp/v2/rbc_my_money_matter?per_page=3&rbc_content_type=31&_embed',
+                cache: true,
+                dataType: 'json',
+                success: callback
+          });
+        });
+
+        function callback(json){
+            var count = 0;
+            var dlImage = ''; var dlTitle =''; var dlLink = '';
+            $.each(json, function(index, post) {
+                $("#money-matters-article-" + count + " span.h4").html(post.title.rendered);
+                $("#money-matters-article-" + count + " a").attr("href", post.link);
+                $("#money-matters-article-" + count + " a").click(function(){dataLayerpush($(this).attr("data-dig-id"), " my money matters - " + post.title.rendered)})
+                $("#money-matters-article-" + count + " div.callout-img").css("background-image", "url(" + post.featured_img + ")");
+                $("#money-matters-article-" + count + " div.callout-img").attr("alt", post["_embedded"]["wp:featuredmedia"][0]["alt_text"])
+                count++;
+            });
+        }
+    </script>
+
+</body>
+
+</html>

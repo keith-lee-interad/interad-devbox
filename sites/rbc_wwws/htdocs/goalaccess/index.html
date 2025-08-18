@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <!--#if expr="${HTTP_HOST}=/sterbc.localdev/" -->
+        <!--#set var='new_host' value='sterbcroyalbank.localdev' -->
+    <!--#elif expr="${HTTP_HOST}=/sterbc.com/" -->
+        <!--#set var='new_host' value='https://www.sterbcroyalbank.com' -->
+    <!--#elif expr="${HTTP_HOST}=/silver.rbc.com/" -->
+        <!--#set var='new_host' value='https://silver.rbcroyalbank.com' -->
+    <!--#else -->
+        <!--#set var='new_host' value='https://www.rbcroyalbank.com' -->
+    <!--#endif -->
+
+    <meta http-equiv="refresh" content="0; url=<!--#echo var="new_host" -->/credit-cards/goalaccess/?utm_source=rbc&utm_medium=vanity&utm_campaign=fifa-wc-26&utm_content=rbc_goalaccess" />
+
+  </head>
+
+</html>
