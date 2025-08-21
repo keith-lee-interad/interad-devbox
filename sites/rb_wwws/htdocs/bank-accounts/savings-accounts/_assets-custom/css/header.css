@@ -1,0 +1,13 @@
+header #header.master-header .header-content {
+	flex: 1 0 auto;
+}
+
+header #header.master-header a.logo-wpr .logo-img,
+header #header.master-header a.logo-wpr .logo-img img {
+	height: 5.2rem;
+	margin-top: -3px;
+}
+
+header #header .header-content .search-trigger .search-text {
+	border: none;
+}

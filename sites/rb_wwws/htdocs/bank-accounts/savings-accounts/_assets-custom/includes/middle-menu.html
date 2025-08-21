@@ -1,9 +1,9 @@
 <link rel="stylesheet" href="_assets-custom/css/middle-menu.css">
-<script src="_assets-custom/js/middle-menu.js"></script>
 <div class="middle-menu">
     <div class="sub-nav">
         <ul id="menu-mmm-global-nav" class="sub-links">
-            <li class="menu-item menu-item-has-children"><a href="#" data-dig-id="LP-94368-526c3cf4" data-dig-category="LP" data-dig-action="link click">Products</a>
+            <li class="menu-item menu-item-has-children">
+                <a href="#" data-dig-id="LP-94368-526c3cf4" data-dig-category="LP" data-dig-action="link click">Products</a>
                 <ul class="sub-menu">
                     <li class="menu-item">
                         <section class="section-tabs full-width">
@@ -561,7 +561,8 @@
                     </li>
                 </ul>
             </li>
-            <li class="menu-item menu-item-has-children"><a href="#" data-dig-id="LP-94368-7ad8a062" data-dig-category="LP" data-dig-action="link click">Solutions</a>
+            <li class="menu-item menu-item-has-children">
+                <a href="#" data-dig-id="LP-94368-7ad8a062" data-dig-category="LP" data-dig-action="link click">Solutions</a>
                 <ul class="sub-menu">
                     <li class="menu-item">
                         <section class="section-tabs full-width">
@@ -959,3 +960,11 @@
         </ul>
     </div>
 </div>
+<script src="_assets-custom/js/middle-menu.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        $(".middle-menu ul.tab-nav > li > a").mouseenter(function () {
+            $(this).tab('show');
+        });
+    });
+</script>
