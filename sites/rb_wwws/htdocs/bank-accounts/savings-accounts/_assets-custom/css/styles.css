@@ -1,0 +1,52 @@
+header #header.master-header .header-content {
+	flex: 1 0 auto;
+}
+
+header #header.master-header a.logo-wpr .logo-img,
+header #header.master-header a.logo-wpr .logo-img img {
+	height: 5.2rem;
+	margin-top: -3px;
+}
+
+header #header .header-content .search-trigger .search-text {
+	border: none;
+}
+
+.mega-menu-wpr.mm-v2 .mega-menu-nav .mega-menu-lobs {
+	padding: 0;
+	width: 100%;
+}
+
+.mega-menu-wpr .mega-menu-nav>ul.mega-menu-lobs>li.mega-menu-lob+.mega-menu-divider:before {
+	content: "";
+	display: inline-block;
+	margin-top: 6px;
+	width: 1px;
+	height: 25px;
+	background-color: #E0E0E0;
+}
+
+.mega-menu-wpr.mm-v2 .mega-menu-nav ul.mega-menu-lobs li {
+	flex: 1 0 auto;
+	height: 100%;
+}
+
+@media (min-width: 769px) {
+	.grid-wpr .grid-one-fifth {
+		width: 20%;
+		float: left;
+	}
+}
+
+@media (min-width: 640px) {
+	.grid-wpr .grid-one-fifth {
+		float: left;
+	}
+}
+
+.grid-wpr .grid-one-fifth {
+	position: relative;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+}

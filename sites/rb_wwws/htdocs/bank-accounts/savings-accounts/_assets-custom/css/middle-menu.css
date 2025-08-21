@@ -1,0 +1,82 @@
+@media (min-width: 769px) {
+	header .middle-menu {
+		display: block;
+		z-index: 4;
+		flex: 1 0 auto;
+	}
+
+	#header.master-header .header-content .sub-nav {
+		display: flex;
+		justify-content: center;
+	}
+
+	#header.master-header .header-content .sub-nav .sub-links {
+		display: flex;
+		gap: 4rem;
+	}
+
+	header .middle-menu .sub-links>li.menu-item {
+		margin-bottom: 0;
+	}
+
+	header .middle-menu .sub-links>li.menu-item>a {
+		align-items: center;
+		color: #fff;
+		display: inline-flex;
+		height: 7rem;
+		margin-bottom: 0;
+		position: relative;
+		text-decoration: none;
+	}
+
+	header .middle-menu .sub-links>li.menu-item.menu-item-has-children>a:after {
+		content: url(/dvl/v1.0/assets/images/ui/ui-chevron-down-white.svg);
+		display: inline-block;
+		font-size: 0;
+		height: .8rem;
+		line-height: 0;
+		margin-left: 1rem;
+		vertical-align: middle;
+		width: .8rem;
+	}
+
+	header .middle-menu .sub-links>li.menu-item.menu-item-has-children ul.sub-menu {
+		background-color: #fff;
+		border: .5px solid #c6c7c9;
+		border-top: none;
+		bottom: -1px;
+		color: #252525;
+		display: none;
+		left: 0;
+		position: absolute;
+		transform: translate3d(0, 100%, 0);
+		width: 100%;
+	}
+
+    header .middle-menu .sub-links>li.menu-item.current-menu-item>a:before, header .middle-menu .sub-links>li.menu-item:hover>a:before {
+        background: #fedf01;
+        bottom: 0;
+        content: "";
+        display: inline-block;
+        height: .4rem;
+        left: 0;
+        position: absolute;
+        width: 100%;
+    }
+
+	header .middle-menu .sub-links>li.menu-item.menu-item-has-children:hover ul.sub-menu {
+        display: block;
+    }
+}
+
+.section-tabs.active {
+    visibility: visible;
+}
+
+.middle-menu .sub-nav .sub-links .section-tabs ul.tab-nav {
+	justify-content: space-around;
+}
+
+.middle-menu .sub-nav .sub-links .section-tabs ul.tab-nav>li:before {
+	content: none;
+}
